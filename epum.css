@@ -5,10 +5,10 @@ body {
     font-size: 14px;
     background: #ecf0f1;
 }
-
+/*
 .bookshelf {
 
-    }
+    }*/
     
 .item {
     width: 270px;
@@ -50,6 +50,7 @@ body {
 a {
     text-decoration: none;
    /* color: white; */
+    color: #a38b70;
 }
 
 .add { 
