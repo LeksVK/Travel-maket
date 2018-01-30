@@ -42,14 +42,14 @@ body {
 .bt:hover {
     color: white;
 }
-/*
+
 .bt:active {
     color: rgba(141, 116, 90, 0.3);
-} */
+} 
 
 a {
     text-decoration: none;
-    color: white;
+   /* color: white; */
 }
 
 .add { 
