@@ -93,8 +93,9 @@ body {
    /* border: 1px solid black; */
 }
 
-/*
+
 /* Блок стилей для ссылок на соцсети */
+/*
 .share {
 	display: inline-block;
 	width: 40px;
@@ -106,9 +107,9 @@ body {
 	background-image: url("");
 	background-repeat: no-repeat;
 }
-
+*/
 /* Временная обводка элемента */
- .icon {
+/* .icon {
     outline: 2px solid rgba(0, 0, 0, 0.1);
 }
 
