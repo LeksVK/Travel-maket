@@ -95,9 +95,9 @@ body {
 	color: white;
 	font-weight: bold;
 	transform: rotate(90deg);
-	font-size: 14px;
+	font-size: 16px;
 	word-wrap: normal;
-	width: 50px;
+	width: 100px;
 	position: absolute;
 	top: 90%;
 	left: 5%;
