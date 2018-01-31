@@ -81,8 +81,6 @@ body {
     clear: both;
 }
 
-
-
 .bar {
 	position: absolute;
 	top: 0;
@@ -93,6 +91,11 @@ body {
    /* border: 1px solid black; */
 }
 
+.s-link {
+	color: white;
+	font-weight: bold;
+	writing-mode: bt-rl;
+}
 
 /* Блок стилей для ссылок на соцсети */
 /*
