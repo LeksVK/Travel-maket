@@ -5,7 +5,7 @@ body {
 	line-height: ;
 	font-family:;
 	color: ; */
-    background-color: #eaeaea ;
+    	background-color: #eaeaea ;
 	min-width: 1040px;
 /*	min-width: 1680px; */
 }
@@ -34,7 +34,7 @@ body {
     }
     
 .main-menu {
-	padding: 0;
+    padding: 0;
     margin: 0;
     list-style: none;
     float; left;
@@ -57,9 +57,13 @@ body {
 
 .main-menu a {
     text-transform: uppercase;
-    color: #ffffff;
+    color: #a38b70;
     /*    color: #92979a; */
     text-decoration: none;
+}
+
+.main-menu a:hover {
+	color: #ffffff;
 }
 
 .btn-main-nav {
