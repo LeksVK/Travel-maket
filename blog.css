@@ -94,8 +94,14 @@ body {
 .s-link {
 	color: white;
 	font-weight: bold;
-	writing-mode: bt-rl;
-	font-size: 12px;
+	transform: rotate(90deg);
+	font-size: 10px;
+	word-wrap: normal;
+	width: 50px;
+	position: absolute;
+	top: 95%;
+	left: 2%;
+	margin: -15px;
 }
 
 /* Блок стилей для ссылок на соцсети */
