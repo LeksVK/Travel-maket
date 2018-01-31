@@ -99,7 +99,7 @@ body {
 	word-wrap: normal;
 	width: 100px;
 	position: absolute;
-	top: 90%;
+	bottom: 10%;
 	left: 5%;
 /*	margin: -15px; */
 }
