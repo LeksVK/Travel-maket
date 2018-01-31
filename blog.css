@@ -95,13 +95,13 @@ body {
 	color: white;
 	font-weight: bold;
 	transform: rotate(90deg);
-	font-size: 10px;
+	font-size: 14px;
 	word-wrap: normal;
 	width: 50px;
 	position: absolute;
-	top: 95%;
-	left: 2%;
-	margin: -15px;
+	top: 90%;
+	left: 5%;
+/*	margin: -15px; */
 }
 
 /* Блок стилей для ссылок на соцсети */
