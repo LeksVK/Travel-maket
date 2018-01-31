@@ -97,7 +97,7 @@ body {
 	transform: rotate(90deg);
 	font-size: 36px;
 	word-wrap: normal;
-	width: 100px;
+/*	width: 100px; */
 	position: absolute;
 	bottom: 10%;
 	left: 2%;
