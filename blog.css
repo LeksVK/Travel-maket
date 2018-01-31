@@ -95,12 +95,12 @@ body {
 	color: white;
 	font-weight: bold;
 	transform: rotate(90deg);
-	font-size: 16px;
+	font-size: 22px;
 	word-wrap: normal;
 	width: 100px;
 	position: absolute;
 	bottom: 10%;
-	left: 5%;
+	left: 3%;
 /*	margin: -15px; */
 }
 
