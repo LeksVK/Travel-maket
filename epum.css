@@ -76,6 +76,7 @@ a {
 
 .image {
     display: flex;
+    flex-direction: column;
     background: #C0C0C0;
 /*    width: 80px; */
     margin-top: 2%;
