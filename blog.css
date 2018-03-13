@@ -5,12 +5,13 @@ body {
 	line-height: ;
 	font-family:;
 	color: ; */
-    	background-color: #eaeaea ;
+    background-color: #eaeaea ;
 	min-width: 1040px;
 /*	min-width: 1680px; */
 }
 /* 1680px (1660px)  из 1920px 
   <!-- Фоновая картинка для верха--> */
+  /*
 .header {
     background-image: url("img/header-bg.jpg");
     background-repeat: no-repeat;
@@ -18,11 +19,11 @@ body {
     background-size: cover;
     min-height: 490px;
 } 
-
+*/
 .header {
     padding: 0px;
 /*    background-color: #363636; */
-    background-color: #eaeaea;
+   /* background-color: #eaeaea;*/
     color: #c3c3c3; 
     }
 
@@ -48,7 +49,9 @@ body {
     text-transform: uppercase;
     float: left;
     margin-right: 50px;
-    
+  /*  text-shadow: 
+        -0.5px 1px #1e181c
+       /* 1px 0.5px #52424d; */
 }
 
 .main-menu li:last-child {
@@ -61,11 +64,11 @@ body {
     /*    color: #92979a; */
     text-decoration: none;
 }
-
+/*
 .main-menu a:hover {
 	color: #ffffff;
 }
-
+*/
 .btn-main-nav {
     margin-right: 100px;
     float: right;
@@ -105,6 +108,89 @@ body {
 	margin: -45px; 
 }
 
+div li:hover {
+    border-bottom: 2px solid #a38b70;
+
+}
+
+.feed {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+
+.news {
+/*    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 50% ;
+    background-color: #ffffff;
+    margin: 100px auto;*/
+    display: flex;
+    margin: 25px;
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 3px #cccccc;
+    background: url("fpost2.jpg") no-repeat 50% 50%;
+
+}
+
+.news:nth-child(2) {
+    background: url("spost.jpg") no-repeat 50% 0%;
+}
+
+.news:nth-child(3) {
+    background: url("spost.jpg") no-repeat 5% 50%;
+}
+
+.shape .details {
+    width: 100%;
+    margin-top: 160px;
+    /*background-color: rgba(139, 69, 19, 0.9); */
+    background-color: rgba(101, 52, 29, 0.9);
+    display: none;
+}
+
+.details header {
+    color: #ffffff;
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cccccc;
+}
+
+.details p {
+    width: 95%;
+    margin: 2px auto;
+    line-height: 1.4;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.button {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    font-size: 12px;
+    padding: 1px 1px;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.shape:hover .details {
+    display: block;
+    transform: scale(1.18);
+    transition-duration: 0.6s;
+}
 /* Блок стилей для ссылок на соцсети */
 /*
 .share {
@@ -114,7 +200,6 @@ body {
 	background-color: #bdc3e7;
 	margin-right: 10px;
 	vertical-align: middle;
-
 	background-image: url("");
 	background-repeat: no-repeat;
 }
@@ -123,23 +208,19 @@ body {
 /* .icon {
     outline: 2px solid rgba(0, 0, 0, 0.1);
 }
-
 .item {
     position: relative;
     margin-bottom: 10px;
     padding-left: 30px;
 }
-
 .icon-git {
 	background-color: #;
 	Background-position: ;
 }
-
 .icon-inst {
 	background-color: #;
 	Background-position: ;
 }
-
 .icon-vk {
 	background-color: #;
 	background-position: ;
