@@ -1,18 +1,24 @@
-.header {
-	margin: 0px;
-	padding: 0px;
+.Banner {
+/*	margin-left: -10px; 
+	padding: 0px; */
 	background-image: url("img/backhead.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: #ffffff;
-    height: 830px;
+/*    height: 830px; */
+	height: 849px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: -10px;
+    margin-right: -10px;
    /* width: 1700px; */
 } 
 
 .topbar {
 	padding: 0px;
-	margin: 0px;
+	margin: -10px; 
 	font-size: 15px;
     line-height: 22px;
     font-family: "Roboto Light", sans-serif;
@@ -51,7 +57,6 @@ margin-left: 265px;
 .btn {
 	text-decoration: none;
 	text-transform: uppercase;
-
 }
 
 .Promo {
@@ -59,7 +64,8 @@ margin-left: 265px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 15em;
+/*	margin-top: 15em; */
+	padding-top: 16em;
 	/*position: absolute; */
 
 	top: 25em;
@@ -76,7 +82,27 @@ margin-left: 265px;
 	text-decoration: none;
 }
 
+button {
+	display: flex;
+	justify-content: center;
+/*	flex-direction: column; 
+	align-items: center; */
+	width: 6em;
+	height: 6em;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	color: #000000;
+	border-width: 0px;
+	font-family: "Roboto Bold", sans-serif;
+	opacity: 0.1; 
+}
 
+button:hover { 
+	background-color: #1dd2af;
+	opacity: 1;
+	color: #ffffff;
+}
 /* 1700 *830 размер фона*/
 
 .promo .btn {
@@ -333,6 +359,7 @@ div .tm-nav {
 
 .Menu {
 	display: flex;
+	margin: -10px;
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: nowrap;
@@ -396,7 +423,7 @@ div .tm-nav {
 
 .btn {
 	display: flex;
-	width: 5%;
+	width: 20%;
     text-transform: uppercase;
 	vertical-align: top;
 	justify-content: center; 
