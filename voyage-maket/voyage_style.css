@@ -1,0 +1,498 @@
+.Banner {
+	background-image: url("img/backhead.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+	height: 849px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    margin-left: -10px;
+    margin-right: -10px;
+} 
+
+.topbar {
+	padding: 0px;
+	margin: -10px; 
+	font-size: 15px;
+    line-height: 22px;
+    font-family: "Roboto Light", sans-serif;
+	background-color: #2c3e50;
+}
+
+.topbar a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.topmenu {
+	list-style: none;
+	float: left;
+	min-width: 1700px; 
+	height: 40px;
+	background-color: #2c3e50;
+}
+
+.topmenu li {
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.topmenu li:first-child {
+margin-left: 265px;
+}
+
+.topmenu li:last-child {
+    margin-right: 0;
+}
+
+.btn {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.Promo {
+	display: flex;
+	flex-direction: column;
+	padding-top: 16em;
+	top: 25em;
+	left: 45em;
+}
+
+.Promo a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+ .scroll{
+	display: flex;
+	justify-content: center;
+	width: 6em;
+	height: 6em;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	color: #000000;
+	border-width: 0px;
+	font-family: "Roboto Bold", sans-serif;
+	opacity: 0.1; 
+}
+
+ .scroll:hover{ 
+	background-color: #1dd2af;
+	opacity: 1;
+	color: #ffffff;
+}
+/* 1700 *830 размер фона*/
+
+.auth {
+	display: flex;
+	flex-direction: row;
+	background-color: #2c3e50;
+	margin-left: -10px;
+	margin-right: -10px;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+}
+
+.auth p {
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+
+.auth span {
+	color: #1dd2af;
+}
+
+
+.auth form input{
+	margin-left: 15px;
+	width: 25em;
+	height: 2em;
+	padding: 3px;
+}
+
+.auth label {
+	margin-left: 10px;
+}
+
+.auth button {
+	width: 75px;
+	height: 35px;
+	margin-left: 15px;
+	color: #ffffff;
+	background-color: #1dd2af;
+	border: none;
+}
+
+.promo .btn {
+	text-align: center;
+}
+
+.Promo p {
+	font-family: "Roboto Bold", sans-serif;
+	text-align: center;
+	font-size: 22px;
+}
+
+.Promo p strong {
+	font-family: "Roboto Medium", sans-serif;
+	text-align: center;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+/* <--->  */
+.category {
+	background-color: #2c3e50;
+	color: #ffffff;
+}
+
+
+/* <-------> */
+
+.footer {
+	background-color: #2c3e50;
+	color: #ffffff;
+}
+
+.footer a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.category h2,
+.carusel h2,
+.reviews h2 {
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 2em;
+}
+
+.category p,
+.carusel p,
+.reviews h3 {
+	text-align: center;
+}
+
+.point {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+}
+
+.point>div {
+	margin: 20px;
+}
+
+/* To do: Переверстать блоки item's 
+в отдельные элементы с img и p, добавить background 
+и выровнять по нижней границе */
+.item1 {
+	background-image: url("img/usa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 275px;
+    height: 259px;
+    color: #ffffff;
+}
+
+.item2 {
+	background-image: url("img/spect2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 275px;
+    height: 259px;
+}
+
+.item3 {
+	background-image: url("img/hong.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 275px;
+    height: 259px;
+}
+
+.item4 {
+	background-image: url("img/viet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 275px;
+    min-height: 259px;
+}
+
+.item5 {
+	background-image: url("img/spect.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 275px;
+    min-height: 259px;
+}
+
+.item6 {
+	background-image: url("img/dubai.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 275px;
+    min-height: 259px;
+}
+.reviews {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+}
+
+.reviews-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+	min-height: 150px;
+	min-width: 450px;
+	border: 2px solid #1dd2af;
+}
+
+.reviews-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-left: 20px;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+	min-height: 150px;
+	min-width: 450px;
+	border: 1px solid #eeeeee; 
+	margin: 20px;
+}
+
+.reviews-item:hover {
+	border: 1px solid #eeeeee;
+	border-top: 3px solid #1dd2af;
+	margin: 19px;
+	margin-top: 17px;
+}
+
+.footer-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+}
+
+.Newsletter,
+.LatestNews,
+.Tags,
+.Address {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+	border: 2px solid #1dd2af;
+	width: 450px;
+	margin: 25px;
+}
+
+
+.Links {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+	padding-bottom: 25px;
+}
+
+.typerest {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+	align-items: flex-end;
+}
+
+div .type-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+	margin: 20px;
+}
+
+/* To do: Переделать изображение в фон
+ и заменять при наведении
+.type-item img:hover{  }
+*/
+
+.topbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+}
+
+div .tm-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+	margin: 20px;
+}
+
+.Menu {
+	display: flex;
+	margin: -10px;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
+	background-color: #eeeeee;
+}
+
+.header-logo {
+  	display: flex;
+  	justify-content: flex-start;
+    margin-left: 265px;
+    width:205px;
+    height: 55px;
+    margin-top: 25px;
+/*    border: 2px solid #1dd2af; рамка для 
+определения границ элемента */
+}
+
+.head-nav  {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: nowrap;
+	align-content: space-between;
+	flex-basis: auto; 
+	margin: 30px; 
+	margin-left: 35em;
+/*	border: 2px solid #1dd2af; рамка для 
+определения границ элемента */
+
+}
+
+.head-nav  div {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: nowrap;
+	align-content: space-between;
+	flex-basis: auto; 
+	margin-left: 20px; 
+/*	border: 2px solid #1dd2af; рамка для 
+определения границ элемента */
+}
+
+.main-nav {
+	margin-left: 350px;
+}
+
+.main-nav  a {
+	text-decoration: none;
+	font-size: 28px;
+	color: #5d6e80;
+	text-transform: uppercase;
+	font-family: "Roboto Medium", sans-serif;
+}
+
+.btn {
+	display: flex;
+	width: 20%;
+    text-transform: uppercase;
+	vertical-align: top;
+	justify-content: center; 
+    border: 2px solid #1dd2af;
+    padding: 10px;
+    word-wrap: break-word;
+    text-align: center;
+    border-radius: 2px;
+	font-size: 12px;
+	margin: 20px;
+	font-family: "Roboto Bold", sans-serif;
+}
+
+.btn:hover{
+	background-color: #1dd2af;
+}
+
+
+a .btn {
+	min-height: 830px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 15em;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* To do: У элементов зафиксировать размер 
+изображения в статике */
+.point div {
+	transition: all 1s ease;
+}
+
+
+.point div:hover {
+	transform: scale(1.2);
+	border: 5px solid #1dd2af;
+	margin: 3em;
+}
+
+/* To do: посмотреть. как добавляются якоря на страницу.
+To do: посмотреть, как отрисовать треугольник. */
+
+.reviews-item strong {
+	color: #1dd2af;
+}
