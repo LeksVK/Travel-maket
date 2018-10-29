@@ -55,7 +55,9 @@
 			
 			<div class="Banner">
 				<!-- <img src="" alt="wallpaper"> Добавить фон в css к div'у -->
-				<button> < </button>
+
+				<button class="scroll"> < </button>
+
 
 				<div class="Promo">
 					<p><strong>To travel is to live </strong> <br> You Don't Need Magic to disappear. All you need is a destination.<br>
@@ -68,22 +70,26 @@
 				</div>
 
 
-				<button> > </button>
+
+				<button class="scroll"> > </button>
+				
 				<!---
 				<button> < </button>
 				<button> > </button>
-				
-				<div class="auth">
-					<p> Find your </p>
-					<p> holidays </p>
-					<form>
-						<input type="" name="where">
-						<input type="" name="when">
-						<button> Search </button>
-					</form>
-				</div>
 				-->
 			</div>
+
+			<div class="auth">
+					<p> Find your <br><span>holidays</span> </p>
+					<form>
+						<label id="tag"> Where </label>
+						<input type="text" name="where" id="tag" placeholder="distination">
+						<label id="date"> When </label>
+						<input type="text" name="when" id="date" placeholder="select data">
+					</form>
+					<button> Search </button>
+				</div>
+
 		</div>
 
 		<div class="content">
@@ -140,7 +146,9 @@
 					
 					<div class="typerest">
 							<div class="type-item">
+
 								<img src="img/cruise.png">
+
 								<p>Cruise</p>
 							</div>
 
@@ -178,21 +186,23 @@
 					</div>
 					<div class="reviews-list">
 						<div class="reviews-item"> <!-- Блок самого отзыва * 3,5-->
-							<p>Comment</p>
+
+							<p>Comment<br>
 							<strong>Client name</strong>
-							<p>Text</p>
+							<br>Text</p>
 						</div>
-						<br>
+						
 						<div class="reviews-item"> <!-- Блок 2 -->
-							<p>Comment</p>
+							<p>Comment<br>
 							<strong>Client name</strong>
-							<p>Text</p>
+							<br>Text</p>
 						</div>
-						<br>
+						
 						<div class="reviews-item"> <!-- Блок 3-->
-							<p>Comment</p>
+							<p>Comment<br>
 							<strong>Client name</strong>
-							<p>Text</p>
+							<br>Text</p>
+
 						</div>
 					</div>
 				</div>
