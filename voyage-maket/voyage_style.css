@@ -4,6 +4,7 @@
     background-position: center;
     background-size: cover;
     color: #ffffff;
+
 	height: 849px;
     display: flex;
     align-items: baseline;
@@ -12,6 +13,7 @@
     align-items: space-between;
     margin-left: -10px;
     margin-right: -10px;
+
 } 
 
 .topbar {
@@ -21,6 +23,7 @@
     line-height: 22px;
     font-family: "Roboto Light", sans-serif;
 	background-color: #2c3e50;
+
 }
 
 .topbar a {
@@ -56,11 +59,13 @@ margin-left: 265px;
 }
 
 .Promo {
+
 	display: flex;
 	flex-direction: column;
 	padding-top: 16em;
 	top: 25em;
 	left: 45em;
+
 }
 
 .Promo a {
@@ -68,9 +73,11 @@ margin-left: 265px;
 	text-decoration: none;
 }
 
+
  .scroll{
 	display: flex;
 	justify-content: center;
+
 	width: 6em;
 	height: 6em;
 	text-decoration: none;
@@ -82,12 +89,15 @@ margin-left: 265px;
 	opacity: 0.1; 
 }
 
+
  .scroll:hover{ 
+
 	background-color: #1dd2af;
 	opacity: 1;
 	color: #ffffff;
 }
 /* 1700 *830 размер фона*/
+
 
 .auth {
 	display: flex;
@@ -181,6 +191,7 @@ margin-left: 265px;
 }
 
 .point {
+
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -194,9 +205,11 @@ margin-left: 265px;
 	margin: 20px;
 }
 
+
 /* To do: Переверстать блоки item's 
 в отдельные элементы с img и p, добавить background 
 и выровнять по нижней границе */
+
 .item1 {
 	background-image: url("img/usa.png");
     background-repeat: no-repeat;
@@ -208,6 +221,7 @@ margin-left: 265px;
 }
 
 .item2 {
+
 	background-image: url("img/spect2.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -279,6 +293,7 @@ margin-left: 265px;
 	flex-direction: row;
 	justify-content: flex-start;
 	padding-left: 20px;
+
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
@@ -297,6 +312,7 @@ margin-left: 265px;
 }
 
 .footer-menu {
+
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -402,6 +418,7 @@ div .tm-nav {
     margin-top: 25px;
 /*    border: 2px solid #1dd2af; рамка для 
 определения границ элемента */
+
 }
 
 .head-nav  {
@@ -409,6 +426,7 @@ div .tm-nav {
 	flex-direction: row;
 	justify-content: flex-end;
 	flex-wrap: nowrap;
+
 	align-content: space-between;
 	flex-basis: auto; 
 	margin: 30px; 
@@ -428,6 +446,7 @@ div .tm-nav {
 	margin-left: 20px; 
 /*	border: 2px solid #1dd2af; рамка для 
 определения границ элемента */
+
 }
 
 .main-nav {
@@ -436,6 +455,7 @@ div .tm-nav {
 
 .main-nav  a {
 	text-decoration: none;
+
 	font-size: 28px;
 	color: #5d6e80;
 	text-transform: uppercase;
@@ -459,6 +479,7 @@ div .tm-nav {
 }
 
 .btn:hover{
+
 	background-color: #1dd2af;
 }
 

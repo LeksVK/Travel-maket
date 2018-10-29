@@ -1,0 +1,265 @@
+body {
+	margin: 0px;
+	padding: 0px;
+/*	font-size:;
+	line-height: ;
+	font-family:;
+	color: ; */
+    background-color: #eaeaea ;
+	min-width: 1040px;
+/*	min-width: 1680px; */
+}
+/* 1680px (1660px)  из 1920px 
+  <!-- Фоновая картинка для верха--> */
+  /*
+.header {
+    background-image: url("img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 490px;
+} 
+*/
+.header {
+    padding: 0px;
+/*    background-color: #363636; */
+   /* background-color: #eaeaea;*/
+    color: #c3c3c3; 
+    }
+
+.container {
+    width: 1020px;
+    /* width: 1660px; */
+    margin:  0 auto;
+    padding-top: 38px;
+    }
+    
+.main-menu {
+    margin: 0;
+    list-style: none;
+    float; left;
+    width: 520px;
+    padding: 0;
+    margin: 0;
+    margin-left: 125px;
+}
+
+.main-menu li {
+    text-transform: uppercase;
+    float: left;
+    margin-right: 50px;
+  /*  text-shadow: 
+        -0.5px 1px #1e181c
+       /* 1px 0.5px #52424d; */
+}
+
+.main-menu li:last-child {
+    margin-right: 0px;
+}
+
+.main-menu a {
+    text-transform: uppercase;
+    color: #a38b70;
+    /*    color: #92979a; */
+    text-decoration: none;
+}
+/*
+.main-menu a:hover {
+	color: #ffffff;
+}
+*/
+.btn-main-nav {
+    margin-right: 100px;
+    float: right;
+    color: #cac0b4; 
+    /*    color: #92979a; */
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+    width: 3% ;
+    background-color: #cac0b4;
+   /* border: 1px solid black; */
+}
+
+.s-link {
+	color: white;
+	font-weight: bold;
+	transform: rotate(90deg);
+	font-size: 24px;
+	word-wrap: normal;
+/*	width: 100px; */
+	position: absolute;
+	bottom: 25%;
+	padding-left: 86%;
+/*	left: 2%; */
+	margin: -45px; 
+}
+
+.follow {
+    color: white;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 22px;
+    min-width: 150px;
+}
+
+div li a:hover {
+    border-bottom: 2px solid #a38b70;
+
+}
+
+.feed {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+
+.news {
+/*    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 50% ;
+    background-color: #ffffff;
+    margin: 100px auto;*/
+    display: flex;
+    margin: 25px;
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 3px #cccccc;
+    background: url("fpost2.jpg") no-repeat 50% 50%;
+
+}
+
+.news:nth-child(2) {
+    background: url("spost.jpg") no-repeat 50% 0%;
+}
+
+.news:nth-child(3) {
+    background: url("spost.jpg") no-repeat 5% 50%;
+}
+
+.shape .details {
+    width: 100%;
+    margin-top: 160px;
+    /*background-color: rgba(139, 69, 19, 0.9); */
+    background-color: rgba(101, 52, 29, 0.9);
+    display: none;
+}
+
+.details header {
+    color: #ffffff;
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cccccc;
+}
+
+.details p {
+    width: 95%;
+    margin: 2px auto;
+    line-height: 1.4;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.button {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    font-size: 12px;
+    padding: 1px 1px;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.shape:hover .details {
+    display: block;
+    transform: scale(1.18);
+    transition-duration: 0.6s;
+}
+
+.share {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center;
+    margin-top: 1450%;
+}
+
+.icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    background: #bdc3c7;
+    vertical-align: middle;
+    background: #bdc3c7 url("sprait.jpg") no-repeat;
+    border-radius: 5px;
+}
+
+.icon-git {
+    background-color: #6d8fb3;
+    background-position: -10 0;
+}
+
+.icon-inst {
+}
+
+.icon-vk {
+}
+/* Блок стилей для ссылок на соцсети */
+/*
+.share {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: #bdc3e7;
+	margin-right: 10px;
+	vertical-align: middle;
+	background-image: url("");
+	background-repeat: no-repeat;
+}
+*/
+/* Временная обводка элемента */
+/* .icon {
+    outline: 2px solid rgba(0, 0, 0, 0.1);
+}
+.item {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+.icon-git {
+	background-color: #;
+	Background-position: ;
+}
+.icon-inst {
+	background-color: #;
+	Background-position: ;
+}
+.icon-vk {
+	background-color: #;
+	background-position: ;
+}  */
