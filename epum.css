@@ -5,65 +5,111 @@ body {
     font-size: 14px;
     background: #ecf0f1;
 }
-/*
-.bookshelf {
 
-    }*/
-    
-.item {
-    width: 270px;
-    margin: 0 auto;
-    margin-top: 120px;
-    padding: 10px;
-    padding-left: 20px;
-    background: white;
-    display: inline-block;
-    position: absolute;
-    top: 25px;
-    left: 10px;
-    width: 500px;
-   
-}
-
-.bt {
+.shelf_bt_add, 
+.bts__edit, 
+.bts__cansel {
     color: #a38b70;
     text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
+    display: block;
     vertical-align: top;
     border: 2px solid #a38b70;
     padding: 10px;
     word-wrap: break-word;
     text-align: center;
-    font-style: inherit;
     border-radius: 2px;
+    font-size: 12px;
 }
-
-.bt:hover {
-    color: white;
-}
-
-.bt:active {
-    color: rgba(141, 116, 90, 0.3);
-} 
 
 a {
     text-decoration: none;
-   /* color: white; */
     color: #a38b70;
+    background-color: white;
 }
 
-.add { 
-    background: #C0C0C0;
-    border: none;
-    color: white;
+.shelf_bt_add {
+    margin-left: 10px;
+    width: 100px;
     }
     
-.image {
-    background: #C0C0C0;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: 10px;
-    left: 20px;
+.shelf__selfname {
+    padding-left: 10px;
     }
+    
+.bookshelf {
+    margin-left: 15px;
+}
+
+.item {
+    width: 50%;
+    margin-top: 15px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    min-width: 500px;
+    min-height: 150px;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    background-color: #C0C0C0;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.cover__image {
+    min-width: 65px;
+    min-height: 120px;
+    width: 15% ;
+    height: 70% ;
+    }
+    
+.descript {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+    
+    
+.bts {
+    display: flex;
+    flex-direction: column; 
+    width: 35%;
+    align-items: center;
+    justify-content: center;    
+}    
+
+
+.bts__edit,
+.bts__cansel {
+    width: auto;
+    height: auto;
+    min-width: 90px;
+    min-height: 15px;
+    margin: 5px;
+}
+
+.descript__name,
+.descript__author,
+.descript__year {
+    width: auto;
+    height: auto;
+    min-width: 90px;
+    min-height: 15px;
+    }
+
+h3, h4 {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    }
+    
+h4 {
+    font-weight: normal;
+    } 
