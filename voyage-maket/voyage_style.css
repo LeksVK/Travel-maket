@@ -516,3 +516,45 @@ To do: посмотреть, как отрисовать треугольник.
 .reviews-item strong {
 	color: #1dd2af;
 }
+ 
+.Newsletter {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-basis: auto; 
+	justify-content: flex-start;
+/*	border: 2px solid #1dd2af; рамка для 
+определения границ элемента */
+}
+
+.Newsletter p {
+	/*	border: 2px solid #1dd2af; */
+		width: 65%;
+		height: auto;
+		margin-left: 2%;
+}
+
+.Newsletter form {
+	width: 65%;
+	height: 15%;
+	margin-left: 10px;
+	background-color: #ffffff;
+/*	border: 2px solid #1dd2af; */
+}
+
+.Newsletter button {
+	width: 10%;
+    text-transform: uppercase;
+	vertical-align: top;
+	justify-content: center; 
+    border: 2px solid #1dd2af;
+    padding: 5px;
+    word-wrap: break-word;
+    text-align: center;
+    border-radius: 2px;
+	font-size: 12px;
+	margin: 5px; 
+	font-family: "Roboto Bold", sans-serif;
+	background-color: #1dd2af;
+	color: #ffffff;
+}
