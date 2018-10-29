@@ -27,10 +27,9 @@ a {
     background-color: white;
 }
 
-.shelf_bt_add {
-    margin-left: 10px;
-    width: 100px;
+
     }
+*/
     
 .shelf__selfname {
     padding-left: 10px;
@@ -64,6 +63,7 @@ a {
     min-height: 120px;
     width: 15% ;
     height: 70% ;
+
     }
     
 .descript {
