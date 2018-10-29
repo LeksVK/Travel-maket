@@ -8,58 +8,38 @@
     </head>
     <body>
         <h1>Книжная полка</h1>
-        <div class="bt add"><a href="#">Добавить книгу</a></div>
+        <div class="bt add">Добавить книгу</div>
+        <!--<a href="#"></a> -->
         <div class="bookshelf">
+            <div class="container">
             <div class="item">    
-                <form action="#" method="get">
-                    <h2>Редактирование книги</h2>
-                    <label> Наименование
-                       <br> <input type="text" name="bookname" id="bookname"value="ES6 и не только" >
-                    </label>
-                    <br>
-                    <label> Автор
-                        <br><input type="text" name="author" id="author" value="Кайл Симпсон">
-                    </label>
-                    <br>
-                    <label> Год выпуска
-                        <br> <input type="text" name="year"id="year" value="2017">
-                    </label>
-                    <br>
-                    <label> Изображение
-                        <br> <input type="text" name="img" id="img" value="Изображение">
-                    </label>
-                    <br>
-                    <br>
-                    <div class="bt">Сохранить</div>
-                    <div class="bt"><a href="epum.html">Отменить</a></div>
+                <form class="editbook" action="#" method="post">
+                    <h2 class="form-head">Редактирование книги</h2>
+                    
+                    <div class="bookinfo-group">
+                        <label for="bookname"> Наименование</label>
+                        <input type="text" name="bookname" id="bookname"value="ES6 и не только" >
+                    </div>
+                    <div class="bookinfo-group">
+                        <label for="author"> Автор </label>
+                        <input type="text" name="author" id="author" value="Кайл Симпсон">
+                    </div>
+                   <div class="bookinfo-group">
+                        <label for="year"> Год выпуска</label>
+                        <input type="text" name="year"id="year" value="2017">
+                    </div>
+                    
+                    <div class="bookinfo-group">
+                        <label for="img"> Изображение </label>
+                        <input type="text" name="img" id="img" value="Изображение">
+                    </div>
+                    <div class="bt-edit">
+                    <input class="bt" type="submit" value="Сохранить">
+                    <input class="bt" type="submit" value="Отменить">
+                    </div>
                 </form>
+            </div>    
             </div>
-            <!--
-               <div class="item">
-                <img src="">
-                <h2 class="name"> JavaScript и Juery</h2>
-                <h3 class="author"> JavaScript и Juery</h3>
-                <h3 class="year"> JavaScript и Juery</h3>
-                <div class="bt">Редактировать</div>
-                <div class="bt">Удалить</div>
-            </div>
-               <div class="item">
-                <img src="">
-                <h2 class="name"> JavaScript и Juery</h2>
-                <h3 class="author"> JavaScript и Juery</h3>
-                <h3 class="year"> JavaScript и Juery</h3>
-                <div class="bt">Редактировать</div>
-                <div class="bt">Удалить</div>
-            </div>
-               <div class="item">
-                <img src="">
-                <h2 class="name"> JavaScript и Juery</h2>
-                <h3 class="author"> JavaScript и Juery</h3>
-                <h3 class="year"> JavaScript и Juery</h3>
-                <div class="bt">Редактировать</div>
-                <div class="bt">Удалить</div>
-            </div>
-            -->
         </div>
     </body>
 </html>
