@@ -210,61 +210,54 @@ margin-left: 265px;
 в отдельные элементы с img и p, добавить background 
 и выровнять по нижней границе */
 
-.item1 {
-	background-image: url("img/usa.png");
+.item {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 275px;
     height: 259px;
     color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
 }
 
-.item2 {
+.item:first-child {
+	background-image: url("img/usa.png");
+}
 
+.item:nth-child(2) {
 	background-image: url("img/spect2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 275px;
-    height: 259px;
 }
 
-.item3 {
+.item:nth-child(3) {
 	background-image: url("img/hong.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 275px;
-    height: 259px;
 }
 
-.item4 {
+.item:nth-child(4) {
 	background-image: url("img/viet.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-width: 275px;
-    min-height: 259px;
 }
 
-.item5 {
+.item:nth-child(5) {
 	background-image: url("img/spect.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-width: 275px;
-    min-height: 259px;
 }
 
-.item6 {
+.item:last-child {
 	background-image: url("img/dubai.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-width: 275px;
-    min-height: 259px;
 }
+
+.item h3 {
+/*	border: 2px solid #1dd2af; - рамка для определения границ элемента */
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	background-color: #eeeeee;
+	padding-left: 5%;
+	padding-top: 5%;
+	padding-bottom: 3%;
+}
+
 .reviews {
 	display: flex;
 	flex-direction: column;
@@ -509,6 +502,12 @@ a .btn {
 	transform: scale(1.2);
 	border: 5px solid #1dd2af;
 	margin: 3em;
+}
+
+.point div:hover h3 {
+	color: #ffffff;
+	background-color: #2c3e50;
+	border: none;
 }
 
 /* To do: посмотреть. как добавляются якоря на страницу.
