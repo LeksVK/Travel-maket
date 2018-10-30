@@ -1,3 +1,10 @@
+
+body {
+	padding: 0;
+	margin: 0;
+
+}
+
 .Banner {
 	background-image: url("img/backhead.png");
     background-repeat: no-repeat;
@@ -14,11 +21,11 @@
     margin-left: -10px;
     margin-right: -10px;
 
-} 
+}
 
 .topbar {
 	padding: 0px;
-	margin: -10px; 
+	margin: -10px;
 	font-size: 15px;
     line-height: 22px;
     font-family: "Roboto Light", sans-serif;
@@ -34,7 +41,7 @@
 .topmenu {
 	list-style: none;
 	float: left;
-	min-width: 1700px; 
+	min-width: 1700px;
 	height: 40px;
 	background-color: #2c3e50;
 }
@@ -86,11 +93,11 @@ margin-left: 265px;
 	color: #000000;
 	border-width: 0px;
 	font-family: "Roboto Bold", sans-serif;
-	opacity: 0.1; 
+	opacity: 0.1;
 }
 
 
- .scroll:hover{ 
+ .scroll:hover{
 
 	background-color: #1dd2af;
 	opacity: 1;
@@ -198,7 +205,7 @@ margin-left: 265px;
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 }
 
 .point>div {
@@ -206,8 +213,8 @@ margin-left: 265px;
 }
 
 
-/* To do: Переверстать блоки item's 
-в отдельные элементы с img и p, добавить background 
+/* To do: Переверстать блоки item's
+в отдельные элементы с img и p, добавить background
 и выровнять по нижней границе */
 
 .item {
@@ -265,7 +272,7 @@ margin-left: 265px;
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 }
 
 .reviews-list{
@@ -275,10 +282,10 @@ margin-left: 265px;
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 	min-height: 150px;
 	min-width: 450px;
-	border: 2px solid #1dd2af;
+/*	border: 2px solid #1dd2af; - рамка для определения границ элемента */
 }
 
 .reviews-item {
@@ -290,10 +297,10 @@ margin-left: 265px;
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 	min-height: 150px;
 	min-width: 450px;
-	border: 1px solid #eeeeee; 
+	border: 1px solid #eeeeee;
 	margin: 20px;
 }
 
@@ -312,7 +319,7 @@ margin-left: 265px;
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 }
 
 .Newsletter,
@@ -325,7 +332,7 @@ margin-left: 265px;
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 	border: 2px solid #1dd2af;
 	width: 450px;
 	margin: 25px;
@@ -349,7 +356,7 @@ margin-left: 265px;
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 	align-items: flex-end;
 }
 
@@ -360,10 +367,20 @@ div .type-item {
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 	margin: 20px;
+
 }
 
+.type-item img {
+	margin: 20px;
+
+}
+
+div .cover {
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
 /* To do: Переделать изображение в фон
  и заменять при наведении
 .type-item img:hover{  }
@@ -376,7 +393,7 @@ div .type-item {
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 }
 
 div .tm-nav {
@@ -386,7 +403,7 @@ div .tm-nav {
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 	margin: 20px;
 }
 
@@ -398,7 +415,7 @@ div .tm-nav {
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
 	background-color: #eeeeee;
 }
 
@@ -409,7 +426,7 @@ div .tm-nav {
     width:205px;
     height: 55px;
     margin-top: 25px;
-/*    border: 2px solid #1dd2af; рамка для 
+/*    border: 2px solid #1dd2af; рамка для
 определения границ элемента */
 
 }
@@ -421,10 +438,10 @@ div .tm-nav {
 	flex-wrap: nowrap;
 
 	align-content: space-between;
-	flex-basis: auto; 
-	margin: 30px; 
+	flex-basis: auto;
+	margin: 30px;
 	margin-left: 35em;
-/*	border: 2px solid #1dd2af; рамка для 
+/*	border: 2px solid #1dd2af; рамка для
 определения границ элемента */
 
 }
@@ -435,9 +452,9 @@ div .tm-nav {
 	justify-content: flex-end;
 	flex-wrap: nowrap;
 	align-content: space-between;
-	flex-basis: auto; 
-	margin-left: 20px; 
-/*	border: 2px solid #1dd2af; рамка для 
+	flex-basis: auto;
+	margin-left: 20px;
+/*	border: 2px solid #1dd2af; рамка для
 определения границ элемента */
 
 }
@@ -460,7 +477,7 @@ div .tm-nav {
 	width: 20%;
     text-transform: uppercase;
 	vertical-align: top;
-	justify-content: center; 
+	justify-content: center;
     border: 2px solid #1dd2af;
     padding: 10px;
     word-wrap: break-word;
@@ -491,7 +508,7 @@ a .btn {
 	justify-content: center;
 }
 
-/* To do: У элементов зафиксировать размер 
+/* To do: У элементов зафиксировать размер
 изображения в статике */
 .point div {
 	transition: all 1s ease;
@@ -516,14 +533,14 @@ To do: посмотреть, как отрисовать треугольник.
 .reviews-item strong {
 	color: #1dd2af;
 }
- 
+
 .Newsletter {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	flex-basis: auto; 
+	flex-basis: auto;
 	justify-content: flex-start;
-/*	border: 2px solid #1dd2af; рамка для 
+/*	border: 2px solid #1dd2af; рамка для
 определения границ элемента */
 }
 
@@ -546,15 +563,22 @@ To do: посмотреть, как отрисовать треугольник.
 	width: 10%;
     text-transform: uppercase;
 	vertical-align: top;
-	justify-content: center; 
+	justify-content: center;
     border: 2px solid #1dd2af;
     padding: 5px;
     word-wrap: break-word;
     text-align: center;
     border-radius: 2px;
 	font-size: 12px;
-	margin: 5px; 
+	margin: 5px;
 	font-family: "Roboto Bold", sans-serif;
 	background-color: #1dd2af;
 	color: #ffffff;
+}
+
+/* уголок */
+.up {
+    left: 20px; bottom: -20px; top: 10px;/* Положение треугольника */
+    border: 45px solid transparent; /* Прозрачные границы */
+    border-bottom: 45px solid #1dd2af; /* Треугольник */
 }
