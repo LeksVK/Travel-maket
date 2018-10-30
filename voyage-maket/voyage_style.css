@@ -2,8 +2,8 @@
 body {
 	padding: 0;
 	margin: 0;
-
 }
+/* To do: убрать -margin для основных блоков */
 
 .Banner {
 	background-image: url("img/backhead.png");
@@ -30,7 +30,6 @@ body {
     line-height: 22px;
     font-family: "Roboto Light", sans-serif;
 	background-color: #2c3e50;
-
 }
 
 .topbar a {
@@ -38,6 +37,7 @@ body {
 	text-decoration: none;
 }
 
+/* To do: иконки соцсетей в спрайт */
 .topmenu {
 	list-style: none;
 	float: left;
@@ -173,12 +173,12 @@ margin-left: 265px;
 
 /* <-------> */
 
-.footer {
+footer {
 	background-color: #2c3e50;
 	color: #ffffff;
 }
 
-.footer a{
+footer a{
 	text-decoration: none;
 	color: #ffffff;
 }
@@ -581,4 +581,24 @@ To do: посмотреть, как отрисовать треугольник.
     left: 20px; bottom: -20px; top: 10px;/* Положение треугольника */
     border: 45px solid transparent; /* Прозрачные границы */
     border-bottom: 45px solid #1dd2af; /* Треугольник */
+}
+
+.top-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		align-content: space-between;
+		flex-basis: auto;
+}
+
+.Menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		align-content: space-between;
+		flex-basis: auto;
 }
