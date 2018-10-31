@@ -217,8 +217,11 @@ footer a{
     height: 259px;
     color: #ffffff;
     display: flex;
+    flex-direction: row;
     align-items: flex-end;
     color: #000000;
+    flex-wrap: wrap;
+/*    justify-content: flex-end;*/
 }
 
 .item:first-child {
@@ -247,6 +250,7 @@ footer a{
 
 .item h3 {
 /*	border: 2px solid #1dd2af; - рамка для определения границ элемента */
+	display: flex;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -255,7 +259,61 @@ footer a{
 	padding-left: 5%;
 	padding-top: 5%;
 	padding-bottom: 3%;
+	margin-top: 195px; 
 }
+
+/*
+.item img {
+	display: flex;
+	position: ;
+	bottom: 15px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	width: 25px;
+	height: auto;
+} */
+
+.item ul {
+	display: none;
+}  
+
+.item:hover ul {
+	background-color: #eeeeee;
+	display: inline-block;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+/*	padding-left: 5%;
+	padding-top: 5%; 
+	padding-bottom: 3%;
+	position: relative; */
+	width: 100%;
+	height: auto;
+	list-style: none;
+}
+
+.item li img {
+	margin-right: 10px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.item li {
+	margin: 0;
+/*	border: 2px solid #1dd2af; */
+	line-height: 50px;
+	align-content: center;
+}
+
+.item li:hover {
+	border: 2px solid #1dd2af; 
+}
+/*
+.point .item li {
+	align-items: center;
+} */
 
 .reviews {
 	display: flex;
@@ -304,7 +362,6 @@ footer a{
 }
 
 .footer-menu {
-
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -643,9 +700,10 @@ To do: посмотреть, как отрисовать треугольник.
 		flex-basis: auto;
 }
 
-.sub-menu {
-	display: none;
-}
+
+/*.point .item h3:hover .submenu {
+
+} */
 
 .sub-menu:checked {
 	display: inline;
