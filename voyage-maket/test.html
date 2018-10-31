@@ -1,0 +1,110 @@
+<!--
+						<div class="item-wrapper">
+								<div class="item item-wrapper">
+								<input type="checkbox" id="item-toggle">
+								<label for="item-toggle" class="item-toggle-lebel"> Statue of liberty - USA
+									<br> New Destination!</label>
+									<input type="checkbox" id="item-toggle">
+									<label for="item-toggle" class="item-toggle-lebel"> <h3>Statue of liberty - USA
+										<br> New Destination!</h3></label>
+										<div class="sub-menu">
+											<input type="radio" id="temp" name="options">
+											<label for="temp"> 10C Rainy</label>
+											<input type="radio" id="price" name="options">
+											<label for="price"> $7965*</label>
+											<input type="radio" id="period" name="options">
+											<label for="period"> 8days/7nights</label>
+										</div>
+							</div>
+						</div>
+-->
+
+
+/*  Test выпадашки CSS*/
+.item-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.item-toggle-label {
+		position: relative;
+		padding: 14px 30px 14px 25px;
+		background-color: #474e5d;
+		color: #fff;
+		cursor: pointer;
+		text-transform: uppercase;
+		font-weight: 900;
+		border-radius: 3px;
+		font-family: sans-serif;
+		font-size: 12px;
+		transition: opacity .2s ease;
+		letter-spacing: .2px;
+		float: left;
+}
+
+.item-toggle-label:active {
+		transform: scale(.98);
+}
+
+.item-toggle-label:after {
+	content: " ";
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: linear-gradient(45deg, #fff 50%, transparent 0);
+	position: absolute;
+	right: 15px;
+	top: 35%;
+	transform: rotate(-45deg);
+}
+
+.item-wrapper input {
+	display: none;
+}
+
+.item-wrapper > input:checked + label:after {
+	top: 45%;
+	transform: rotate(135deg);
+}
+
+..item-wrapper > input:checked + label + .sub-menu {
+	display: inline-block;
+}
+
+.sub-menu {
+	position: absolute;
+	right: 0;
+	top: calc(100% + 10px);
+	padding: 10px 0;
+	box-shadow: 0 0 20px rgba(0.0.0..1);
+	border-radius: 4px 0 4px 4px;
+	min-width: 150px;
+	display: none;
+}
+
+.sub-menu label {
+	display: block;
+	padding: 12px 20px;
+	border-left: 0 solid ransparent;
+	font-family: sans-serif;
+	font-size: 14px;
+	cursor: #474e5d;
+	opacity: .8;
+	transition:
+			border /.3s ease,
+			padding-left .3s ease,
+			background-color .s ease;
+}
+
+.sub-menu label:hover {
+	border-left: 10px solid #474e5d;
+	background-color: rgba(180,180,180,.1);
+	opacity: .9;
+	font-weight: 700;
+}
+
+.sub-menu input:checked + label {
+	font-weight: 700;
+	opacity: 1;
+	background-color: rgba(180,180,180,.1);
+}

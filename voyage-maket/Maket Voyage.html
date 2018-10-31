@@ -7,25 +7,29 @@
 	</head>
 	<body>
 <!--		<div class="header"> -->
-	<header>
-			<a name="home"><div class="topbar">
+		<header>
+			<a name="home"> <div class="topbar">
 				<div class="tm-nav">
 					<ul class="topmenu clearfix">
-					<li><a href="#"><img src="img/a_log.png" width="13" height="14" alt="icon"> Agent Login</a></li>
-					<li><a href="#"><img src="img/custom.png" width="13" height="14" alt="icon"> Customer Login</a></li>
-					<li><a href="#"><img src="img/notm.png" width="12" height="15" alt="icon">Not a Member? Register</a></li>
-					<li><a href="#"> Call Us Now 815-123-4567 </a></li>
+						<li><a href="#"><img src="img/a_log.png" width="13" height="14" alt="icon"> Agent Login</a></li>
+
+						<li><a href="#"><img src="img/custom.png" width="13" height="14" alt="icon"> Customer Login</a></li>
+
+						<li><a href="#"><img src="img/notm.png" width="12" height="15" alt="icon">Not a Member? Register</a></li>
+
+						<li><a href="#"> Call Us Now 815-123-4567 </a></li>
 
 
-					<li><a href="#"><img src="img/fb.png" width="8" height="16" alt="Fb"></a> <!-- Fb --></li>
-					<li><a href="#"><img src="img/tw.png" width="15" height="12" alt="Tw"></a> <!-- Tw --></li>
-					<li><a href="#"><img src="img/tumb.png" width="9" height="15" alt="Tumb"></a> <!-- Tumb--></li>
-					<li><a href="#"><img src="img/pin.png" width="14" height="14" alt="Pint"></a> <!-- Pint--></li>
-				</ul>
+						<li><a href="#"><img src="img/fb.png" width="8" height="16" alt="Fb"></a> <!-- Fb --></li>
+
+						<li><a href="#"><img src="img/tw.png" width="15" height="12" alt="Tw"></a> <!-- Tw --></li>
+
+						<li><a href="#"><img src="img/tumb.png" width="9" height="15" alt="Tumb"></a> <!-- Tumb--></li>
+
+						<li><a href="#"><img src="img/pin.png" width="14" height="14" alt="Pint"></a> <!-- Pint--></li>
+					</ul>
 				</div>
-	<!--		</div> -->
-	</header>
-		</a>
+			</div> </a>
 
 			<div class="Menu">
 
@@ -65,21 +69,23 @@
 
 
 				<button class="scroll"> > </button>
-
 			</div>
 
 			<div class="auth">
-					<p> Find your <br><span>holidays</span> </p>
+					<p> Find your <br><span>holidays</span></p>
 					<form>
-						<label for="tag"> Where </label>
-						<input type="text" name="where" id="tag" placeholder="distination">
+						<label for="geo"> Where </label>
+						<div class="locate">
+							<input type="text" name="where" id="geo" placeholder="distination" >
+							<input type="image"  src="img/map.png"></div>
 						<label for="date"> When </label>
-						<input type="text" name="when" id="date" placeholder="select data">
+						<div class="period">
+							<input type="date" name="when" id="date" placeholder="select data">
+							<input type="image"  src="img/month.png"></div>
 					</form>
 					<button> Search </button>
-				</div>
-
-		</div>
+			</div>
+		</header>
 
 		<div class="content">
 				<div class="carusel">
@@ -89,10 +95,17 @@
 
 					<div class="point">
 
-						<div class="item">
-							<!-- <img src="img/usa.png"> -->
-							<h3>Statue of liberty - USA<br> New Destination!</h3>
-							<!-- <img src="#"> -->
+							<!-- Подпись v.2--->
+							<div class="item">
+								<!-- <img src="img/usa.png"> -->
+								<!-- <img src="#"> -->
+								<h3>Statue of liberty - USA<br> New Destination!</h3>
+								<ul class="sub-menu">
+									<li><img> 10C Rainy</li>
+									<li><img> $7965*</li>
+									<li><img> 8days/7nights</li>
+								</ul>
+
 						</div>
 
 						<div class="item">
@@ -199,30 +212,40 @@
 		<!--<div class="footer"> -->
 		<footer>
 				<div class="footer-menu">
-						<div class="Newsletter">
-							<p>Newsletter</p>
-							<p>Text</p>
+						<div class="Newsletter footer-item">
+							<h3>Newsletter</h3>
+							<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.</p>
 							<form>
-								<input type="" name="Email"> <!-- "Subscribes..." -->
+								<input type="text" name="Email"> <!-- "Subscribes..." -->
+								<button>GO</button>
 							</form>
-							<button>GO</button>
+
 						</div>
-						<div class="LatestNews">
-							<p>Latest News</p>
+
+						<div class="LatestNews footer-item">
+							<h3>Latest News</h3>
 							<div class="post"> <!-- 2* элемента-->
 								<img src="№"> <!-- avatar-->
-								<p>Text</p>
-								<p>Data</p>	<!-- Mountch Day, Year - Time pm/am -->
+								<p> Postformat Gallery: Multiple <br>
+								images<br>
+								<span>October 21, 2013 - 3:31 pm </span></p>	<!-- Mountch Day, Year - Time pm/am -->
+							</div>
+							<div class="post"> <!-- 2* элемента-->
+								<img src="№"> <!-- avatar-->
+								<p> Snowboarding is fun!<br>
+								<span>December 12, 2012 - 9:11 pm </span></p>	<!-- Mountch Day, Year - Time pm/am -->
 							</div>
 						</div>
-						<div class="Tags">
-							<p>Tags</p>
-							<a href="#">Agent login</a> <!-- 10 элементов : Customer Login, Not a Member?, Contact, New horizons, Lanscape, Tags, Nice, Some, Portrait-->
+
+						<div class="Tags footer-item">
+							<h3>Tags</h3>
+							<p><a href="#"><span>Agent Login</span></a> <span>Customer Login</span> <span>Not a Member?</span> <span>Contact</span> <span> New Horizons</span> <span>Lanscape</span><span> Tags</span> <span>Nice</span> <span>Some</span> <span>Portrait</span> </p>
 						</div>
-						<div class="Address">
-							<p>Address</p>
-							<p></p> <!-- Address-->
-							<p>Email</p> <!-- E-mail: moin@blindtextgenerator.de -->
+
+						<div class="Address footer-item">
+							<h3>Address</h3>
+							<p>DieSachbearbeiter Schönhauser Allee <br> 167c,10435 Berlin Germany<br>
+							<span>E-mail: moin@blindtextgenerator.de</span></p>
 							<a href="#"></a> <!-- Fb -->
 							<a href="#"></a> <!-- Tw -->
 							<a href="#"></a> <!-- Tumb -->
@@ -246,10 +269,11 @@
 						<p>Copyright @voyage. All Right Reserved.</p>
 					</div>
 
-					<a href="#home"><div class="up"> <!--Up -->
-
+					<a href="#home"><div class="up">
+						<!--Up -->
 						<!-- <img src="#"> -->
 					</div></a>
+
 				</div>
 
 		</footer>
