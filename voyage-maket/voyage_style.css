@@ -594,7 +594,7 @@ To do: посмотреть, как отрисовать треугольник.
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	min-height: 300px;
+	min-height: 200px;
 /*	border: 2px solid #1dd2af; рамка для
 определения границ элемента */
 }
