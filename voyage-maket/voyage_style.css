@@ -382,9 +382,9 @@ footer a{
 	align-items: stretch;
 	align-content: space-between;
 	flex-basis: auto;
-	border: 2px solid #1dd2af;
-	width: 450px;
-	margin: 25px;
+/*	border: 2px solid #1dd2af; */
+	width: 350px;
+	margin: 15px;
 }
 
 
@@ -614,6 +614,7 @@ To do: посмотреть, как отрисовать треугольник.
 /*	border: 2px solid #1dd2af; */
 	margin-left: 15px;
 	width: 85%;
+	line-height: 25px;
 }
 
 .Newsletter  input {
@@ -644,18 +645,29 @@ To do: посмотреть, как отрисовать треугольник.
 }
 
 .LatestNews .post {
-	margin-left: 15px;
-	margin-top: 10px;
+	margin-left: 25px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-top: 20px;
 }
 
 .post img {
 	margin: 0;
 	padding: 0;
+	width: 36px;
+	height: 36px;
+	margin-right: 20px;
 }
 
 .post p {
 	margin: 0;
 	padding: 0;
+}
+
+.post span {
+	color: #1dd2af;
 }
 
 .Tags p {
@@ -671,8 +683,12 @@ To do: посмотреть, как отрисовать треугольник.
 
 .Address p {
 	margin-left: 15px;
+	line-height: 25px;
 }
 
+.Address span {
+	color: #1dd2af;
+}
 /* уголок */
 .up {
     left: 20px; bottom: -20px; top: 10px;/* Положение треугольника */
