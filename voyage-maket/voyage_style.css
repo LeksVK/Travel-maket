@@ -1,35 +1,19 @@
-
 body {
 	padding: 0;
 	margin: 0;
 }
-/* To do: убрать -margin для основных блоков */
-
-.Banner {
-	background-image: url("img/backhead.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #ffffff;
-
-	height: 849px;
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: space-between;
-    margin-left: -10px;
-    margin-right: -10px;
-
-}
 
 .topbar {
-	padding: 0px;
-/*	margin: -10px; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: space-around;
 	font-size: 15px;
     line-height: 22px;
     font-family: "Roboto Light", sans-serif;
 	background-color: #2c3e50;
+	flex-basis: auto;
+	padding: 3px;
 }
 
 .topbar a {
@@ -37,11 +21,20 @@ body {
 	text-decoration: none;
 }
 
+div .tm-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto;
+}
 /* To do: иконки соцсетей в спрайт */
+
 .topmenu {
+	margin: 0;
 	list-style: none;
-	float: left;
-	min-width: 1700px;
 	height: 40px;
 	background-color: #2c3e50;
 }
@@ -52,12 +45,79 @@ body {
 	margin-top: 10px;
 }
 
-.topmenu li:first-child {
-margin-left: 265px;
+.topmenu li img {
+	margin-right: 10px;
 }
 
-.topmenu li:last-child {
-    margin-right: 0;
+.topmenu li span {
+	color: #1dd2af;
+}
+
+.Menu {
+	background-color: #eeeeee;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	padding: 10px;
+}
+
+.header-logo {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    width:205px;
+    height: 55px;
+/*  border: 2px solid #1dd2af; рамка для
+определения границ элемента */
+}
+
+.head-nav {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+/*  border: 2px solid #1dd2af; рамка для
+определения границ элемента */
+}
+
+.head-nav  div {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: nowrap;
+	align-content: space-between;
+	flex-basis: auto;
+	margin-left: 20px;
+/*	border: 2px solid #1dd2af; рамка для
+определения границ элемента */
+}
+
+.main-nav a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #5d6e80;
+	text-transform: uppercase;
+	font-family: "Roboto Medium", sans-serif;
+}
+
+.main-nav a:hover {
+/*	border-top: 3px solid #1dd2af;*/
+	color: #1dd2af;
+}
+
+.Banner {
+	background-image: url("img/backhead2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+	height: 849px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
 }
 
 .btn {
@@ -66,13 +126,11 @@ margin-left: 265px;
 }
 
 .Promo {
-
 	display: flex;
 	flex-direction: column;
 	padding-top: 16em;
 	top: 25em;
 	left: 45em;
-
 }
 
 .Promo a {
@@ -80,11 +138,9 @@ margin-left: 265px;
 	text-decoration: none;
 }
 
-
- .scroll{
+.scroll{
 	display: flex;
 	justify-content: center;
-
 	width: 6em;
 	height: 6em;
 	text-decoration: none;
@@ -96,25 +152,21 @@ margin-left: 265px;
 	opacity: 0.1;
 }
 
-
- .scroll:hover{
-
+.scroll:hover {
 	background-color: #1dd2af;
 	opacity: 1;
 	color: #ffffff;
 }
-/* 1700 *830 размер фона*/
 
+/* 1700 *830 размер фона*/
 
 .auth {
 	display: flex;
 	flex-direction: row;
 	background-color: #2c3e50;
-	margin-left: -10px;
-	margin-right: -10px;
 	color: #ffffff;
 	justify-content: center;
-	align-items: center;
+	align-items: center; 
 }
 
 .auth p {
@@ -124,6 +176,10 @@ margin-left: 265px;
 
 .auth span {
 	color: #1dd2af;
+}
+
+.auth form {
+	align-items: baseline;
 }
 
 .auth label {
@@ -157,21 +213,8 @@ margin-left: 265px;
 	text-transform: uppercase;
 }
 
-/* <--->  */
 .category {
 	background-color: #2c3e50;
-	color: #ffffff;
-}
-
-/* <-------> */
-
-footer {
-	background-color: #2c3e50;
-	color: #ffffff;
-}
-
-footer a{
-	text-decoration: none;
 	color: #ffffff;
 }
 
@@ -221,7 +264,6 @@ footer a{
     align-items: flex-end;
     color: #000000;
     flex-wrap: wrap;
-/*    justify-content: flex-end;*/
 }
 
 .item:first-child {
@@ -262,18 +304,6 @@ footer a{
 	margin-top: 195px; 
 }
 
-/*
-.item img {
-	display: flex;
-	position: ;
-	bottom: 15px;
-	right: 20px;
-	margin: 0;
-	padding: 0;
-	width: 25px;
-	height: auto;
-} */
-
 .item ul {
 	display: none;
 }  
@@ -285,10 +315,6 @@ footer a{
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-/*	padding-left: 5%;
-	padding-top: 5%; 
-	padding-bottom: 3%;
-	position: relative; */
 	width: 100%;
 	height: auto;
 	list-style: none;
@@ -310,10 +336,6 @@ footer a{
 .item li:hover {
 	border: 2px solid #1dd2af; 
 }
-/*
-.point .item li {
-	align-items: center;
-} */
 
 .reviews {
 	display: flex;
@@ -343,7 +365,6 @@ footer a{
 	flex-direction: row;
 	justify-content: flex-start;
 	padding-left: 20px;
-
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
@@ -387,7 +408,6 @@ footer a{
 	margin: 15px;
 }
 
-
 .Links {
 	list-style: none;
 	display: flex;
@@ -421,111 +441,33 @@ div .type-item {
 }
 
 .type-item img {
-	margin: 20px;
-
+	width: auto;
+	height: auto;
 }
 
 div .cover {
-	border: 1px solid #fff;
+	border: 3px solid #fff;
 	border-radius: 50%;
-/*	align-items: center;
+	width: 147px;
+	height: 147px;
+	display: flex;
+	align-items: center;
 	justify-content: center;
-*/
 }
-/*
-div img {
-	background-image: url("img/Shape21.png"); */
+
+div .type-item:hover .cover {
+	border: 3px solid #1dd2af;
+	background-color: #1dd2af;
 }
+
+div .type-item:hover p {
+	color: #1dd2af;
+}
+
 /* To do: Переделать изображение в фон
  и заменять при наведении
 .type-item img:hover{  }
 */
-
-.topbar {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: nowrap;
-	align-items: stretch;
-	align-content: space-between;
-	flex-basis: auto;
-}
-
-div .tm-nav {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	flex-wrap: nowrap;
-	align-items: stretch;
-	align-content: space-between;
-	flex-basis: auto;
-/*	margin: 20px; */
-}
-
-.Menu {
-	display: flex;
-	margin: -10px;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
-	align-items: stretch;
-	align-content: space-between;
-	flex-basis: auto;
-	background-color: #eeeeee;
-}
-
-.header-logo {
-  	display: flex;
-  	justify-content: flex-start;
-    margin-left: 265px;
-    width:205px;
-    height: 55px;
-    margin-top: 25px;
-/*    border: 2px solid #1dd2af; рамка для
-определения границ элемента */
-
-}
-
-.head-nav  {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	flex-wrap: nowrap;
-
-	align-content: space-between;
-	flex-basis: auto;
-	margin: 30px;
-	margin-left: 35em;
-/*	border: 2px solid #1dd2af; рамка для
-определения границ элемента */
-
-}
-
-.head-nav  div {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	flex-wrap: nowrap;
-	align-content: space-between;
-	flex-basis: auto;
-	margin-left: 20px;
-/*	border: 2px solid #1dd2af; рамка для
-определения границ элемента */
-
-}
-
-.main-nav {
-	margin-left: 350px;
-}
-
-.main-nav  a {
-	text-decoration: none;
-
-	font-size: 28px;
-	color: #5d6e80;
-	text-transform: uppercase;
-	font-family: "Roboto Medium", sans-serif;
-}
 
 .btn {
 	display: flex;
@@ -544,7 +486,6 @@ div .tm-nav {
 }
 
 .btn:hover{
-
 	background-color: #1dd2af;
 }
 
@@ -565,10 +506,10 @@ a .btn {
 
 /* To do: У элементов зафиксировать размер
 изображения в статике */
+
 .point div {
 	transition: all 1s ease;
 }
-
 
 .point div:hover {
 	transform: scale(1.2);
@@ -582,11 +523,18 @@ a .btn {
 	border: none;
 }
 
-/* To do: посмотреть. как добавляются якоря на страницу.
-To do: посмотреть, как отрисовать треугольник. */
-
 .reviews-item strong {
 	color: #1dd2af;
+}
+
+footer {
+	background-color: #2c3e50;
+	color: #ffffff;
+}
+
+footer a{
+	text-decoration: none;
+	color: #ffffff;
 }
 
 .footer-item {
@@ -617,27 +565,33 @@ To do: посмотреть, как отрисовать треугольник.
 	line-height: 25px;
 }
 
+form {
+	display: flex;
+	flex-direction: row;
+	margin-left: 15px; 
+	align-items: stretch;
+}
+
 .Newsletter  input {
 	background-color: #eeeeee;
-	width: 20em;
+	width: 15em;
 	min-height: 25px;
-	padding-left: 8px;
-	margin-right: 5px;
-	margin-left: 15px;
-	margin-top: 0;
+	padding-left: 10px;
+	margin-right: 10px;
+	border-radius: 3px;
 /*	border: 2px solid #1dd2af; */
 }
 
 .Newsletter button {
-	width: 35px;
-	min-height: 25px;
+	width: 40px;
+	height: auto; 
     text-transform: uppercase;
 	vertical-align: top;
 	justify-content: center;
     border: none;
-    border-radius: 2px;
-    word-wrap: break-word;
-    text-align: center;
+    border-radius: 3px;
+	word-wrap: break-word; 
+	text-align: center;
 	font-size: 12px;
 	font-family: "Roboto Bold", sans-serif;
 	background-color: #1dd2af;
@@ -689,9 +643,10 @@ To do: посмотреть, как отрисовать треугольник.
 .Address span {
 	color: #1dd2af;
 }
+
 /* уголок */
 .up {
-    left: 20px; bottom: -20px; top: 10px;/* Положение треугольника */
+    left: 20px; bottom: -20px; top: 10px; /* Положение треугольника */
     border: 45px solid transparent; /* Прозрачные границы */
     border-bottom: 45px solid #1dd2af; /* Треугольник */
 }
@@ -706,29 +661,8 @@ To do: посмотреть, как отрисовать треугольник.
 		flex-basis: auto;
 }
 
-.Menu {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: nowrap;
-		align-items: stretch;
-		align-content: space-between;
-		flex-basis: auto;
-}
-
-
-/*.point .item h3:hover .submenu {
-
-} */
-
 .sub-menu:checked {
 	display: inline;
-}
-
-form {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;;
 }
 
 .locate {
