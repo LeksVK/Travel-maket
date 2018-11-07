@@ -71,16 +71,16 @@ div .tm-nav {
 	justify-content: center;
     width:205px;
     height: 55px;
-/*  border: 2px solid #1dd2af; рамка для
-определения границ элемента */
+	/*  border: 2px solid #1dd2af; рамка для
+	определения границ элемента */
 }
 
 .head-nav {
     display: flex;
 	align-items: center;
 	justify-content: center;
-/*  border: 2px solid #1dd2af; рамка для
-определения границ элемента */
+	/*  border: 2px solid #1dd2af; рамка для
+	определения границ элемента */
 }
 
 .head-nav  div {
@@ -91,8 +91,8 @@ div .tm-nav {
 	align-content: space-between;
 	flex-basis: auto;
 	margin-left: 20px;
-/*	border: 2px solid #1dd2af; рамка для
-определения границ элемента */
+	/*	border: 2px solid #1dd2af; рамка для
+	определения границ элемента */
 }
 
 .main-nav a {
@@ -215,132 +215,6 @@ div .tm-nav {
 	text-transform: uppercase;
 }
 
-.category {
-	background-color: #2c3e50;
-	color: #ffffff;
-}
-
-.category h2,
-.carusel h2,
-.reviews h2 {
-	text-transform: uppercase;
-	text-align: center;
-	padding-top: 2em;
-}
-
-.category p,
-.carusel p,
-.reviews h3 {
-	text-align: center;
-}
-
-.point {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: nowrap;
-	align-items: stretch;
-	align-content: space-between;
-	flex-basis: auto;
-	min-height: 380px;
-}
-
-.point>div {
-	margin: 20px;
-}
-
-
-/* To do: Переверстать блоки item's
-в отдельные элементы с img и p, добавить background
-и выровнять по нижней границе */
-
-.item {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 275px;
-    height: 259px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    color: #000000;
-    flex-wrap: wrap;
-}
-
-.item:first-child {
-	background-image: url("img/usa.png");
-}
-
-.item:nth-child(2) {
-	background-image: url("img/layers1.png");
-}
-
-.item:nth-child(3) {
-	background-image: url("img/layers5.png");
-}
-
-.item:nth-child(4) {
-	background-image: url("img/layers2.png");
-}
-
-.item:nth-child(5) {
-	background-image: url("img/layers3.png");
-}
-
-.item:last-child {
-	background-image: url("img/layers4.png");
-}
-
-.item h3 {
-/*	border: 2px solid #1dd2af; - рамка для определения границ элемента */
-	display: flex;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: auto;
-	background-color: #eeeeee;
-	padding-left: 5%;
-	padding-top: 5%;
-	padding-bottom: 3%;
-	margin-top: 195px; 
-}
-
-.item ul {
-	display: none;
-}  
-
-.item:hover ul {
-	background-color: #eeeeee;
-	display: inline-block;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: auto;
-	list-style: none;
-}
-
-.item li img {
-	margin-right: 10px;
-	margin-top: 15px;
-	margin-left: 20px;
-}
-
-.item li {
-	margin: 0;
-/*	border: 2px solid #1dd2af; */
-	line-height: 50px;
-	align-content: center;
-}
-
-.item li:hover {
-	border: 2px solid #1dd2af; 
-}
-
-/* ---- */
-
 .btn {
 	display: flex;
 	width: 20%;
@@ -376,26 +250,6 @@ a .btn {
 	justify-content: center;
 }
 
-/* To do: У элементов зафиксировать размер
-изображения в статике */
-
-.point div {
-	transition: all 1s ease;
-}
-
-.point div:hover {
-	transform: scale(1.2);
-	border: 5px solid #1dd2af;
-	margin: 3em;
-}
-
-.point div:hover h3 {
-	color: #ffffff;
-	background-color: #2c3e50;
-	border: none;
-}
-
-
 /*----*/
 
 .top-nav {
@@ -406,10 +260,6 @@ a .btn {
 		align-items: stretch;
 		align-content: space-between;
 		flex-basis: auto;
-}
-
-.sub-menu:checked {
-	display: inline;
 }
 
 .locate {
@@ -453,80 +303,123 @@ a .btn {
 		background-color: white;
 		border: none;
 }
+											/* ---Special offers ----*/
 
-/* ---- S[ecial offers ---- */
-
-.special_offers {
-	display: flex;
-	flex-direction: column;
+.carusel {
 	height: 500px;
 }
 
-.special_offers h2 {
+.title h2 {
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
+	padding-top: 2em;
 	font-family: Roboto Medium, sans-serif;
+	color: #2c3e50;
 }
 
-.special_offers p {
+.title p {
 	text-align: center;
 	margin: 0;
 	margin-bottom: 10px;
 	font-family: Roboto Regular, sans-serif;
 }
 
-.offers {
+.point {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto; 
 }
 
-.item_test {
-	display: flex;
-	flex-direction: column;
-	width: 250px;
-/*	height: 259px; */
-	margin: 8px;
-	background-color: #eee;
-	padding: 10px;
-	transition: all 1.5s ease;
+.item {
+    width: 275px;
+    height: auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
-.item_test:hover {
-	border: 2px solid #1dd2af;
-	transform: scale(1.1);
+.item img + .item_cover{
+	width: 275px;
+	height: 200px;
+}
+
+.item_cover {
+	width: 100%;
+	margin: 0;
+}
+
+.sub-menu {
+	list-style: none;
+	width: 100%;
 	padding: 0;
-	margin: 20px; 
+	margin: 0;
 }
 
-.title_offer {
+.sub-menu li {	
 	display: flex;
-	flex-direction: row;
-	flex-grow: 1;
+	width: auto;
+	background-color: #eeeeee;
+	justify-content: flex-start;;
 	align-items: center;
-}
-
-.item_test:hover .title_offer {
-	background-color: #2c3e50;
-	color: white;
-}
-
-.title_offer h3 {
-	flex-grow: 2;
-	font-size: 15px;
-	padding-left: 10px;
+	margin: 0;
+	padding: 10px 15px;
 	font-family: Roboto Regular, sans-serif;
 }
 
-.title_offer div {
-	flex-grow: 1;
-	padding: 10px;
-	width: 35px;
-	text-align: center;
+.sub-menu li:first-child {
+	justify-content: space-between;
+	color: #626262;
 }
 
-/* -- Holidays Type --*/
+.disclose {
+	background-image: url("img/str_nav.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50% 50%;
+	width: 35px;
+	height: 20px;
+}
+
+.sub-menu li:last-child {
+	justify-content: space-between;
+	border-top: 1px dashed black;
+}
+
+.item {
+	transition: all 2s ease;
+}
+
+.item:hover {
+	transform: scale(1.2);
+	border: 5px solid #1dd2af;
+	margin: 3em;
+}
+
+.item:hover li {
+	color: #ffffff;
+	background-color: #2c3e50;
+}
+
+.item:hover .disclose {
+	background-image: url("img/str_active.png");
+}
+
+
+li + .hidden_item {
+	display: none;	
+} 
+
+li + .hidden_item img {
+	margin-right: 15px; 
+} 
+
+											/* -- Holidays Type --*/
 
 .category {
 	background-color: #2c3e50;
@@ -536,7 +429,7 @@ a .btn {
 }
 
 .category h2 {
-	font-family: "Roboto Medium", sans-serif;
+	color: white;
 }
 
 .category p {
@@ -564,6 +457,10 @@ div .type-item {
 	align-content: space-between;
 	flex-basis: auto;
 	margin: 20px;
+}
+
+.type-item p {
+	text-align: center;
 }
 
 div .cover {
@@ -646,7 +543,7 @@ div .cover {
 	color: #1dd2af;
 }
 
-/* ---- Reviews ---*/
+											/* ---- Reviews ---*/
 
 .reviews {
 	display: flex;
@@ -666,6 +563,7 @@ div .cover {
 .reviews h3 {
 	font-weight: normal;
 	color: #626262;
+	text-align: center;
 }
 
 .reviews-list{
@@ -716,8 +614,7 @@ div .cover {
 .reviews-item:hover p {
 		color: #626262;
 }
-
-/* ---- Footer --- */
+											/* ---- Footer --- */
 
 footer {
 	background-color: #2c3e50;
@@ -734,9 +631,10 @@ footer a{
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+	align-items: flex-start;
 	min-height: 200px;
-/*	border: 2px solid #1dd2af; рамка для
-определения границ элемента */
+	/*	border: 2px solid #1dd2af; рамка для
+	определения границ элемента */
 }
 
 .footer-item h3 {
@@ -768,10 +666,11 @@ footer a{
 	flex-direction: column;
 	justify-content: center;
 	flex-wrap: nowrap;
+	justify-content: flex-start;
 	align-items: stretch;
 	align-content: space-between;
 	flex-basis: auto;
-/*	border: 2px solid #1dd2af; */
+	/*	border: 2px solid #1dd2af; */
 	width: 350px;
 	margin: 15px;
 }
@@ -795,7 +694,7 @@ footer a{
 }
 
 .Newsletter p {
-/*	border: 2px solid #1dd2af; */
+	/*	border: 2px solid #1dd2af; */
 	margin-left: 15px;
 	width: 85%;
 	line-height: 25px;
@@ -815,7 +714,7 @@ form {
 	padding-left: 10px;
 	margin-right: 10px;
 	border-radius: 3px;
-/*	border: 2px solid #1dd2af; */
+	/*	border: 2px solid #1dd2af; */
 }
 
 .Newsletter button {
@@ -887,7 +786,7 @@ form {
     border-bottom: 45px solid #1dd2af; /* Треугольник */
 }
 
-/* --Forma LogIn---*/
+												/*---Forma LogIn---*/
 .login_form {
 	background-color: #eee;
 	background-image: url("img/auth_form.jpg");
