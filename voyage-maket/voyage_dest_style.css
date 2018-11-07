@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:300,400,500,700');
+/*
+body {
+	opacity: 50%;
+} */
+.content {
+	flex-direction: column;
+}
+/* ---- */
+.content h3 {
+	text-align: left;
+	text-transform: uppercase;
+	width: auto;
+	font-family: Roboto, sans-serif;
+	color: #eeeeee;
+	padding-left: 15%;
+}
+
+/* ---- */
+
+div .offers {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+div .item-offers {
+	display: flex;
+	margin: 15px;
+	flex-direction: column;
+	border: 2px solid #eee;	
+}
+
+div .item-offers:hover {
+	border: 2px solid #1dd2af;
+}
+
+div .descript {
+	display: flex;
+	justify-content: space-around;
+	background-color: #2c3e50;
+	font-family: Roboto Medium, sans-serif;
+	font-size: 15px;
+	color: #ffffff;
+	align-items: baseline;
+	padding-left: 5px;
+}
+
+div .city_offers {
+	display: flex;
+	justify-content: space-between;
+	background-color: #1dd2af;
+	font-family: Roboto Medium, sans-serif;
+	color: #ffffff;
+	font-size: 15px;	
+}
+
+.item-offers p {
+	margin: 10px;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+/* ------*/
+
+.content button {
+	display: flex;
+	margin: 20px auto;
+	width: 85%;
+	border: none;
+	justify-content: center;
+	padding: 10px;
+	text-transform: uppercase;
+	background-color: #2c3e50;
+	color: white;
+}
+
+/* ----- */
+
+.login_form {
+	background-color: #eee;
+	background-image: url("img/auth_form.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 15%;
+	left: 40%;
+	width: 265px;
+	height: 400px;
+	border-radius: 2px;
+	display: none; 
+}
+
+.login_form_active {
+	background-color: #eee;
+	background-image: url("img/auth_form.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 15%;
+	left: 40%;
+	width: 265px;
+	height: 400px;
+	border-radius: 2px;
+}
+
+.login_form_active input {
+	background-color: rgba(0, 170, 238, 0);
+	border: none;
+	border-bottom: 1px solid #eee;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	color: white; 
+}
+
+.data_login {
+	margin-top: 77%;
+	margin-left: 16%;
+}
+
+.login_form_active button {
+	margin-top: 37px;
+	min-width: 182px;
+	min-height: 35px;
+	justify-content: center;
+	word-wrap: normal;
+	background-color: #008B8B; /* #2E8B57 */
+	color: white;
+}
+/* При нажатии ссылки LogIn затемнять фон body */
+
+.login_form_active p {
+	color: #eee;
+	margin: 0;
+}
+
+.login_form_active a {
+	color: #eee;
+	text-decoration: none;
+}
