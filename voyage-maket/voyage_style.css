@@ -393,7 +393,7 @@ a .btn {
 }
 
 .item {
-	transition: all 2s ease;
+	transition: all 0.9s ease;
 }
 
 .item:hover {
