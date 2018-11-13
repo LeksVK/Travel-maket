@@ -7,19 +7,18 @@ body {
 
 .topbar {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
 	align-content: space-around;
 	font-size: 15px;
-    line-height: 22px;
-    font-family: "Roboto Light", sans-serif;
+  line-height: 22px;
+  font-family: "Roboto Light", sans-serif;
 	background-color: #2c3e50;
 	flex-basis: auto;
 	padding: 3px;
 }
 
 .topbar a {
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -32,6 +31,7 @@ div .tm-nav {
 	align-content: space-between;
 	flex-basis: auto;
 }
+
 /* To do: иконки соцсетей в спрайт */
 
 .topmenu {
@@ -55,10 +55,9 @@ div .tm-nav {
 	color: #1dd2af;
 }
 
-.Menu {
-	background-color: #eeeeee;
+.menu {
+	background-color: #eee;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: nowrap;
 	align-items: stretch;
@@ -66,17 +65,17 @@ div .tm-nav {
 }
 
 .header-logo {
-    display: flex;
+  display: flex;
 	align-items: center;
 	justify-content: center;
-    width:205px;
-    height: 55px;
+  width:205px;
+  height: 55px;
 	/*  border: 2px solid #1dd2af; рамка для
 	определения границ элемента */
 }
 
 .head-nav {
-    display: flex;
+  display: flex;
 	align-items: center;
 	justify-content: center;
 	/*  border: 2px solid #1dd2af; рамка для
@@ -85,7 +84,6 @@ div .tm-nav {
 
 .head-nav  div {
 	display: flex;
-	flex-direction: row;
 	justify-content: flex-end;
 	flex-wrap: nowrap;
 	align-content: space-between;
@@ -104,30 +102,42 @@ div .tm-nav {
 }
 
 .main-nav a:hover {
-/*	border-top: 3px solid #1dd2af;*/
+	/*	border-top: 3px solid #1dd2af;*/
 	color: #1dd2af;
 }
 
-.Banner {
-	background-image: url("img/backhead2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #ffffff;
+.banner {	
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
 	height: 849px;
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: space-between;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  align-items: space-between;
 }
+
+.banner_back_promo {
+  background-image: url("img/backhead2.png");
+}
+
+
+.banner_back_greece {
+  background-image: url("img/images.jpeg");
+}
+
+.banner_back_mill {
+  background-image: url("img/milcover.jpg");
+}
+
 
 .btn {
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-.Promo {
+.promo {
 	display: flex;
 	flex-direction: column;
 	padding-top: 16em;
@@ -135,38 +145,39 @@ div .tm-nav {
 	left: 45em;
 }
 
-.Promo a {
-	color: #ffffff;
+.promo a {
+	color: #fff;
 	text-decoration: none;
 }
 
-.scroll{
+.scroll_left,
+.scroll_right {
 	display: flex;
 	justify-content: center;
 	width: 6em;
 	height: 6em;
 	text-decoration: none;
 	text-transform: uppercase;
-	background-color: #ffffff;
-	color: #000000;
+	background-color: #fff;
+	color: #000;
 	border-width: 0px;
 	font-family: "Roboto Bold", sans-serif;
 	opacity: 0.1;
 }
 
-.scroll:hover {
+.scroll_left:hover,
+.scroll_right:hover {
 	background-color: #1dd2af;
 	opacity: 1;
-	color: #ffffff;
+	color: #fff;
 }
 
 /* 1700 *830 размер фона*/
 
 .auth {
 	display: flex;
-	flex-direction: row;
 	background-color: #2c3e50;
-	color: #ffffff;
+	color: #fff;
 	justify-content: center;
 	align-items: center; 
 }
@@ -192,7 +203,7 @@ div .tm-nav {
 	width: 75px;
 	height: 35px;
 	margin-left: 15px;
-	color: #ffffff;
+	color: #fff;
 	background-color: #1dd2af;
 	border: none;
 	border-radius: 3px;
@@ -202,13 +213,13 @@ div .tm-nav {
 	text-align: center;
 }
 
-.Promo p {
+.promo p {
 	font-family: "Roboto Bold", sans-serif;
 	text-align: center;
 	font-size: 22px;
 }
 
-.Promo p strong {
+.promo p strong {
 	font-family: "Roboto Medium", sans-serif;
 	text-align: center;
 	font-size: 36px;
@@ -218,14 +229,14 @@ div .tm-nav {
 .btn {
 	display: flex;
 	width: 20%;
-    text-transform: uppercase;
+  text-transform: uppercase;
 	vertical-align: top;
 	justify-content: center;
-    border: 2px solid #1dd2af;
-    padding: 10px;
-    word-wrap: break-word;
-    text-align: center;
-    border-radius: 2px;
+  border: 2px solid #1dd2af;
+  padding: 10px;
+  word-wrap: break-word;
+  text-align: center;
+  border-radius: 2px;
 	font-size: 12px;
 	margin: 20px;
 	font-family: "Roboto Bold", sans-serif;
@@ -246,28 +257,25 @@ a .btn {
 
 .buttons {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 }
 
 /*----*/
 
 .top-nav {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: nowrap;
-		align-items: stretch;
-		align-content: space-between;
-		flex-basis: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: space-between;
+	flex-basis: auto;
 }
 
 .locate {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	background-color: #ffffff;
+	background-color: #fff;
 	border: none;
 	margin-left: 15px;
 	border-radius: 3px;
@@ -279,16 +287,15 @@ a .btn {
 }
 
 .locate img {
-		background-color: white;
-		border: none;
+	background-color: #fff;
+	border: none;
 }
 
 .period {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	background-color: #ffffff;
+	background-color: #fff;
 	border: none;
 	margin-left: 15px;
 	border-radius: 3px;
@@ -300,10 +307,16 @@ a .btn {
 }
 
 .period img {
-		background-color: white;
-		border: none;
+	background-color: #fff;
+	border: none;
 }
-											/* ---Special offers ----*/
+			/*----Content - Upload ----*/
+.upload {
+	position: absolute;
+	display: none;
+}
+
+					/* ---Special offers ----*/
 
 .carusel {
 	height: 500px;
@@ -327,21 +340,23 @@ a .btn {
 
 .point {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
-	flex-basis: auto; 
+	flex-basis: auto;
+	height: 500px;
 }
 
 .item {
-    width: 275px;
-    height: auto;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+  width: 275px;
+  height: auto;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-self: flex-start;
+  border: 5px solid #fff; 
 }
 
 .item img + .item_cover{
@@ -364,15 +379,18 @@ a .btn {
 .sub-menu li {	
 	display: flex;
 	width: auto;
-	background-color: #eeeeee;
+	background-color: #eee;
 	justify-content: flex-start;;
 	align-items: center;
 	margin: 0;
 	padding: 10px 15px;
+	padding-right: 5px;
 	font-family: Roboto Regular, sans-serif;
+	font-size: 12px;
+	height: 40px;
+	min-width: 160px;
 }
 
-/*.sub-menu li:first-child */
 .sub-menu .first_li {
 	justify-content: space-between;
 	color: #626262;
@@ -389,11 +407,11 @@ a .btn {
 
 .sub-menu li:last-child {
 	justify-content: space-between;
-	border-top: 1px dashed black;
+	border-top: 1px dashed #000;
 }
 
 .item {
-	transition: all 0.9s ease;
+	transition: all 1s ease;
 }
 
 .item:hover {
@@ -403,7 +421,7 @@ a .btn {
 }
 
 .item:hover .first_li {
-	color: #ffffff;
+	color: #fff;
 	background-color: #2c3e50;
 }
 
@@ -424,17 +442,17 @@ li + .hidden6_item {
 	margin-right: 15px; 
 } 
 
-											/* -- Holidays Type --*/
+						/* -- Holidays Type --*/
 
 .category {
 	background-color: #2c3e50;
-	color: #ffffff;
+	color: #fff;
 	background-image: url('img/Layer12.png');
 	min-height: 515px;
 }
 
 .category h2 {
-	color: white;
+	color: #fff;
 }
 
 .category p {
@@ -444,7 +462,6 @@ li + .hidden6_item {
 
 .typerest {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	flex-wrap: nowrap;
 	align-items: stretch;
@@ -548,7 +565,7 @@ div .cover {
 	color: #1dd2af;
 }
 
-											/* ---- Reviews ---*/
+						/* ---- Reviews ---*/
 
 .reviews {
 	display: flex;
@@ -573,7 +590,6 @@ div .cover {
 
 .reviews-list{
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	flex-wrap: nowrap;
 	align-items: stretch;
@@ -586,18 +602,19 @@ div .cover {
 
 .reviews-item {
 	display: flex;
-	flex-direction: row;
 	justify-content: flex-start;
 	padding-left: 20px;
+	padding-right: 20px;
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
 	flex-basis: auto;
 	min-height: 150px;
 	min-width: 450px;
-	border: 1px solid #eeeeee;
+	border: 1px solid #eee;
 	margin: 20px;
 	line-height: 22px;
+	width: 550px;
 }
 
 .reviews-item p {
@@ -610,25 +627,25 @@ div .cover {
 }
 
 .reviews-item:hover {
-	border: 1px solid #eeeeee;
+	border: 1px solid #eee;
 	border-top: 3px solid #1dd2af;
 	margin: 19px;
 	margin-top: 17px;
 }
 
 .reviews-item:hover p {
-		color: #626262;
+  color: #626262;
 }
-											/* ---- Footer --- */
+					/* ---- Footer --- */
 
 footer {
 	background-color: #2c3e50;
-	color: #ffffff;
+	color: #fff;
 }
 
 footer a{
 	text-decoration: none;
-	color: #ffffff;
+	color: #fff;
 }
 
 .footer-item {
@@ -644,18 +661,17 @@ footer a{
 
 .footer-item h3 {
 	/*	border: 2px solid #1dd2af; */
-		padding: 0;
-		margin: 0;
-		margin-top: 15px;
-		margin-left: 15px;
-		font-size: 26px;
-		font-family: "Roboto Bold", sans-serif;
-		color: #1dd2af;
+	padding: 0;
+	margin: 0;
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 26px;
+	font-family: "Roboto Bold", sans-serif;
+	color: #1dd2af;
 }
 
 .footer-menu {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	flex-wrap: nowrap;
 	align-items: stretch;
@@ -663,10 +679,10 @@ footer a{
 	flex-basis: auto;
 }
 
-.Newsletter,
-.LatestNews,
-.Tags,
-.Address {
+.newsletter,
+.latest_news,
+.tags,
+.adress {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -680,7 +696,7 @@ footer a{
 	margin: 15px;
 }
 
-.Links {
+.links {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
@@ -689,7 +705,7 @@ footer a{
 	align-content: space-between;
 }
 
-.Links a:hover {
+.links a:hover {
 	color: #1dd2af;
 
 }
@@ -698,7 +714,7 @@ footer a{
 	margin-top: 25px;
 }
 
-.Newsletter p {
+.newsletter p {
 	/*	border: 2px solid #1dd2af; */
 	margin-left: 15px;
 	width: 85%;
@@ -707,13 +723,12 @@ footer a{
 
 form {
 	display: flex;
-	flex-direction: row;
 	margin-left: 15px; 
 	align-items: stretch;
 }
 
-.Newsletter  input {
-	background-color: #eeeeee;
+.newsletter  input {
+	background-color: #eee;
 	width: 15em;
 	min-height: 25px;
 	padding-left: 10px;
@@ -722,26 +737,25 @@ form {
 	/*	border: 2px solid #1dd2af; */
 }
 
-.Newsletter button {
+.newsletter button {
 	width: 40px;
 	height: auto; 
-    text-transform: uppercase;
+  text-transform: uppercase;
 	vertical-align: top;
 	justify-content: center;
-    border: none;
-    border-radius: 3px;
+  border: none;
+  border-radius: 3px;
 	word-wrap: break-word; 
 	text-align: center;
 	font-size: 12px;
 	font-family: "Roboto Bold", sans-serif;
 	background-color: #1dd2af;
-	color: #ffffff;
+	color: #fff;
 }
 
-.LatestNews .post {
+.latest_news .post {
 	margin-left: 25px;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	margin-top: 20px;
@@ -764,23 +778,23 @@ form {
 	color: #1dd2af;
 }
 
-.Tags p {
+.tags p {
 	margin-left: 15px;
 	line-height: 35px;
 }
 
-.Tags span {
-	border: 1px solid white;
+.tags span {
+	border: 1px solid #fff;
 	padding: 3px;
 	margin-left: 5px;
 }
 
-.Address p {
+.adress p {
 	margin-left: 15px;
 	line-height: 25px;
 }
 
-.Address span {
+.adress span {
 	color: #1dd2af;
 }
 
@@ -815,8 +829,8 @@ form {
 	background-color: #eee;
 	background-image: url("img/auth_form.jpg");
 	background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-position: center;
+  background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -835,7 +849,7 @@ form {
 	border-bottom: 1px solid #eee;
 	margin-top: 10px;
 	padding-bottom: 5px;
-	color: white; 
+	color: #fff; 
 }
 
 .data_login {
@@ -850,7 +864,7 @@ form {
 	justify-content: center;
 	word-wrap: normal;
 	background-color: #008B8B; /* #2E8B57 */
-	color: white;
+	color: #fff;
 }
 	/* To do: При нажатии ссылки LogIn затемнять фон body */
 
