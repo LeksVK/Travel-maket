@@ -108,8 +108,7 @@ div .tm-nav {
 	color: #1dd2af;
 }
 
-.Banner {
-	background-image: url("img/backhead2.png");
+.banner {	
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -121,6 +120,20 @@ div .tm-nav {
     justify-content: space-between;
     align-items: space-between;
 }
+
+.banner_back_promo {
+    background-image: url("img/backhead2.png");
+}
+
+
+.banner_back_greece {
+    background-image: url("img/images.jpeg");
+}
+
+.banner_back_mill {
+    background-image: url("img/milcover.jpg");
+}
+
 
 .btn {
 	text-decoration: none;
@@ -140,7 +153,8 @@ div .tm-nav {
 	text-decoration: none;
 }
 
-.scroll{
+.scroll_left,
+.scroll_right {
 	display: flex;
 	justify-content: center;
 	width: 6em;
@@ -154,7 +168,8 @@ div .tm-nav {
 	opacity: 0.1;
 }
 
-.scroll:hover {
+.scroll_left:hover,
+.scroll_right:hover {
 	background-color: #1dd2af;
 	opacity: 1;
 	color: #ffffff;

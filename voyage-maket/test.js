@@ -75,3 +75,66 @@ for (var i = 2; i<subMenu.length; i++) {
 		var item = subMenu[i];
 		item.classList.remove('hidden_item');
 	}*/
+
+
+var wallpaper = document.querySelector('.banner');
+var nav_left = document.querySelector('.scroll_left');
+var nav_right = document.querySelector('.scroll_right');
+var i = 0;
+var j = 0;
+
+nav_left.addEventListener('click', function () {
+/*    var yes = 'yes';
+    console.log(yes); */
+    console.log(i);
+    if (i == 0) {
+        wallpaper.classList.remove('banner_back_promo');
+        wallpaper.classList.add('banner_back_greece');
+        i = 1;
+         console.log(i);
+    } else if (i == 1) {
+        wallpaper.classList.remove('banner_back_greece');
+        wallpaper.classList.add('banner_back_mill');
+        i = 2;
+         console.log(i);
+    } else if (i == 2) {
+        wallpaper.classList.remove('banner_back_mill');
+        wallpaper.classList.add('banner_back_promo');
+        i = 0;
+         console.log(i);
+    }
+  /*popup.classList.add('modal--show'); */
+    }
+);
+
+nav_right.addEventListener('click', function (evt) {
+    var yes = 'yes';
+    console.log(yes);
+/*    j++;
+    console.log(j); */
+    if (i == 0) {
+        wallpaper.classList.remove('banner_back_promo');
+        wallpaper.classList.add('banner_back_mill');
+        i = 1;
+         console.log(i);
+    } else if (i == 1) {
+        wallpaper.classList.remove('banner_back_mill');
+        wallpaper.classList.add('banner_back_greece');
+        i = 2;
+         console.log(i);
+    } else if (i == 2) {
+        wallpaper.classList.remove('banner_back_greece');
+        wallpaper.classList.add('banner_back_promo');
+        i = 0;
+         console.log(i);
+    }
+   
+  /*popup.classList.add('modal--show'); */
+    }
+);
+
+
+/*
+closePopupButton.addEventListener('click', function () {
+  popup.classList.remove('modal--show');
+}); */
