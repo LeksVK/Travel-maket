@@ -3,6 +3,7 @@
 body {
 	padding: 0;
 	margin: 0;
+    min-width: 1924px;
 }
 
 .topbar {
@@ -123,26 +124,23 @@ div .tm-nav {
 }
 
 
-.banner_back_greece {
-  background-image: url("img/images.jpeg");
+.banner_back_lake {
+  background-image: url("img/Explore-the-worlds.jpg");
 }
 
-.banner_back_mill {
-  background-image: url("img/milcover.jpg");
-}
-
-
-.btn {
-	text-decoration: none;
-	text-transform: uppercase;
+.banner_back_night {
+  background-image: url("img/night.png");
 }
 
 .promo {
 	display: flex;
 	flex-direction: column;
-	padding-top: 16em;
-	top: 25em;
-	left: 45em;
+	padding-top: 20rem;
+}
+
+.btn {
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .promo a {
@@ -154,8 +152,8 @@ div .tm-nav {
 .scroll_right {
 	display: flex;
 	justify-content: center;
-	width: 6em;
-	height: 6em;
+	width: 4rem;
+	height: 4rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	background-color: #fff;
@@ -163,6 +161,7 @@ div .tm-nav {
 	border-width: 0px;
 	font-family: "Roboto Bold", sans-serif;
 	opacity: 0.1;
+    focus: none;
 }
 
 .scroll_left:hover,
@@ -227,12 +226,13 @@ div .tm-nav {
 }
 
 .btn {
-	display: flex;
+	/*display: flex; */
+    display: inline-block;
 	width: 20%;
   text-transform: uppercase;
 	vertical-align: top;
 	justify-content: center;
-  border: 2px solid #1dd2af;
+  border: 2px solid #fff; /* #1dd2af */
   padding: 10px;
   word-wrap: break-word;
   text-align: center;
@@ -244,20 +244,22 @@ div .tm-nav {
 
 .btn:hover {
 	background-color: #1dd2af;
+     border: 2px solid #1dd2af;
 }
 
 
 a .btn {
-	min-height: 830px; */
-	display: flex;
+	min-height: 830px; 
+	width: 20%;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 15em;
+	margin-top: 15rem;
 }
 
 .buttons {
-	display: flex;
-	justify-content: center;
+/*	display: flex; */
+    display: inline-block;
+    text-align: center;
 }
 
 /*----*/
@@ -316,7 +318,7 @@ a .btn {
 	display: none;
 }
 
-					/* ---Special offers ----*/
+            /* ---Special offers ----*/
 
 .carusel {
 	height: 500px;
@@ -326,7 +328,7 @@ a .btn {
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
-	padding-top: 2em;
+	padding-top: 4rem;
 	font-family: Roboto Medium, sans-serif;
 	color: #2c3e50;
 }
@@ -346,6 +348,7 @@ a .btn {
 	align-content: space-between;
 	flex-basis: auto;
 	height: 500px;
+    width: 100%;
 }
 
 .item {
@@ -392,7 +395,6 @@ a .btn {
 }
 
 .sub-menu .first_li {
-	justify-content: space-between;
 	color: #626262;
 }
 
@@ -403,11 +405,15 @@ a .btn {
 	background-size: 50% 50%;
 	width: 35px;
 	height: 20px;
+    margin-left: 85px;
 }
 
 .sub-menu li:last-child {
-	justify-content: space-between;
 	border-top: 1px dashed #000;
+}
+
+.sub-menu li:last-child img {
+    margin-left: 120px;
 }
 
 .item {
@@ -417,7 +423,8 @@ a .btn {
 .item:hover {
 	transform: scale(1.2);
 	border: 5px solid #1dd2af;
-	margin: 3em;
+	margin: 2rem;
+    position: relative;
 }
 
 .item:hover .first_li {
@@ -497,62 +504,62 @@ div .cover {
 	background-position: center;
 }
 
-.type-item:first-child .cover {
+.cover_cruise {
 	background-image: url('img/cruise.png');
 	background-size: 50% 55%;	
 }
 
-.type-item:first-child .cover:hover {
+.cover_cruise:hover {
 	background-image: url('img/cruise2.png');
 	border: 3px solid #1dd2af;
 }
 
-.type-item:nth-child(2) .cover {
+.cover_city {
 	background-image: url('img/city.png');
 		background-size: 50% 60%;	
 }
 
-.type-item:nth-child(2) .cover:hover {
+.cover_city:hover {
 	background-image: url('img/city2.png');
 	border: 3px solid #1dd2af;	
 }
 
-.type-item:nth-child(3) .cover {
+.cover_honey {
 	background-image: url('img/honeyw.png');
 	background-size: 70% 50%;	
 }
 
-.type-item:nth-child(3) .cover:hover {
+.cover_honey:hover {
 	background-image: url('img/honey.png');
 	border: 3px solid #1dd2af;	
 }
 
-.type-item:nth-child(4) .cover {
+.cover_advent {
 	background-image: url('img/compas.png');
 	background-size: 70% 70%;	
 }
 
-.type-item:nth-child(4) .cover:hover {
+.cover_advent:hover {
 	background-image: url('img/compas2.png');
 	border: 3px solid #1dd2af;	
 }
 
-.type-item:nth-child(5) .cover {
+.cover_safari {
 	background-image: url('img/safari.png');
 	background-size: 60% 60%;
 }
 
-.type-item:nth-child(5) .cover:hover {
+.cover_safari:hover {
 	background-image: url('img/safari2.png');
 	border: 3px solid #1dd2af;	
 }
 
-.type-item:last-child .cover {
+.cover_beach {
 	background-image: url('img/beach.png');
 	background-size: 80% 30%;
 }
 
-.type-item:last-child .cover:hover {
+.cover_beach:hover {
 	background-image: url('img/beach2.png');
 	border: 3px solid #1dd2af;	
 }
@@ -571,7 +578,7 @@ div .cover {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	align-items: stretch;
 	align-content: space-between;
 	flex-basis: auto;
@@ -591,7 +598,7 @@ div .cover {
 .reviews-list{
 	display: flex;
 	justify-content: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	align-items: stretch;
 	align-content: space-between;
 	flex-basis: auto;
@@ -817,11 +824,12 @@ form {
 	align-items: center;
 	flex-direction: column;
 	position: absolute;
-	top: 15%;
-	left: 40%;
+	top: 15rem;
+	left: 50rem;
 	width: 265px;
 	height: 400px;
 	border-radius: 2px;
+   
 	display: none; 
 }
 
@@ -840,6 +848,7 @@ form {
 	left: 40%;
 	width: 265px;
 	height: 400px;
+     z-index: 101;
 	border-radius: 2px;
 }
 
@@ -876,4 +885,20 @@ form {
 .login_form_active a {
 	color: #eee;
 	text-decoration: none;
+}
+
+.back_login_off {
+    position: absolute;
+    display: none;
+}
+
+.back_login_active {
+    Background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 100;
 }
