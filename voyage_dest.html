@@ -7,12 +7,12 @@
 	<link rel="stylesheet" href="voyage_dest_style.css">
 </head>
 <body>
-	<header>
-		<div class="topbar"><a name="home">
-			<div class="tm-nav usermenu">
+    <header>
+		<div class="topbar" id="home">
+			<div class="tm-nav">
 				<ul class="topmenu ">
 					<li>
-						<a href="#" onclick="login()">
+						<a href="#" onclick = "login()">
 						<img src="img/a_log.png" width="13" height="14" alt="icon"> 
 						Agent Login
 						</a>
@@ -39,6 +39,15 @@
 						</a>
 					</li>
 				</ul>
+
+				<div class="login_form">
+					<div class="data_login">
+						<input type="text" name="username" placeholder="Username">
+						<input type="text" name="password" placeholder="Password">
+					</div>	
+					<button onclick="logout()">SIGN IN</button>
+					<p>Don't have an account? <a href="#">Sign up</a></p>
+				</div>
 			</div> 
 			<div class="tm-nav">
 				<ul class="topmenu ">
@@ -71,9 +80,9 @@
 					</li>
 				</ul>
 			</div>
-		</a></div>
+            </div>
 
-		<div class="Menu">
+		<div class="menu">
 
 			<div class="header-logo">
 				<img src="img/Voyage_logo.png" width="152" height="30" alt="VOYAGE">
@@ -102,11 +111,11 @@
 					</div>
 						
 					<div>
-						<a href="#">Blog</a>
+						<a href="blog.html">Blog</a>
 					</div>
 						
 					<div>
-						<a class="Search" href="#">
+						<a class="search" href="#">
 						<img src="img/search.png" width="" height="" alt="Search">
 						</a>
 					</div>
@@ -336,9 +345,9 @@
 		</div>
 	</div>
 
+	
 	<footer>
-		<div class="footer-menu">
-		<div class="Links">
+		<div class="links">
 
 			<div class="link-nav">
 			<!-- To do: Добавить ссылки в список. -->
@@ -347,12 +356,8 @@
 				<a href="#">Criuses </a>::
 				<a href="#">Specils </a>::
 				<a href="#">Holidays </a>::
-				<a href="#">Blog </a>::
+				<a href="blog.html">Blog </a>::
 				<a href="#">Contact Us </a>
-			</div>
-
-			<div class="author">
-				<p>Copyright @voyage. All Right Reserved.</p>
 			</div>
 
 			<a href="#home">
@@ -361,7 +366,7 @@
 				<div class="up"></div>
 			</a>
 		</div>
-	</footer>	
+	</footer>		
 	<script type="text/javascript" src="test.js"></script>
 </body>
 </html>
