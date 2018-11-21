@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:300,400,500,700');
+html {
+	width: 1720px;
+}
+
 
 body {
 	padding: 0;
 	margin: 0;
-    min-width: 1024px;
 }
 
 .topbar {
