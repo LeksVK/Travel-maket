@@ -94,16 +94,16 @@ nav_left.addEventListener('click', function () {
     console.log(i);
     if (i == 0) {
         wallpaper.classList.remove('banner_back_promo');
-        wallpaper.classList.add('banner_back_greece');
+        wallpaper.classList.add('banner_back_lake');
         i = 1;
          console.log(i);
     } else if (i == 1) {
-        wallpaper.classList.remove('banner_back_greece');
-        wallpaper.classList.add('banner_back_mill');
+        wallpaper.classList.remove('banner_back_lake');
+        wallpaper.classList.add('banner_back_night');
         i = 2;
          console.log(i);
     } else if (i == 2) {
-        wallpaper.classList.remove('banner_back_mill');
+        wallpaper.classList.remove('banner_back_night');
         wallpaper.classList.add('banner_back_promo');
         i = 0;
          console.log(i);
