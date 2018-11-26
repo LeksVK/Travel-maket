@@ -6,49 +6,49 @@ body {
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
-    /*- User-menu */
+	/*- User-menu */
 .user-menu {
 	padding: 3px;
-    display: flex;
+	display: flex;
 	justify-content: space-around;
 	align-content: space-around;
 	flex-basis: auto;
-    background-color: #2c3e50;
-    font-size: 15px;
-    line-height: 22px;
-    font-family: "Roboto Light", sans-serif;
+	background-color: #2c3e50;
+	font-size: 15px;
+	line-height: 22px;
+	font-family: "Roboto Light", sans-serif;
 }
 
 .user-menu a {
-    color: #fff;
+	color: #fff;
 }
 
 .us-menu-nav,
 .us-menu-icons {
 	margin: 0;
-    padding: 10px 0 0 0; 
-    display: flex;
+	padding: 10px 0 0 0; 
+	display: flex;
 	justify-content: center;
 	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: space-between;
 	flex-basis: auto;
-    list-style: none;
+	list-style: none;
 	min-height: 40px;
-    height: auto;
+	height: auto;
 }
 
 .us-menu-nav li,
 .us-menu-icons li {
-    margin-left: 10px;
-    margin-right: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .us-menu-nav li img {
@@ -59,26 +59,26 @@ ul {
 	color: #1dd2af;
 }
 
-    /*-Navigation menu-*/
+	/*-Navigation menu-*/
 .nav-menu {
 	background-color: #eee;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-    flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	padding: 10px;
 }
 
 .header-logo {
-    display: flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
-    width: 146px;
-    height: 28px;
+	width: 146px;
+	height: 28px;
 }
 
 .nav-menu-links {
-    display: flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	list-style: none;
@@ -102,10 +102,10 @@ ul {
 
 .nav-menu-links a:hover {
 	color: #1dd2af;
-    border-bottom: 3px solid #1dd2af;
+	border-bottom: 3px solid #1dd2af;
 }
 
-    /*---LogIn Form---*/
+	/*---LogIn Form---*/
 .log-form {
 	display: none;
 }
@@ -114,20 +114,20 @@ ul {
 	background-color: #eee;
 	background-image: url("img/login-form.PNG");
 	background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+	background-position: center;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
-    justify-content: flex-end;
+	justify-content: flex-end;
 	align-items: center;
 	position: absolute;
 	top: 15%;
 	left: 40%;
 	width: 265px;
 	height: 400px;
-    z-index: 101;
+	z-index: 101;
 	border-radius: 2px;
-    font-family: "Roboto Medium", sans-serif;
+	font-family: "Roboto Medium", sans-serif;
 }
 
 .j-log-form_active input {
@@ -136,8 +136,8 @@ ul {
 	border-bottom: 1px solid #eee;
 	margin-top: 17px;
 	padding-bottom: 5px;
-    min-width: 182px;
-    color: #fff;
+	min-width: 182px;
+	color: #fff;
 }
 
 .j-log-form_active button {
@@ -148,104 +148,103 @@ ul {
 	word-wrap: normal;
 	background-color: #008B8B;
 	color: #fff;
-    border: none;
-    box-shadow:  -1px -1px 5px 0.5px #fff;
+	border: none;
+	box-shadow:  -1px -1px 5px 0.5px #fff;
 }
 
 .j-log-form_active p {
 	color: #eee;
 	margin: 0 0 14px 0;
-    font-size: 10px;
+	font-size: 10px;
 }
 
 .j-log-form_active a {
 	color: #eee;
 	text-decoration: none;
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .j-log-form__back_off {
-    position: absolute;
-    display: none;
+	position: absolute;
+	display: none;
 }
 
 .j-log-form__back_active {
-    Background-color: #000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    z-index: 100;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	z-index: 100;
 }
 
-    /*--Promo-block--*/
-
+	/*--Promo-block--*/
 .promo {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    align-items: space-between;
-    height: 849px;
-    color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	align-items: space-between;
+	height: 849px;
+	color: #fff;
 }
 
 .j-promo_back-bridge {
-    background-image: url("img/backhead2.png");
+	background-image: url("img/backhead2.png");
 }
 
 .j-promo_back-lake {
-    background-image: url("img/Explore-the-worlds.jpg");
+	background-image: url("img/Explore-the-worlds.jpg");
 }
 
 .j-promo_back-night {
-    background-image: url("img/night.png");
+	background-image: url("img/night.png");
 }
 
 .promo-tagline {
 	display: flex;
 	flex-direction: column;
-    align-items: center;
+	align-items: center;
 	padding-top: 20rem;
-    font-family: "Roboto Bold", sans-serif;
+	font-family: "Roboto Bold", sans-serif;
 	text-align: center;
 	font-size: 16px;
 }
 
 .promo-tagline strong {
-    font-size: 24px;
-    text-transform: uppercase;
+	font-size: 24px;
+	text-transform: uppercase;
 }
 
 .promo-buttons {
-    width: auto;
+	width: auto;
 }
 
 .promo-buttons__btn {
 	display: inline-block;
-    min-width: 20%;
+	min-width: 20%;
 	max-width: auto;
-    margin: 10px;
-    padding: 10px;
-    text-decoration: none;
+	margin: 10px;
+	padding: 10px;
+	text-decoration: none;
 	text-transform: uppercase;
-    text-align: center;
-    vertical-align: top;    
-    border: 2px solid #fff;
-    border-radius: 2px;
-    word-wrap: break-word;
-    color: #fff;
-    font-family: "Roboto Bold", sans-serif;
-    font-size: 12px;
+	text-align: center;
+	vertical-align: top;    
+	border: 2px solid #fff;
+	border-radius: 2px;
+	word-wrap: break-word;
+	color: #fff;
+	font-family: "Roboto Bold", sans-serif;
+	font-size: 12px;
 }
 
 .promo-buttons__btn:hover {
 	background-color: #1dd2af;
-    border: 2px solid #1dd2af;
+	border: 2px solid #1dd2af;
 }
 
 .promo__scroll_left,
@@ -257,20 +256,20 @@ ul {
 	text-transform: uppercase;
 	background-color: #1dd2af;
 	opacity: 0.8;
-    border: 1px solid #1dd2af;
+	border: 1px solid #1dd2af;
 	font-family: "Roboto Bold", sans-serif;
-    color: #fff;
-    font-size: 26px;
+	color: #fff;
+	font-size: 26px;
 }
 
-    /*------*/
+	/*------*/
 .find-offers {
 	display: flex;
 	background-color: #2c3e50;
 	color: #fff;
 	justify-content: center;
 	align-items: center;
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .find-offers span {
@@ -278,9 +277,9 @@ ul {
 }
 
 .find-offers label {
-    text-transform: capitalize;
-    margin-right: 10px;
-    margin-left: 10px;
+	text-transform: capitalize;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .find-offers-form {
@@ -291,10 +290,10 @@ ul {
 }
 
 .find-offers-form input {
-    margin: 0;
-    padding: 6px;
-    vertical-align: middle;
-    border: none;
+	margin: 0;
+	padding: 6px;
+	vertical-align: middle;
+	border: none;
 }
 
 .find-offers button {
@@ -304,16 +303,16 @@ ul {
 	background-color: #1dd2af;
 	border: none;
 	border-radius: 3px;
-    color: #fff;
+	color: #fff;
 }
 
-    /*----Content - Upload ----*/
+	/*----Content - Upload ----*/
 .l-upload {
 	position: absolute;
 	display: none;
 }
 
-    /* ---Special offers ----*/
+/* ---Special offers ----*/
 .carusel {
 	height: 500px;
 }
