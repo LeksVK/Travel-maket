@@ -188,7 +188,6 @@ ul {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
-	align-items: space-between;
 	height: 849px;
 	color: #fff;
 }
@@ -227,7 +226,6 @@ ul {
 .promo-buttons__btn {
 	display: inline-block;
 	min-width: 20%;
-	max-width: auto;
 	margin: 10px;
 	padding: 10px;
 	text-decoration: none;
