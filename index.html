@@ -6,116 +6,115 @@
     <link rel="stylesheet" href="voyage_style.css">
 </head>
 <body>
-    <header>
-        <div class="user-menu" id="home">
-			<ul class="us-menu-nav ">
-				<li>
-				<a href="#" onclick = "login()">
-				<img src="img/a_log.png" alt="icon">
-				Agent Login
-				</a>
+    <header class="header">
+		<div class="user-menu" id="home">
+            <ul class="us-menu-nav ">
+				<li class="us-menu-nav__link">
+				    <a href="#" onclick = "login()">
+				    <img class="us-menu-nav__link-icon"src="img/a_log.png" alt="icon">
+				    Agent Login
+				    </a>
 				</li>
 
-				<li>
-				<a href="#">
-				<img src="img/custom.png" alt="icon">
-				Customer Login
-				</a>
+				<li class="us-menu-nav__link">
+				    <a href="#">
+				    <img class="us-menu-nav__link-icon" src="img/custom.png" alt="icon">
+				    Customer Login
+				    </a>
 				</li>
 
-				<li>
-				<a href="#">
-				<img src="img/notm.png" alt="icon">
-				Not a Member? <span> Register </span>
-				</a>
+				<li class="us-menu-nav__link">
+				    <a href="#">
+				    <img class="us-menu-nav__link-icon" src="img/notm.png" alt="icon">
+				    Not a Member? <span class="l-my-style"> Register </span>
+				    </a>
 				</li>
 
-				<li>
-				<a href="#">
-				Call Us Now 815-123-4567
-				</a>
+				<li class="us-menu-nav__link">
+				    <a href="#">
+				    Call Us Now 815-123-4567
+				    </a>
 				</li>
-			</ul>
+            </ul>
 
-			<ul class="us-menu-icons">
-				<li>
-				<a href="#">
-				<img src="img/fb.png" alt="Fb">
-				<!-- Fb -->
-				</a>
-				</li>
-
-				<li>
-				<a href="#">
-				<img src="img/tw.png"  alt="Tw">
-				<!-- Tw -->
-				</a>
-
+            <ul class="us-menu-icons">
+				<li class="us-menu-icons__link">
+				    <a href="#">
+				    <img src="img/fb.png"  alt="Fb">
+				    </a>
+				    <!-- Fb -->
 				</li>
 
-				<li>
-				<a href="#">
-				<img src="img/tumb.png"  alt="Tumb">
-				<!-- Tumb-->
-				</a>
+				<li class="us-menu-icons__link">
+				    <a href="#">
+				    <img src="img/tw.png"  alt="Tw">
+				    </a>
+				    <!-- Tw -->
 				</li>
 
-				<li>
-				<a href="#">
-				<img src="img/pin.png"  alt="Pint">
-				<!-- Pint-->
-				</a>
+				<li class="us-menu-icons__link">
+				    <a href="#">
+				    <img src="img/tumb.png"  alt="Tumb">
+				    </a>
+				    <!-- Tumb-->
 				</li>
-			</ul>
-	    </div>
 
-	    <div class="nav-menu">
+				<li class="us-menu-icons__link">
+				    <a href="#">
+				    <img src="img/pin.png"  alt="Pint">
+				    </a>
+				    <!-- Pint-->
+				</li>
+            </ul>
+        </div>
+
+		<div class="nav-menu">
 
 			<img class="header-logo" src="img/Voyage_logo.png" width="152" height="30" alt="VOYAGE">
 
-			<ul class="nav-menu-links">
-				<li>
-				<a href="index.html">Home</a>
+            <ul class="nav-menu-links">
+                <li>
+				    <a href="index.html">Home</a>
 				</li>
 
 				<li>
-				<a href="voyage_dest.html">Destinations</a>
+				    <a href="voyage_dest.html">Destinations</a>
 				</li>
 
 				<li>
-				<a href="#">Criuses</a>
+				    <a href="#">Criuses</a>
 				</li>
 
 				<li>
-				<a href="#">Specials</a>
+				    <a href="#">Specials</a>
 				</li>
 
 				<li>
-				<a href="#">Holidays</a>
+				    <a href="#">Holidays</a>
 				</li>
 
 				<li>
-				<a href="blog.html">Blog</a>
+				    <a href="blog.html">Blog</a>
 				</li>
 
 				<li>
-				<a class="nav-menu-links__search" href="#">
-				<img src="img/search.png" alt="Search">
-				</a>
+				    <a class="nav-menu-links__search" href="#">
+				    <img src="img/search.png" alt="Search">
+				    </a>
 				</li>
-			</ul>
-	    </div>
+            </ul>
+		</div>
 
-	    <div class="log-form">
+        <div class="log-form j-log-form_active">
 
-			<input type="text" name="username" placeholder="Username">
+            <input type="text" name="username" placeholder="Username">
 
-			<input type="text" name="password" placeholder="Password">
+            <input type="text" name="password" placeholder="Password">
 
-			<button onclick="logout()">SIGN IN</button>
+            <button onclick="logout()">SIGN IN</button>
 
-			<p>Don't have an account? <a href="#">Sign up</a></p>
-	    </div>
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
 
 	    <div class="promo j-promo_back-bridge">
 
