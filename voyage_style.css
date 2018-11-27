@@ -795,3 +795,12 @@ form {
     border: 45px solid transparent; /* Прозрачные границы */
     border-bottom: 45px solid #1dd2af; /* Треугольник */
 }
+
+/* Хелперы */
+.l-hidden {
+    display: none;
+}
+
+.l-my-style {
+    color: #1dd2af;
+}
