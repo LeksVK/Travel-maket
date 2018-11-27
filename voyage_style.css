@@ -20,11 +20,11 @@ ul {
 
     /*- User-menu */
 .user-menu {
-	padding: 3px;
+    padding: 3px;
     display: flex;
-	justify-content: space-around;
-	align-content: space-around;
-	flex-basis: auto;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-basis: auto;
     font-size: 15px;
     line-height: 22px;
     font-family: "Roboto Light", sans-serif;
@@ -32,16 +32,16 @@ ul {
 
 .us-menu-nav,
 .us-menu-icons {
-	margin: 0;
+    margin: 0;
     padding: 10px 0 0 0; 
     display: flex;
-	justify-content: center;
-	flex-wrap: nowrap;
-	align-items: stretch;
-	align-content: space-between;
-	flex-basis: auto;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: space-between;
+    flex-basis: auto;
     list-style: none;
-	min-height: 40px;
+    min-height: 40px;
     height: auto;
 }
 
@@ -52,7 +52,7 @@ ul {
 }
 
 .us-menu-nav__link-icon {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
     /*-Navigation menu-*/
