@@ -4,21 +4,18 @@ var logForm = document.querySelector('.log-form');
 var cover   = document.querySelector('.log-form__back');
 
 function login() {
-    logForm.classList.add('j-log-form_active');
-    cover.classList.remove('j-log-form__back_off');
-    cover.classList.add('j-log-form__back_active');
+    logForm.style.display='flex';
+    cover.style.display='flex';
 };
 
 function logout() {
-    logForm.classList.remove('j-log-form_active');
-    cover.classList.add('j-log-form__back_off');
-    cover.classList.remove('j-log-form__back_active');
+    logForm.style.display='none';
+    cover.style.display='none';
 };
 
 cover.addEventListener('click', function() {
-    logForm.classList.remove('j-log-form_active');
-    cover.classList.remove('j-log-form__back_active');
-    cover.classList.add('j-log-form__back_off');
+    logForm.style.display='none';
+    cover.style.display='none';
 });
 
     /*** Slider IN banner ***/
