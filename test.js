@@ -1,11 +1,11 @@
             /** LogIn Form**/
-
-var logForm = document.querySelector('.log-form');
+var logForm = document.querySelector('.j-log-form');
 var cover   = document.querySelector('.log-form__back');
 
 function login() {
     logForm.style.display='flex';
     cover.style.display='flex';
+    regForm.style.display='none';
 };
 
 function logout() {
@@ -16,32 +16,47 @@ function logout() {
 cover.addEventListener('click', function() {
     logForm.style.display='none';
     cover.style.display='none';
+    regForm.style.display='none';
 });
 
+            /** Registar Form**/
+var regForm = document.querySelector('.j-reg-form');
+
+function regin() {
+    regForm.style.display='flex';
+    cover.style.display='flex';
+    logForm.style.display='none';
+};
+
+function regout() {
+    regForm.style.display='none';
+    cover.style.display='none';
+};
+
     /*** Slider IN banner ***/
-var wallpaper = document.querySelector('.promo');
-var nav_left  = document.querySelector('.promo__scroll_left');
-var nav_right = document.querySelector('.promo__scroll_right');
+var wallpaper = document.querySelector('.j-promo');
+var nav_left  = document.querySelector('.promo__scroll_position_left');
+var nav_right = document.querySelector('.promo__scroll_position_right');
     var i     = 0;
     var j     = 0;
 
 nav_left.addEventListener('click', function() {
     console.log(i);
     if (i == 0) {
-        wallpaper.classList.remove('j-promo_back-bridge');
-        wallpaper.classList.add('j-promo_back-lake');
+        wallpaper.classList.remove('promo_back-bridge');
+        wallpaper.classList.add('promo_back-lake');
             i = 1;
          console.log(i);
 
     } else if (i == 1) {
-        wallpaper.classList.remove('j-promo_back-lake');
-        wallpaper.classList.add('j-promo_back-night');
+        wallpaper.classList.remove('promo_back-lake');
+        wallpaper.classList.add('promo_back-night');
             i = 2;
          console.log(i);
 
     } else if (i == 2) {
-        wallpaper.classList.remove('j-promo_back-night');
-        wallpaper.classList.add('j-promo_back-bridge');
+        wallpaper.classList.remove('promo_back-night');
+        wallpaper.classList.add('promo_back-bridge');
             i = 0;
          console.log(i);
     }
@@ -51,20 +66,20 @@ nav_right.addEventListener('click', function() {
       var yes = 'yes';
     console.log(yes);
     if (i == 0) {
-        wallpaper.classList.remove('j-promo_back-bridge');
-        wallpaper.classList.add('j-promo_back-night');
+        wallpaper.classList.remove('promo_back-bridge');
+        wallpaper.classList.add('promo_back-night');
             i = 1;
          console.log(i);
 
     } else if (i == 1) {
-        wallpaper.classList.remove('j-promo_back-night');
-        wallpaper.classList.add('j-promo_back-lake');
+        wallpaper.classList.remove('promo_back-night');
+        wallpaper.classList.add('promo_back-lake');
             i = 2;
          console.log(i);
 
     } else if (i == 2) {
-        wallpaper.classList.remove('j-promo_back-lake');
-        wallpaper.classList.add('j-promo_back-bridge');
+        wallpaper.classList.remove('promo_back-lake');
+        wallpaper.classList.add('promo_back-bridge');
             i = 0;
          console.log(i);
     }

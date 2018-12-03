@@ -45,14 +45,22 @@ ul {
 	height: auto;
 }
 
-.us-menu-nav__link,
-.us-menu-icons__link {
+.us-menu-nav__link {
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
 .us-menu-nav__link-icon {
 	margin-right: 10px;
+}
+
+.us-menu-icons__link {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -2px 0px 0px 0px #115f83;
 }
 
 /*-Navigation menu-*/
@@ -63,6 +71,7 @@ ul {
 	align-items: center;
 	flex-wrap: nowrap;
 	padding: 10px;
+    max-height: 50px;
 }
 
 .header-logo {
@@ -77,34 +86,37 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	list-style: none;
-	width: auto;
+    width: auto;
 }
 
-.nav-menu-links li {
+.nav-menu-links__item {
+    flex-direction: row;
 	justify-content: flex-end;
 	flex-wrap: nowrap;
 	align-content: space-between;
 	flex-basis: auto;
-	margin: 0 10px;
-}
-
-.nav-menu-links a {
-	text-decoration: none;
+	margin: 0 5px;
+    font-family: "Roboto Medium", sans-serif;
 	font-size: 20px;
 	color: #5d6e80;
 	text-transform: uppercase;
-	font-family: "Roboto Medium", sans-serif;
 }
 
-.nav-menu-links a:hover {
+.nav-menu-links__item:hover {
 	color: #1dd2af;
 	border-bottom: 3px solid #1dd2af;
 }
 
-/*---LogIn Form---*/
-.log-form {
+.nav-menu-links__item_type_search {
+    margin: 0 5px;
+    border-bottom: none;
+}
+
+/*---LogIn/Registrar Form---*/
+.log-form,
+.reg-form {
 	background-color: #eee;
 	background-image: url("img/login-form.PNG");
 	background-repeat: no-repeat;
@@ -117,8 +129,10 @@ ul {
 	position: absolute;
 	top: 15%;
 	left: 40%;
-	width: 265px;
-	height: 400px;
+    /*left: auto;
+    right: auto; */
+	min-width: 265px;
+	min-height: 400px;
 	margin: 0 auto;
 	z-index: 101;
 	border-radius: 2px;
@@ -126,37 +140,45 @@ ul {
 	display: none;
 }
 
-.log-form input {
+.log-form__input,
+.reg-form__input {
 	background-color: rgba(0, 170, 238, 0);
 	border: none;
 	border-bottom: 1px solid #eee;
 	margin-top: 17px;
-	padding-bottom: 5px;
+	padding: 4px 8px;
 	min-width: 182px;
 	color: #fff;
 }
 
-.log-form button {
+.log-form__input::placeholder,
+.reg-form__input::placeholder {
+    color: #fff;
+}
+
+.log-form__btn,
+.reg-form__btn {
 	margin: 36px 0 23px 0;
 	min-width: 182px;
 	min-height: 35px;
 	justify-content: center;
 	word-wrap: normal;
-	background-color: #008B8B;
+    text-transform: uppercase;
+    background: linear-gradient(to top left, #115f83, #408c72);
 	color: #fff;
 	border: none;
-	box-shadow:  -1px -1px 5px 0.5px #fff;
+	box-shadow:  -1px -1px 5px 0.5px #115f83;
 }
 
-.log-form p {
+.log-form__text,
+.reg-form__text {
 	color: #eee;
 	margin: 0 0 14px 0;
 	font-size: 10px;
 }
 
-.log-form a {
-	color: #eee;
-	text-decoration: none;
+.log-form__text_state_bold,
+.reg-form__text_state_bold {
 	font-weight: bold;
 }
 
@@ -185,15 +207,15 @@ ul {
 	color: #fff;
 }
 
-.j-promo_back-bridge {
+.promo_back-bridge {
 	background-image: url("img/backhead2.png");
 }
 
-.j-promo_back-lake {
+.promo_back-lake {
 	background-image: url("img/Explore-the-worlds.jpg");
 }
 
-.j-promo_back-night {
+.promo_back-night {
 	background-image: url("img/night.png");
 }
 
@@ -207,7 +229,7 @@ ul {
 	font-size: 16px;
 }
 
-.promo-tagline strong {
+.promo-tagline_title_style {
 	font-size: 24px;
 	text-transform: uppercase;
 }
@@ -238,8 +260,7 @@ ul {
 	border: 2px solid #1dd2af;
 }
 
-.promo__scroll_left,
-.promo__scroll_right {
+.promo__scroll {
 	display: flex;
 	justify-content: center;
 	width: 4rem;
@@ -256,18 +277,17 @@ ul {
 /*------*/
 .find-offers {
 	display: flex;
-	background-color: #2c3e50;
 	color: #fff;
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
 }
 
-.find-offers span {
+.find-offers_text-color_sea {
 	color: #1dd2af;
 }
 
-.find-offers label {
+.find-offers-form__label {
 	text-transform: capitalize;
 	margin-right: 10px;
 	margin-left: 10px;
@@ -280,14 +300,14 @@ ul {
 	border-radius: 3px;
 }
 
-.find-offers-form input {
+.find-offers-form__input {
 	margin: 0;
 	padding: 6px;
 	vertical-align: middle;
 	border: none;
 }
 
-.find-offers button {
+.find-offers-form__btn {
 	width: 75px;
 	height: 35px;
 	margin-left: 20px;
@@ -303,45 +323,47 @@ ul {
 	display: none;
 }
 
-/* ---Special offers ----*/
-.carusel {
-	height: 500px;
+/* ---Content ----*/
+.content-title {
+    width: 100%;
+	margin: 0;
+	margin-bottom: 10px;
+    text-align: center;
+	font-family: "Roboto Regular", sans-serif;
 }
 
-.title h2 {
-	text-align: center;
+.content-title_text-style_header {
 	text-transform: uppercase;
-	width: 100%;
-	padding-top: 4rem;
-	font-family: Roboto Medium, sans-serif;
+	padding-top: 1rem;
+	font-family: "Roboto Medium", sans-serif;
 	color: #2c3e50;
 }
 
-.title p {
-	text-align: center;
-	margin: 0;
-	margin-bottom: 10px;
-	font-family: Roboto Regular, sans-serif;
+/* ---Special offers ----*/
+.special-offers {
+	/*height: 400px; */
 }
 
-.point {
-	display: flex;
+.special-offers-block {
 	justify-content: center;
+    align-content: center;
 	flex-wrap: nowrap;
+    flex-direction: column;
 	align-items: stretch;
 	align-content: space-between;
 	flex-basis: auto;
-	height: 500px;
-    width: 100%;
+	/*height: 500px;*/
 }
 
 .item {
-  width: 275px;
+  max-width: 275px;
+  width: 160px;
   height: auto;
   color: #000;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   margin: 10px;
+  margin-bottom: 50px;
   align-self: flex-start;
   border: 5px solid #fff; 
 }
@@ -407,7 +429,8 @@ ul {
 .item:hover {
 	transform: scale(1.2);
 	border: 5px solid #1dd2af;
-	margin: 2rem;
+	margin-left: 2rem;
+    margin-right: 2rem;
     position: relative;
 }
 
@@ -435,23 +458,24 @@ li + .hidden6_item {
 
 						/* -- Holidays Type --*/
 
-.category {
+.holidays-type {
 	background-color: #2c3e50;
 	color: #fff;
 	background-image: url('img/Layer12.png');
 	min-height: 515px;
 }
 
-.category h2 {
+.holidays-type h2 {
 	color: #fff;
+    margin-top: 2rem;
 }
 
-.category p {
+.holidays-type p {
 	font-family: "Roboto Regular", sans-serif;
 	color: #9dafc0;
 }
 
-.typerest {
+.holidays-type-block {
 	display: flex;
 	justify-content: center;
 	flex-wrap: nowrap;

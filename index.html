@@ -26,12 +26,12 @@
                 <li class="us-menu-nav__link">
                     <a href="#">
                     <img class="us-menu-nav__link-icon" src="img/notm.png" alt="icon">
-                    Not a Member? <span class="l-my-style"> Register </span>
+                        Not a Member? <a href="#" onclick = "regin()"><span class="l-my-style"> Register </span></a>
                     </a>
                 </li>
 
                 <li class="us-menu-nav__link">
-                    <a href="#">
+                    <a href="tel:8151234567">
                     Call Us Now 815-123-4567
                     </a>
                 </li>
@@ -74,82 +74,71 @@
 
             <ul class="nav-menu-links">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a class="nav-menu-links__item" href="index.html">Home</a>
                 </li>
 
                 <li>
-                    <a href="voyage_dest.html">Destinations</a>
+                    <a class="nav-menu-links__item" href="voyage_dest.html">Destinations</a>
                 </li>
 
                 <li>
-                    <a href="#">Criuses</a>
+                    <a class="nav-menu-links__item" href="#">Criuses</a>
                 </li>
 
                 <li>
-                    <a href="#">Specials</a>
+                    <a class="nav-menu-links__item" href="#">Specials</a>
                 </li>
 
                 <li>
-                    <a href="#">Holidays</a>
+                    <a class="nav-menu-links__item" href="#">Holidays</a>
                 </li>
 
                 <li>
-                    <a href="blog.html">Blog</a>
+                    <a class="nav-menu-links__item" href="blog.html">Blog</a>
                 </li>
-
                 <li>
-                    <a class="nav-menu-links__search" href="#">
+                    <a class="nav-menu-links__item_type_search" href="#">
                     <img src="img/search.png" alt="Search">
                     </a>
                 </li>
             </ul>
+            
         </div>
 
-        <div class="log-form j-log-form_active">
+        <div class="promo j-promo promo_back-bridge">
 
-            <input type="text" name="username" placeholder="Username">
-
-            <input type="text" name="password" placeholder="Password">
-
-            <button onclick="logout()">SIGN IN</button>
-
-            <p>Don't have an account? <a href="#">Sign up</a></p>
-        </div>
-
-        <div class="promo j-promo_back-bridge">
-
-            <button class="promo__scroll_left"> &lt; </button>
+            <button class="promo__scroll promo__scroll_position_left"> &lt; </button>
 
             <div class="promo-tagline">
-                <p><strong>To travel is to live </strong>
+                <p><strong class="promo-tagline_title_style">To travel is to live </strong>
                 <br> You Don't Need Magic to disappear.
                 All you need is a destination.</p>
 
                 <div class="promo-buttons">
-                    <a class="promo-buttons__btn btn_active" href="#">Snow on the map</a>
+                    <a class="promo-buttons__btn" href="#">Snow on the map</a>
                     <a class="promo-buttons__btn" href="blog.html">More info</a>
                 </div>
             </div>
 
-            <button class="promo__scroll_right"> &gt; </button>
+            <button class="promo__scroll promo__scroll_position_right"> &gt; </button>
         </div>
 
         <div class="find-offers">
-            <p> Find your <br><span>holidays</span></p>
+            <p> Find your <br><span class="find-offers_text-color_sea">holidays</span></p>
 
-            <label for="locate"> Where </label>
+            <label class="find-offers-form__label" for="locate"> Where </label>
             <div class="find-offers-form">
-                <input type="text" name="where" id="locate" placeholder="distination" >
-                <input type="image"  src="img/map.png" alt="Change locate">
+                <input class="find-offers-form__input" type="text" name="where" id="locate" placeholder="distination" >
+                <input class="find-offers-form__input" type="image"  src="img/map.png" alt="Change locate">
             </div>
 
-            <label for="date"> When </label>
+            <label class="find-offers-form__label" for="date"> When </label>
             <div class="find-offers-form">
-               <input type="date" name="when" id="date">
-               <input type="image"  src="img/month.png" alt="Change data">
+               <input class="find-offers-form__input" type="date" name="when" id="date">
+               <input class="find-offers-form__input" type="image"  src="img/month.png" alt="Change data">
             </div>
 
-            <button> Search </button>
+            <button class="find-offers-form__btn"> Search </button>
         </div>
     </header>
 
@@ -170,13 +159,13 @@
 			<img src="img/beach2.png">
 		</div>
 
-		<div class="carusel">
-			<div class="title">
-				<h2>Special offers</h2>
+		<div class="special-offers">
+			<div class="content-title">
+				<h2 class="content-title_text-style_header">Special offers</h2>
 				<p>Best 2014 packages where people love to stay?</p>
 			</div>
 
-			<div class="point">
+			<div class="special-offers-block">
 				<div class="item">
 					<img src="img/usa.png" class="item_cover">
 
@@ -353,13 +342,13 @@
 			</div>
 		</div>
 
-		<div class="category">
-			<div class="title">
-				<h2>Holidays type</h2>
+		<div class="holidays-type">
+			<div class="content-title">
+				<h2 class="content-title_text-style_header">Holidays type</h2>
 				<p>Get explore your dream to travel this world!</p>
 			</div>
 
-			<div class="typerest">
+			<div class="holidays-type-block">
 				<div class="type-item">
 					<div class="cover cover_cruise"></div>
 					<p>Cruise</p>
@@ -393,8 +382,8 @@
 		</div>
 
 		<div class="reviews"> <!-- блок отзывы-->
-			<div class="title">
-				<h2>Happy clients</h2>
+			<div class="content-title">
+				<h2 class="content-title_text-style_header">Happy clients</h2>
 				<h3>what customer say about us and why love our services!</h3>
 			</div>		
 			<div class="reviews-list">
@@ -529,7 +518,32 @@
 			</a>
 		</div>
 	</footer>	
+    
+    
+    <div class="log-form j-log-form">
+
+            <input class="log-form__input" type="text" name="username" placeholder="Username">
+
+            <input class="log-form__input" type="text" name="password" placeholder="Password">
+
+            <button class="log-form__btn j-log-form__btn" onclick="logout()">SIGN IN</button>
+
+            <p class="log-form__text">Don't have an account? <a class="log-form__text_state_bold" href="#" onclick = "regin()">Sign up</a></p>
+    </div>
+    <div class="reg-form j-reg-form">
+
+            <input class="reg-form__input" type="text" name="username" placeholder="Username">
+        
+            <input class="reg-form__input" type="text" name="email" placeholder="Email">
+
+            <input class="reg-form__input" type="text" name="password" placeholder="Password">
+
+            <button class="reg-form__btn" onclick="regout()">Register</button>
+
+            <p class="reg-form__text">Do you have an account? <a class="reg-form__text_state_bold" href="#" onclick = "login()">Sign In</a></p>
+    </div>
     <div class="log-form__back j-log-form__back_off"></div>
-	<script type="text/javascript" src="test.js"></script>
+    
+    <script type="text/javascript" src="test.js"></script>
 </body>
 </html>
