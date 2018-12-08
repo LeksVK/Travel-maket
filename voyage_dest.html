@@ -7,142 +7,123 @@
 	<link rel="stylesheet" href="voyage_dest_style.css">
 </head>
 <body>
-    <header>
-		<div class="topbar" id="home">
-			<div class="tm-nav">
-				<ul class="topmenu ">
-					<li>
-						<a href="#" onclick = "login()">
-						<img src="img/a_log.png" width="13" height="14" alt="icon"> 
-						Agent Login
-						</a>
-					</li>
+    <header class="header">
+        <div class="user-menu" id="home">
+            <ul class="us-menu-nav social-icons">
+                <li class="us-menu-nav__link">
+                    <a href="#" onclick = "login()">
+                    <img class="us-menu-nav__link-icon"src="img/a_log.png" alt="icon">
+                    Agent Login
+                    </a>
+                </li>
 
-					<li>
-						<a href="#">
-						<img src="img/custom.png" width="13" height="14" alt="icon"> 
-						Customer Login
-						</a>
-					</li>
+                <li class="us-menu-nav__link">
+                    <a href="#">
+                    <img class="us-menu-nav__link-icon" src="img/custom.png" alt="icon">
+                    Customer Login
+                    </a>
+                </li>
 
-					<li>
-						<a href="#">
-						<img src="img/notm.png" width="12" height="15" alt="icon">
-						Not a Member? 
-						<span> Register </span>
-						</a>
-					</li>
+                <li class="us-menu-nav__link">
+                    <a href="#">
+                    <img class="us-menu-nav__link-icon" src="img/notm.png" alt="icon">
+                        Not a Member? <a href="#" onclick = "regin()"><span class="l_text-color_lazur"> Register </span></a>
+                    </a>
+                </li>
 
-					<li>
-						<a href="#"> 
-						Call Us Now 815-123-4567 
-						</a>
-					</li>
-				</ul>
+                <li class="us-menu-nav__link">
+                    <a href="tel:8151234567">
+                    Call Us Now 815-123-4567
+                    </a>
+                </li>
+            </ul>
 
-				<div class="login_form">
-					<div class="data_login">
-						<input type="text" name="username" placeholder="Username">
-						<input type="text" name="password" placeholder="Password">
-					</div>	
-					<button onclick="logout()">SIGN IN</button>
-					<p>Don't have an account? <a href="#">Sign up</a></p>
-				</div>
-			</div> 
-			<div class="tm-nav">
-				<ul class="topmenu ">
-					<li>
-						<a href="#">
-						<img src="img/fb.png" width="8" height="16" alt="Fb">
-						</a> 
-						<!-- Fb -->
-					</li>
+            <ul class="us-menu-icons">
+                <li class="us-menu-icons__link">
+                    <a href="#">
+                    <img src="img/fb.png"  alt="Fb">
+                    </a>
+                    <!-- Fb -->
+                </li>
 
-					<li>
-						<a href="#">
-						<img src="img/tw.png" width="15" height="12" alt="Tw">
-						</a> 
-						<!-- Tw -->
-					</li>
+                <li class="us-menu-icons__link">
+                    <a href="#">
+                    <img src="img/tw.png"  alt="Tw">
+                    </a>
+                    <!-- Tw -->
+                </li>
 
-					<li>
-						<a href="#">
-						<img src="img/tumb.png" width="9" height="15" alt="Tumb">
-						</a> 
-						<!-- Tumb-->
-					</li>
+                <li class="us-menu-icons__link">
+                    <a href="#">
+                    <img src="img/tumb.png"  alt="Tumb">
+                    </a>
+                    <!-- Tumb-->
+                </li>
 
-					<li>
-						<a href="#">
-						<img src="img/pin.png" width="14" height="14" alt="Pint">
-						</a> 
-						<!-- Pint-->
-					</li>
-				</ul>
-			</div>
+                <li class="us-menu-icons__link">
+                    <a href="#">
+                    <img src="img/pin.png"  alt="Pint">
+                    </a>
+                    <!-- Pint-->
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-menu">
+
+            <img class="header-logo" src="img/Voyage_logo.png" width="152" height="30" alt="VOYAGE">
+
+            <ul class="nav-menu-links">
+                <li>
+                    <a class="nav-menu-links__item" href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a class="nav-menu-links__item" href="voyage_dest.html">Destinations</a>
+                </li>
+
+                <li>
+                    <a class="nav-menu-links__item" href="#">Criuses</a>
+                </li>
+
+                <li>
+                    <a class="nav-menu-links__item" href="#">Specials</a>
+                </li>
+
+                <li>
+                    <a class="nav-menu-links__item" href="#">Holidays</a>
+                </li>
+
+                <li>
+                    <a class="nav-menu-links__item" href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a class="nav-menu-links__item_type_search" href="#">
+                    <img src="img/search.png" alt="Search">
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+
+        <div class="find-offers">
+            <p> Find your <br><span class="l_text-color_lazur">holidays</span></p>
+
+            <label class="find-offers-form__label" for="locate"> Where </label>
+            <div class="find-offers-form">
+                <input class="find-offers-form__input" type="text" name="where" id="locate" placeholder="distination" >
+                <input class="find-offers-form__input" type="image"  src="img/map.png" alt="Change locate">
             </div>
 
-		<div class="menu">
+            <label class="find-offers-form__label" for="date"> When </label>
+            <div class="find-offers-form">
+               <input class="find-offers-form__input" type="date" name="when" id="date">
+               <input class="find-offers-form__input" type="image"  src="img/month.png" alt="Change data">
+            </div>
 
-			<div class="header-logo">
-				<img src="img/Voyage_logo.png" width="152" height="30" alt="VOYAGE">
-			</div>
-
-			<div class="head-nav">
-				<div class="main-nav">
-					<div>
-						<a href="index.html">Home</a>
-					</div>
-						
-					<div>
-						<a href="voyage_dest.html">Destinations</a>
-					</div>
-						
-					<div>
-						<a href="#">Criuses</a>
-					</div>
-						
-					<div>
-						<a href="#">Specials</a>
-					</div>
-						
-					<div>
-						<a href="#">Holidays</a>
-					</div>
-						
-					<div>
-						<a href="blog.html">Blog</a>
-					</div>
-						
-					<div>
-						<a class="search" href="#">
-						<img src="img/search.png" width="" height="" alt="Search">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="auth">
-			<p> Find your <br><span>holidays</span></p>
-			
-			<form>
-				<label for="geo"> Where </label>
-				<div class="locate">
-					<input type="text" name="where" id="geo" placeholder="distination" >
-					<input type="image"  src="img/map.png">
-				</div>
-
-				<label for="date"> When </label>
-				<div class="period">
-					<input type="date" name="when" id="date" placeholder="select data">
-					<input type="image"  src="img/month.png">
-				</div>
-			</form>
-					
-			<button> Search </button>
-		</div>
-	</header>
+            <button class="find-offers-form__btn"> Search </button>
+        </div>
+    </header>
 	
 	<div class="content">
 		<h3>Cheapest destinations</h3>
@@ -346,27 +327,51 @@
 	</div>
 
 	
-	<footer>
-		<div class="links">
+  <footer class="footer">
+      <ul class="footer__links">
+				<li><a class="footer__link" href="index.html">Home</a>:</li>
+				<li><a class="footer__link" href="voyage_dest.html">Destinations</a>::</li>
+				<li><a class="footer__link" href="#">Criuses</a>::</li>
+				<li><a class="footer__link" href="#">Specils</a>::</li>
+				<li><a class="footer__link" href="#">Holidays</a>::</li>
+				<li><a class="footer__link" href="blog.html">Blog</a>::</li>
+				<li><a class="footer__link" href="#">Contact Us</a></li>
+      </ul>
 
-			<div class="link-nav">
-			<!-- To do: Добавить ссылки в список. -->
-				<a href="index.html">Home</a>::
-				<a href="voyage_dest.html">Destinations</a>::
-				<a href="#">Criuses </a>::
-				<a href="#">Specils </a>::
-				<a href="#">Holidays </a>::
-				<a href="blog.html">Blog </a>::
-				<a href="#">Contact Us </a>
+			<div class="footer__copyright">
+				<p>Copyright @voyage. All Right Reserved.</p>
 			</div>
 
 			<a href="#home">
-				<!--Up -->
 				<!-- <img src="#"> -->	
-				<div class="up"></div>
+				<div class="footer__btn-up"></div>
 			</a>
-		</div>
-	</footer>		
-	<script type="text/javascript" src="test.js"></script>
+	</footer>	
+
+      <div class="log-form j-log-form">
+
+            <input class="log-form__input" type="text" name="username" placeholder="Username">
+
+            <input class="log-form__input" type="text" name="password" placeholder="Password">
+
+            <button class="log-form__btn j-log-form__btn" onclick="logout()">SIGN IN</button>
+
+            <p class="log-form__text">Don't have an account? <a class="log-form__text_state_bold" href="#" onclick = "regin()">Sign up</a></p>
+    </div>
+    <div class="reg-form j-reg-form">
+
+            <input class="reg-form__input" type="text" name="username" placeholder="Username">
+        
+            <input class="reg-form__input" type="text" name="email" placeholder="Email">
+
+            <input class="reg-form__input" type="text" name="password" placeholder="Password">
+
+            <button class="reg-form__btn" onclick="regout()">Register</button>
+
+            <p class="reg-form__text">Do you have an account? <a class="reg-form__text_state_bold" href="#" onclick = "login()">Sign In</a></p>
+    </div>
+    <div class="log-form__back j-log-form__back_off"></div>
+    
+    <script type="text/javascript" src="test.js"></script>
 </body>
 </html>

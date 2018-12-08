@@ -8,7 +8,7 @@
 <body>
     <header class="header">
         <div class="user-menu" id="home">
-            <ul class="us-menu-nav ">
+            <ul class="us-menu-nav social-icons">
                 <li class="us-menu-nav__link">
                     <a href="#" onclick = "login()">
                     <img class="us-menu-nav__link-icon"src="img/a_log.png" alt="icon">
@@ -26,7 +26,7 @@
                 <li class="us-menu-nav__link">
                     <a href="#">
                     <img class="us-menu-nav__link-icon" src="img/notm.png" alt="icon">
-                        Not a Member? <a href="#" onclick = "regin()"><span class="l-my-style"> Register </span></a>
+                        Not a Member? <a href="#" onclick = "regin()"><span class="l_text-color_lazur"> Register </span></a>
                     </a>
                 </li>
 
@@ -124,7 +124,7 @@
         </div>
 
         <div class="find-offers">
-            <p> Find your <br><span class="find-offers_text-color_sea">holidays</span></p>
+            <p> Find your <br><span class="l_text-color_lazur">holidays</span></p>
 
             <label class="find-offers-form__label" for="locate"> Where </label>
             <div class="find-offers-form">
@@ -345,39 +345,39 @@
 
 		<div class="holidays-type">
 			<div class="content-title">
-				<h2 class="content-title_text-style_header">Holidays type</h2>
+				<h2 class="content-title_text-style_header content-title_text-style_holiday-head">Holidays type</h2>
 				<p>Get explore your dream to travel this world!</p>
 			</div>
 
 			<div class="holidays-type-block">
-				<div class="type-item">
-					<div class="cover cover_cruise"></div>
-					<p>Cruise</p>
+				<div class="holidays-type-block__item holidays-item">
+					<div class="holidays-item__cover holidays-item__cover_icon_cruise"></div>
+					<p class="holidays-item__text">Cruise</p>
 				</div>
 
-				<div class="type-item">
-					<div class="cover cover_city"></div>
-					<p>City Breaks</p>
+				<div class="holidays-type-block__item holidays-item">
+					<div class="holidays-item__cover holidays-item__cover_icon_city"></div>
+					<p class="holidays-item__text" >City Breaks</p>
 				</div>
 							
-				<div class="type-item">
-					<div class="cover cover_honey"></div>
-					<p>Honeymoon</p>
+				<div class="holidays-type-block__item holidays-item">
+					<div class="holidays-item__cover holidays-item__cover_icon_honey"></div>
+					<p class="holidays-item__text">Honeymoon</p>
 				</div>
 
-				<div class="type-item">
-					<div class="cover cover_advent"></div>
-					<p>Adventure</p>
+				<div class="holidays-type-block__item holidays-item">
+					<div class="holidays-item__cover holidays-item__cover_icon_advent"></div>
+					<p class="holidays-item__text">Adventure</p>
 				</div>
 
-				<div class="type-item">
-					<div class="cover cover_safari"></div>
-					<p>Safari</p>
+				<div class="holidays-type-block__item holidays-item">
+					<div class="holidays-item__cover holidays-item__cover_icon_safari"></div>
+					<p class="holidays-item__text">Safari</p>
 				</div>
 
-				<div class="type-item">
-					<div class="cover cover_beach"></div>
-					<p>Beach</p>
+				<div class="holidays-type-block__item holidays-item">
+					<div class="holidays-item__cover holidays-item__cover_icon_beach"></div>
+					<p class="holidays-item__text">Beach</p>
 				</div>
 			</div>
 		</div>
@@ -385,141 +385,156 @@
 		<div class="reviews"> <!-- блок отзывы-->
 			<div class="content-title">
 				<h2 class="content-title_text-style_header">Happy clients</h2>
-				<h3>what customer say about us and why love our services!</h3>
+				<p>what customer say about us and why love our services!</p>
 			</div>		
-			<div class="reviews-list">
-				<div class="reviews-item"> 
-					<!-- Блок самого отзыва * 3,5-->
-					<p>Lorem Ipsum is simply dummy text of the 
+			<div class="reviews-block">
+				<div class="reviews-block__item"> 
+					<p class="reviews-block__item-text">
+            Lorem Ipsum is simply dummy text of the 
 						printing and typeset industry. Lorem Ipsum 
 						has been the industry's standard dummy text
 						 ever hen an with new version look.
 					<br>
-					<strong>Client Name</strong>
+					<span class="l_text-color_lazur">Client Name</span>
 					<br>United States</p>
 				</div>
 
-				<div class="reviews-item"> 
-					<!-- Блок 2 -->
-					<p>Lorem Ipsum is simply dummy text of the 
+				<div class="reviews-block__item"> 
+					<p class="reviews-block__item-text">
+            Lorem Ipsum is simply dummy text of the 
 						printing and typeset industry. Lorem Ipsum 
 						has been the industry's standard dummy text 
 						ever hen an with new version look.
 					<br>
-					<strong>Client Name</strong>
+					<span class="l_text-color_lazur">Client Name</span>
 					<br>United States</p>
 				</div>
 
-				<div class="reviews-item"> 
-					<!-- Блок 3-->
-					<p>Lorem Ipsum is simply dummy text of the 
+				<div class="reviews-block__item"> 
+					<p class="reviews-block__item-text">
+            Lorem Ipsum is simply dummy text of the 
 						printing and typeset industry. Lorem Ipsum 
 						has been the industry's standard dummy text 
 						ever hen an with new version look.
 					<br>
-					<strong>Client Name</strong>
+					<span class="l_text-color_lazur">Client Name</span>
 					<br>United States</p>
 				</div>
 			</div>
-        </div>
     </div>
+  </div>
 	
-	<footer>
-		<div class="footer-menu">
-			<div class="newsletter footer-item">
-				<h3>Newsletter</h3>
-				<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.</p>
+	<footer class="footer">
+		<div class="footer__site-nav footer-nav">
+			<div class="footer-nav__column">
+				<h3 class="footer-nav__title">Newsletter</h3>
+				<p class="footer-nav__text">
+          Duis autem vel eum iriure dolor in
+          <br>hendrerit in vulputate velit esse
+          <br>molestie consequat, vel illum dolore.
+        </p>
 				
-				<form>		
-					<input type="text" name="Email" placeholder="Subscribes..">
-					<button>GO</button>				
+				<form class="footer__subscribe ">		
+					<input class="footer__subscribe-mail" type="text" name="Email" placeholder="Subscribes..">
+					<button class="footer__subscribe-btn">GO</button>				
 				</form>
 			</div>
 
-			<div class="latest_news footer-item">
-				<h3>Latest News</h3>
+			<div class="footer-nav__column">
+				<h3 class="footer-nav__title">Latest News</h3>
 				
-				<div class="post">
-					<img src="img/1board.png"> 
-					<p> Postformat Gallery: Multiple <br>
+				<div class="footer-nav__post">
+					<img class="footer-nav__post-icon" src="img/1board.png"> 
+					<p class="footer-nav__text"> Postformat Gallery: Multiple <br>
 					images<br>
-					<span>October 21, 2013 - 3:31 pm </span></p>
+					<span class="l_text-color_lazur">October 21, 2013 - 3:31 pm </span></p>
 					<!-- Mountch Day, Year - Time pm/am -->
 				</div>	
 
-				<div class="post"> 
-					<img src="img/2board.png"> 
-					<p> Snowboarding is fun!<br>
-					<span>December 12, 2012 - 9:11 pm </span></p>	
+				<div class="footer-nav__post"> 
+					<img class="footer-nav__post-icon" src="img/2board.png"> 
+					<p class="footer-nav__text"> Snowboarding is fun!<br>
+					<span class="l_text-color_lazur">December 12, 2012 - 9:11 pm </span></p>	
 					<!-- Mountch Day, Year - Time pm/am -->
 				</div>
 			</div>
 
-			<div class="tags footer-item">
-				<h3>Tags</h3>
-				<p>
-					<span><a href="#">Agent Login </a></span> 
-					<span>Customer Login </span><br> 
-					<span>Not a Member? </span> 
-					<span>Contact </span><br> 
-					<span>New Horizons </span> 
-					<span>Lanscape </span>
-					<span>Tags </span><br> 
-					<span>Nice </span> 
-					<span>Some </span> 
-					<span>Portrait </span> 
+			<div class="footer-nav__column">
+				<h3 class="footer-nav__title">Tags</h3>
+				<p class="footer-nav__text footer-nav__text_type_tags">
+					<span class="footer-nav__text_type_tag"><a href="#">Agent Login </a></span> 
+					<span class="footer-nav__text_type_tag">Customer Login </span><br> 
+					<span class="footer-nav__text_type_tag">Not a Member? </span> 
+					<span class="footer-nav__text_type_tag">Contact </span><br> 
+					<span class="footer-nav__text_type_tag">New Horizons </span> 
+					<span class="footer-nav__text_type_tag">Lanscape </span>
+					<span class="footer-nav__text_type_tag">Tags </span><br> 
+					<span class="footer-nav__text_type_tag">Nice </span> 
+					<span class="footer-nav__text_type_tag">Some </span> 
+					<span class="footer-nav__text_type_tag">Portrait </span> 
 				</p>
 			</div>
 
-			<div class="adress footer-item">
-				<h3>Address</h3>
-				<p>	
+			<div class="footer-nav__column">
+				<h3 class="footer-nav__title">Address</h3>
+				<p class="footer-nav__text">	
 					DieSachbearbeiter Schönhauser Allee 
 					<br> 167c,10435 Berlin Germany
-					<br>
-					<span>E-mail:</span> 
+					<br><span class="l_text-color_lazur">E-mail:</span> 
 					moin@blindtextgenerator.de
 				</p>
 				
-				<a href="#"></a> 
-				<!-- Fb -->
-				
-				<a href="#"></a>
-				 <!-- Tw -->
-				
-				<a href="#"></a> 
-				<!-- Tumb -->
-							
-				<a href="#"></a> 
-				<!-- Pint -->
+				 <ul class="footer__social-icons social-icons">
+                    <li class="social-icons__link">
+                        <a href="#">
+                        <img src="img/fb.png"  alt="Fb">
+                        </a>
+                        <!-- Fb -->
+                    </li>
+
+                    <li class="social-icons__link">
+                        <a href="#">
+                        <img src="img/tw.png"  alt="Tw">
+                        </a>
+                        <!-- Tw -->
+                    </li>
+
+                    <li class="social-icons__link">
+                        <a href="#">
+                        <img src="img/tumb.png"  alt="Tumb">
+                        </a>
+                        <!-- Tumb-->
+                    </li>
+
+                    <li class="social-icons__link">
+                        <a href="#">
+                        <img src="img/pin.png"  alt="Pint">
+                        </a>
+                        <!-- Pint-->
+                    </li>
+                </ul>
 			</div>
 		</div>
 
-		<div class="links">
+      <ul class="footer__links">
+				<li><a class="footer__link" href="index.html">Home</a>:</li>
+				<li><a class="footer__link" href="voyage_dest.html">Destinations</a>::</li>
+				<li><a class="footer__link" href="#">Criuses</a>::</li>
+				<li><a class="footer__link" href="#">Specils</a>::</li>
+				<li><a class="footer__link" href="#">Holidays</a>::</li>
+				<li><a class="footer__link" href="blog.html">Blog</a>::</li>
+				<li><a class="footer__link" href="#">Contact Us</a></li>
+      </ul>
 
-			<div class="link-nav">
-			<!-- To do: Добавить ссылки в список. -->
-				<a href="index.html">Home</a>::
-				<a href="voyage_dest.html">Destinations</a>::
-				<a href="#">Criuses </a>::
-				<a href="#">Specils </a>::
-				<a href="#">Holidays </a>::
-				<a href="blog.html">Blog </a>::
-				<a href="#">Contact Us </a>
-			</div>
-
-			<div class="author">
+			<div class="footer__copyright">
 				<p>Copyright @voyage. All Right Reserved.</p>
 			</div>
 
 			<a href="#home">
-				<!--Up -->
 				<!-- <img src="#"> -->	
-				<div class="up"></div>
+				<div class="footer__btn-up"></div>
 			</a>
-		</div>
 	</footer>	
-    
     
     <div class="log-form j-log-form">
 
