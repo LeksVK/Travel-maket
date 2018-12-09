@@ -349,10 +349,11 @@ overflow: hidden visible; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     align-content: space-between;
     flex-basis: auto;
-    /*	height: 500px;*/
+    min-height: 450px;
+    max-height: 900px;
     width: 100%;
     /*overflow: visible; */
 }
@@ -367,6 +368,7 @@ overflow: hidden visible; */
     align-self: flex-start;
     border: 5px solid #fff;
     transition: all 1s ease;
+    position: relative;
 }
 
 .offers-item__cover {
@@ -382,6 +384,7 @@ overflow: hidden visible; */
     display: flex;
     flex-direction: column;
     width: auto;
+    position: relative;
 }
 
 .item-sub-menu__stroke {
@@ -417,9 +420,11 @@ overflow: hidden visible; */
     background-image: url("img/str.png");
 }
 
-
-
-
+.offers-item__menu_status_hidden {
+    position: absolute;
+    top: auto;
+    width: auto;
+}
 
 
 .item img + .item_cover {
@@ -437,11 +442,13 @@ overflow: hidden visible; */
     width: 100%;
     padding: 0;
     margin: 0;
+    position: absolute;
+    bottom: -40px;
 }
 
 .sub-menu li {	
     display: flex;
-    width: auto;
+    width: 256px;
     background-color: #eee;
     justify-content: flex-start;
     align-items: center;
@@ -481,9 +488,6 @@ overflow: hidden visible; */
     margin-left: auto;
 }
 
-.special-offers-block__item {
-
-}
 
 .special-offers-block__item:hover {
     transform: scale(1.2);
