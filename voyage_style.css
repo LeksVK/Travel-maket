@@ -33,12 +33,12 @@ ul {
     margin: 0;
     display: flex;
     justify-content: center;
-
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;  
 }
 
 .us-menu-nav__link {
-    margin-right: 10px;
+    padding: 3px 10px;
+    box-shadow: inset -2px 0px 0px 0px #17202a;
 }
 
 .us-menu-nav__link-icon {
@@ -51,7 +51,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: inset -2px 0px 0px 0px #000;
+    box-shadow: inset -2px 0px 0px 0px #17202a;
 }
 
 /*-Navigation menu-*/
@@ -101,8 +101,16 @@ ul {
 }
 
 .nav-menu-links__item_type_search {
-    margin: 0 5px;
-    border-bottom: none;
+    background-image: url("img/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border: 2px solid #2c3e50;
+    border-radius: 50%;
+    
 }
 
 /*---LogIn/Registrar Form---*/
@@ -258,13 +266,18 @@ ul {
     width: 4rem;
     height: 4rem;
     text-transform: uppercase;
-    background-color: #1dd2af;
+    background-color: #92a2a9;
     opacity: 0.8;
-    border: 1px solid #1dd2af;
+    border: none;
     font-family: "Roboto Bold", sans-serif;
     color: #fff;
     font-size: 26px;
     cursor: pointer;
+}
+
+.promo__scroll:hover {
+    background-color: #1dd2af;
+    border: 1px solid #1dd2af;
 }
 
 /*---Find Your Holidays---*/
@@ -352,16 +365,15 @@ ul {
     flex-direction: column;
     margin: 7px;
     align-self: flex-start;
-    border: 5px solid #fff;
+    border: 3px solid transparent;
     transition: all 1s ease;
     position: relative;
     z-index: 900;
 }
 
 .special-offers-block__item:hover {
-    transform: scale(1.2);
-    border: 3px solid #1dd2af;
-    border-bottom: none;
+    transform: scale(1.1);
+    border-color: #1dd2af;
     margin: 0.5rem;
     position: relative;
     z-index: 1000;
@@ -384,17 +396,21 @@ ul {
 }
 
 
-.offers-item__menu_status_hidden {
+.offers-item__menu-hidden {
     margin: 0;
     padding: 0;    
     position: absolute;
     top: 50px;
     width: 100%;
     z-index: 100;
+    border: 3px solid transparent;
+    transition: all 1s ease;
+    border-top: none;
+    margin-left: -3px;
 }
 
-.special-offers-block__item:hover .offers-item__menu_status_hidden {
-    border: 3px solid #1dd2af;
+.special-offers-block__item:hover .offers-item__menu-hidden {
+    border-color: #1dd2af;
     border-top: none;
     margin-left: -3px;
 }
@@ -449,7 +465,7 @@ ul {
 }
 
 .special-offers-block__item:hover .offers-item__nav-img_type_top {
-    background-image: url("img/str_act.png");
+    background-image: url("img/str_active.png");
 }
 
 .offers-item__nav-img_type_bottom {
@@ -613,10 +629,8 @@ ul {
 }
 
 .reviews-block__item:hover {
-    border: 1px solid #eee;
-    border-top: 3px solid #1dd2af;
-    margin: 19px;
-    margin-top: 17px;
+    box-shadow: 0 -3px 0.5px #1dd2af;
+    margin: 20px;
 }
 
 .reviews-block__item-text {
