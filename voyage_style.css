@@ -665,15 +665,13 @@ footer {
 
 .footer-nav__column {
     margin: 0;
-/*    margin-left: 10px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
-    width: 300px;
-/*    min-width: 300px;
-    min-height: 200px;*/
+    width: 280px;
+    font-size: 14px;
     flex-basis: auto;
     margin: 0 10px;
     /*	border: 2px solid #1dd2af; рамка для
