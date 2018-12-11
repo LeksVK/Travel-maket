@@ -411,6 +411,7 @@ ul {
 
 .special-offers-block__item:hover .offers-item__menu-hidden {
     border-color: #1dd2af;
+    border-radius: 3px;
     border-top: none;
     margin-left: -3px;
 }
@@ -664,23 +665,24 @@ footer {
 
 .footer-nav__column {
     margin: 0;
-    margin-left:25px;
+/*    margin-left: 10px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
-    min-width: 300px;
-    min-height: 200px;
+    width: 300px;
+/*    min-width: 300px;
+    min-height: 200px;*/
     flex-basis: auto;
-    margin: 15px;
+    margin: 0 10px;
     /*	border: 2px solid #1dd2af; рамка для
     определения границ элемента */
 }
 
 .footer-nav__title {
     margin: 10px 0;
-    font-size: 26px;
+    font-size: 24px;
     font-family: "Roboto Bold", sans-serif;
     color: #1dd2af;
 }
