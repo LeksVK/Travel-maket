@@ -1,6 +1,6 @@
             /** LogIn Form**/
-var logForm = document.querySelector('.j-log-form');
-var cover   = document.querySelector('.log-form__back');
+var logForm   = document.querySelector('.j-log-form');
+var cover     = document.querySelector('.log-form__back');
 
 function login() {
     logForm.style.display='flex';
@@ -20,7 +20,7 @@ cover.addEventListener('click', function() {
 });
 
             /** Registar Form**/
-var regForm = document.querySelector('.j-reg-form');
+var regForm   = document.querySelector('.j-reg-form');
 
 function regin() {
     regForm.style.display='flex';
@@ -37,8 +37,8 @@ function regout() {
 var wallpaper = document.querySelector('.j-promo');
 var nav_left  = document.querySelector('.promo__scroll_position_left');
 var nav_right = document.querySelector('.promo__scroll_position_right');
-    var i     = 0;
-    var j     = 0;
+var i         = 0;
+var j         = 0;
 
 nav_left.addEventListener('click', function() {
     console.log(i);
@@ -63,8 +63,6 @@ nav_left.addEventListener('click', function() {
 });
 
 nav_right.addEventListener('click', function() {
-      var yes = 'yes';
-    console.log(yes);
     if (i == 0) {
         wallpaper.classList.remove('promo_back-bridge');
         wallpaper.classList.add('promo_back-night');
@@ -86,63 +84,15 @@ nav_right.addEventListener('click', function() {
 });
 
    /** Sub-menu IN Special offers **/
-
-function addmenu() {
-var list = document.querySelector('.sub_list');
-list.classList.remove('hidden_item');
+function addmenu(elem) {
+var stroke    = elem.parentNode;
+var list      = stroke.parentNode;
+var menu      = list.querySelector('.j-off-item-menu'); 
+    menu.classList.remove('l-hidden');
 };
 
-function dellmenu() {
-var list = document.querySelector('.sub_list');
-list.classList.add('hidden_item');
-};
-
-function addmenu2() {
-var list = document.querySelector('.sub2_list');
-list.classList.remove('hidden2_item');
-};
-
-function dellmenu2() {
-var list = document.querySelector('.sub2_list');
-list.classList.add('hidden2_item');
-};
-
-function addmenu3() {
-var list = document.querySelector('.sub3_list');
-list.classList.remove('hidden3_item');
-};
-
-function dellmenu3() {
-var list = document.querySelector('.sub3_list');
-list.classList.add('hidden3_item');
-};
-
-function addmenu4() {
-var list = document.querySelector('.sub4_list');
-list.classList.remove('hidden4_item');
-};
-
-function dellmenu4() {
-var list = document.querySelector('.sub4_list');
-list.classList.add('hidden4_item');
-};
-
-function addmenu5() {
-var list = document.querySelector('.sub5_list');
-list.classList.remove('hidden5_item');
-};
-
-function dellmenu5() {
-var list = document.querySelector('.sub5_list');
-list.classList.add('hidden5_item');
-};
-
-function addmenu6() {
-var list = document.querySelector('.sub6_list');
-list.classList.remove('hidden6_item');
-};
-
-function dellmenu6() {
-var list = document.querySelector('.sub6_list');
-list.classList.add('hidden6_item');
+function dellmenu(elem) {
+var stroke    = elem.parentNode;
+var list      = stroke.parentNode;
+    list.classList.add('l-hidden');
 };
