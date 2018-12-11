@@ -616,26 +616,25 @@ ul {
     justify-content: flex-start;
     padding-left: 20px;
     padding-right: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: stretch;
     align-content: space-between;
     flex-basis: auto;
     min-height: 150px;
-    min-width: 450px;
     border: 1px solid #eee;
-    margin: 20px;
-    line-height: 22px;
-    width: 550px;
+    margin: 10px;
+    line-height: 20px;
+    width: 350px;
 }
 
 .reviews-block__item:hover {
     box-shadow: 0 -3px 0.5px #1dd2af;
-    margin: 20px;
 }
 
 .reviews-block__item-text {
     color: #b2b2b2;
     font-family: "Roboto Regular", sans-serif;
+    font-size: 14px;
 }
 
 .reviews-block__item-text:hover {
