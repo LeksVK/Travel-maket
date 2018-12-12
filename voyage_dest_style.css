@@ -8,25 +8,25 @@ body {
 }
 /* ---- */
 .content__title {
-	text-align: left;
-	text-transform: uppercase;
+    padding-left: 33rem;
 	width: auto;
 	font-family: Roboto, sans-serif;
+    text-align: left;
+	text-transform: uppercase;
 	color: #b2b2b2;
-	padding-left: 27rem;
 }
 
 /* --Content Destinations-- */
 
 .content__offers {
-	display: flex;
 	width: 100%;
+    display: flex;
 	justify-content: center;
 }
 
 .content__item-offers {
-	display: flex;
 	margin: 15px;
+    display: flex;
     flex-direction: column;
 	border: 2px solid #eee;	
 }
@@ -36,37 +36,37 @@ body {
 }
 
 .content-item__descript {
-	display: flex;
+	padding: 5px;
+    display: flex;
 	justify-content: space-around;
-	background-color: #2c3e50;
+	align-items: baseline;
+    background-color: #2c3e50;
 	font-family: "Roboto Medium", sans-serif;
 	font-size: 14px;
 	color: #ffffff;
-	align-items: baseline;
-	padding: 5px;
 }
 
 .content-item__price {
-	display: flex;
+	padding: 0 10px;
+    display: flex;
 	justify-content: space-between;
 	background-color: #1dd2af;
 	font-family: "Roboto Medium", sans-serif;
-	color: #ffffff;
-	font-size: 15px;
-    padding: 0 10px;
     text-transform: uppercase;
+    font-size: 15px;
+    color: #ffffff;
 }
 
 /* ------*/
 
 .content__button {
-	display: flex;
 	margin: 20px auto;
-	width: 55rem;
-	border: none;
+    padding: 10px;
+    width: 55rem;
+    display: flex;
 	justify-content: center;
-	padding: 10px;
-	text-transform: uppercase;
 	background-color: #2c3e50;
+	text-transform: uppercase;
 	color: white;
+    border: none;
 }
