@@ -20,39 +20,29 @@ ul {
 
 /*- User-menu */
 .user-menu {
-    padding: 3px;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-around;
-    text-align: center;
-    flex-basis: auto;
-    font-size: 15px;
-    line-height: 22px;
+    align-items: center;
     font-family: "Roboto Light", sans-serif;
 }
 
 .us-menu-nav,
 .us-menu-icons {
     margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    align-content: space-between;
-    flex-basis: auto;
-    list-style: none;
-    min-height: 40px;
-    height: auto;
+    flex-wrap: nowrap;  
 }
 
 .us-menu-nav__link {
-    margin-left: 10px;
-    margin-right: 10px;
-    align-items: center;
+    padding: 3px 10px;
+    box-shadow: inset -2px 0px 0px 0px #17202a;
 }
 
 .us-menu-nav__link-icon {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .us-menu-icons__link {
@@ -61,9 +51,22 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: inset -2px 0px 0px 0px #115f83;
+    box-shadow: inset -2px 0px 0px 0px #17202a;
 }
 
+@media all and (max-width: 399px) {
+    .user-menu {
+        flex-direction: column;
+    }
+    .us-menu-nav {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    .us-menu-nav__link {
+        margin: 5px 0;
+        box-shadow: none;
+    }
+}
 /*-Navigation menu-*/
 .nav-menu {
     background-color: #eee;
@@ -72,7 +75,7 @@ ul {
     align-items: center;
     flex-wrap: nowrap;
     padding: 10px;
-    max-height: 50px;
+/*    max-height: 50px; */
 }
 
 .header-logo {
@@ -93,6 +96,7 @@ ul {
 }
 
 .nav-menu-links__item {
+    margin: 0;
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: nowrap;
@@ -111,8 +115,35 @@ ul {
 }
 
 .nav-menu-links__item_type_search {
-    margin: 0 5px;
-    border-bottom: none;
+    background-image: url("img/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border: 2px solid #2c3e50;
+    border-radius: 50%;
+    
+}
+
+@media all and (max-width: 399px) {
+    .nav-menu {
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .header-logo {
+        margin: 10px;
+    }
+    .nav-menu-links {
+        flex-direction: column;
+        margin: auto;
+    }
+    .nav-menu-links__item {
+        padding: 0;
+        align-content: center;
+    }
 }
 
 /*---LogIn/Registrar Form---*/
@@ -198,6 +229,8 @@ ul {
 }
 
 /*--Promo-block--*/
+ 
+
 .promo {
     background-repeat: no-repeat;
     background-position: center;
@@ -207,6 +240,12 @@ ul {
     justify-content: space-between;
     height: 849px;
     color: #fff;
+}
+
+@media all and (max-width: 399px) {
+    .promo {
+        display: none;
+    }
 }
 
 .promo_back-bridge {
@@ -268,16 +307,21 @@ ul {
     width: 4rem;
     height: 4rem;
     text-transform: uppercase;
-    background-color: #1dd2af;
+    background-color: #92a2a9;
     opacity: 0.8;
-    border: 1px solid #1dd2af;
+    border: none;
     font-family: "Roboto Bold", sans-serif;
     color: #fff;
     font-size: 26px;
     cursor: pointer;
 }
 
-/*------*/
+.promo__scroll:hover {
+    background-color: #1dd2af;
+    border: 1px solid #1dd2af;
+}
+
+/*---Find Your Holidays---*/
 .find-offers {
     display: flex;
     color: #fff;
@@ -317,6 +361,25 @@ ul {
     cursor: pointer;
 }
 
+@media all and (max-width: 399px) {
+    .find-offers {
+        flex-wrap: wrap;
+    }
+    .find-offers__text {
+        width: 300px;
+        text-align: center;
+    }
+    .find-offers-form__label {
+        margin: 0px 10px 5px;
+    }
+    .find-offers-form {
+        margin-bottom: 15px;
+        margin-right: 25px;
+    }
+    .find-offers-form__btn {
+        margin-bottom: 15px;
+    }
+}
 /*----Content - Upload ----*/
 .l-upload {
     position: absolute;
@@ -340,10 +403,6 @@ ul {
 }
 
 /* ---Special offers ----*/
-.special-offers {
-/*height: 500px;
-overflow: hidden visible; */
-}
 
 .special-offers-block {
     display: flex;
@@ -356,7 +415,6 @@ overflow: hidden visible; */
     max-height: 750px;
     width: 100%;
     position: relative;
-    /*overflow: visible; */
 }
 
 .special-offers-block__item {
@@ -367,17 +425,18 @@ overflow: hidden visible; */
     flex-direction: column;
     margin: 7px;
     align-self: flex-start;
-    border: 5px solid #fff;
+    border: 3px solid transparent;
     transition: all 1s ease;
     position: relative;
+    z-index: 900;
 }
 
 .special-offers-block__item:hover {
-    transform: scale(1.2);
-    border: 3px solid #1dd2af;
-    border-bottom: none;
+    transform: scale(1.1);
+    border-color: #1dd2af;
     margin: 0.5rem;
     position: relative;
+    z-index: 1000;
 }
 
 .offers-item__cover {
@@ -397,24 +456,28 @@ overflow: hidden visible; */
 }
 
 
-.offers-item__menu_status_hidden {
+.offers-item__menu-hidden {
     margin: 0;
     padding: 0;    
     position: absolute;
     top: 50px;
     width: 100%;
-    display: none;
+    z-index: 100;
+    border: 3px solid transparent;
+    transition: all 1s ease;
+    border-top: none;
+    margin-left: -3px;
 }
 
-.special-offers-block__item:hover .offers-item__menu_status_hidden {
-    border: 3px solid #1dd2af;
+.special-offers-block__item:hover .offers-item__menu-hidden {
+    border-color: #1dd2af;
+    border-radius: 3px;
     border-top: none;
     margin-left: -3px;
 }
 
 .offers-item__stroke {
     display: flex;
-/*    width: 256px;*/
     background-color: #eee;
     justify-content: flex-start;
     align-items: center;
@@ -424,13 +487,12 @@ overflow: hidden visible; */
     font-family: "Roboto Regular", sans-serif;
     font-size: 12px;
     height: 40px;
-/*    min-width: 160px;*/
 }
 
 .offers-item__stroke_position_first {
     margin: 0;
     padding-left: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #626262;
 }
 
@@ -441,7 +503,7 @@ overflow: hidden visible; */
 
 .offers-item__stroke_position_last {
     border-top: 1px dashed #000;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .offers-item__img {
@@ -450,25 +512,33 @@ overflow: hidden visible; */
     height: 18px;
 }
 
-.offers-item__img_type_nav {
-/*    background-repeat: no-repeat;
+.offers-item__nav-img {
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: 50% 50%;*/
-    width: 18px;
-    height: 10px;
-
-/*    margin-left: auto;*/
+    background-size: 50% 50%;
+    width: 35px;
+    height: 15px;
     cursor: pointer;
 }
-/*
-.offers-item__img_position_top {
+
+.offers-item__nav-img_type_top {
     background-image: url("img/str_nav.png");
 }
 
-.offers-item__img_position_end {
-    background-image: url("img/str.png");
-}*/
+.special-offers-block__item:hover .offers-item__nav-img_type_top {
+    background-image: url("img/str_active.png");
+}
 
+.offers-item__nav-img_type_bottom {
+    background-image: url("img/str.png");
+}
+
+
+@media all and (max-width: 399px) {
+    .special-offers-block {
+        max-height: 1200px;
+    }
+}
 /* -- Holidays Type --*/
 .holidays-type {
     background-color: #2c3e50;
@@ -584,6 +654,24 @@ overflow: hidden visible; */
     background-image: url('img/beach2.png');	
 }
 
+@media all and (max-width: 399px) {
+    .holidays-type-block {
+        flex-wrap: wrap;
+        max-height: auto;
+    }
+    .holidays-item {
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+    }
+    .holidays-item__cover {
+        width: 50px;
+        height: 50px;
+    }
+    .holidays-item__text {
+        width: 150px;
+    }
+}
 /* ---- Reviews ---*/
 .reviews {
     display: flex;
@@ -613,32 +701,40 @@ overflow: hidden visible; */
     justify-content: flex-start;
     padding-left: 20px;
     padding-right: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: stretch;
     align-content: space-between;
     flex-basis: auto;
     min-height: 150px;
-    min-width: 450px;
     border: 1px solid #eee;
-    margin: 20px;
-    line-height: 22px;
-    width: 550px;
+    margin: 10px;
+    line-height: 20px;
+    width: 350px;
 }
 
 .reviews-block__item:hover {
-    border: 1px solid #eee;
-    border-top: 3px solid #1dd2af;
-    margin: 19px;
-    margin-top: 17px;
+    box-shadow: 0 -3px 0.5px #1dd2af;
 }
 
 .reviews-block__item-text {
     color: #b2b2b2;
     font-family: "Roboto Regular", sans-serif;
+    font-size: 14px;
 }
 
 .reviews-block__item-text:hover {
     color: #626262;
+}
+
+@media all and (max-width: 399px) {
+    .reviews-block {
+        padding: 0;
+        margin: 0;
+        min-width: 250px;
+    }
+    .reviews-block__item {
+        width: 250px;
+    }
 }
 /* ---- Footer --- */
 
@@ -664,23 +760,24 @@ footer {
 
 .footer-nav__column {
     margin: 0;
-    margin-left:25px;
+/*    margin-left: 10px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
-    min-width: 300px;
-    min-height: 200px;
+    width: 300px;
+/*    min-width: 300px;
+    min-height: 200px;*/
     flex-basis: auto;
-    margin: 15px;
+    margin: 0 10px;
     /*	border: 2px solid #1dd2af; рамка для
     определения границ элемента */
 }
 
 .footer-nav__title {
     margin: 10px 0;
-    font-size: 26px;
+    font-size: 24px;
     font-family: "Roboto Bold", sans-serif;
     color: #1dd2af;
 }
@@ -786,6 +883,16 @@ footer {
     transition: all 6s ease;
 }
 
+@media all and (max-width: 399px) {
+    .footer__links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+    
+    .footer__link {
+        width: 250px;
+    }
+}
 /* Хелперы */
 .l-hidden {
     display: none;
