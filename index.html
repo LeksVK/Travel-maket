@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html  lang="ru">
+<html  lang="en">
 <head>
     <meta charset="utf-8">
     <title>Maket Voyage</title>
-    <link rel="stylesheet" href="voyage_style.css">
+    <link rel="stylesheet" madia="all" href="voyage_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
 <body>
     <header class="header">
-        <div class="user-menu" id="home">
-            <ul class="us-menu-nav social-icons">
+        <div class="user-menu">
+            <ul class="us-menu-nav">
                 <li class="us-menu-nav__link">
                     <a href="#" onclick = "login()">
                     <img class="us-menu-nav__link-icon"src="img/a_log.png" alt="icon">
@@ -26,7 +28,7 @@
                 <li class="us-menu-nav__link">
                     <a href="#">
                     <img class="us-menu-nav__link-icon" src="img/notm.png" alt="icon">
-                        Not a Member? <a href="#" onclick = "regin()"><span class="l_text-color_lazur"> Register </span></a>
+                        Not a Member? <a href="#" onclick = "regin()"><span class="l-text_color_lazur"> Register </span></a>
                     </a>
                 </li>
 
@@ -37,29 +39,29 @@
                 </li>
             </ul>
 
-            <ul class="us-menu-icons">
-                <li class="us-menu-icons__link">
+            <ul class="social-icons social-icons_position_top">
+                <li class="social-icons__link">
                     <a href="#">
                     <img src="img/fb.png"  alt="Fb">
                     </a>
                     <!-- Fb -->
                 </li>
 
-                <li class="us-menu-icons__link">
+                <li class="social-icons__link">
                     <a href="#">
                     <img src="img/tw.png"  alt="Tw">
                     </a>
                     <!-- Tw -->
                 </li>
 
-                <li class="us-menu-icons__link">
+                <li class="social-icons__link">
                     <a href="#">
                     <img src="img/tumb.png"  alt="Tumb">
                     </a>
                     <!-- Tumb-->
                 </li>
 
-                <li class="us-menu-icons__link">
+                <li class="social-icons__link">
                     <a href="#">
                     <img src="img/pin.png"  alt="Pint">
                     </a>
@@ -70,8 +72,8 @@
 
         <div class="nav-menu">
             
-            <a href="index.html">
-                <img class="header-logo" src="img/Voyage_logo.png" width="152" height="30" alt="VOYAGE"></a>
+                <a href="index.html">
+                <img class="header-logo" id="home" src="img/Voyage_logo.png" width="152" height="30" alt="VOYAGE"></a>
 
             <ul class="nav-menu-links">
                 <li>
@@ -99,19 +101,19 @@
                 </li>
                 <li>
                     <a href="#">
-                        <div class="nav-menu-links__item_type_search"></div>
+                        <div class="nav-menu-links__item nav-menu-links__item_type_search"></div>
                     </a>
                 </li>
             </ul>
             
         </div>
 
-        <div class="promo j-promo promo_back-bridge">
+        <div class="promo j-promo promo_cover_back-bridge">
 
             <button class="promo__scroll promo__scroll_position_left"> &lt; </button>
 
             <div class="promo-tagline">
-                <p><strong class="promo-tagline_title_style">To travel is to live </strong>
+                <p><strong class="promo__text promo__text_style_big">To travel is to live </strong>
                 <br> You Don't Need Magic to disappear.
                 All you need is a destination.</p>
 
@@ -125,18 +127,22 @@
         </div>
 
         <div class="find-offers">
-            <p> Find your <br><span class="l_text-color_lazur">holidays</span></p>
-
-            <label class="find-offers-form__label" for="locate"> Where </label>
+            <p class="find-offers__text"> Find your <br><span class="l-text_color_lazur">holidays</span></p>
+            
             <div class="find-offers-form">
-                <input class="find-offers-form__input" type="text" name="where" id="locate" placeholder="distination" >
-                <input class="find-offers-form__input" type="image"  src="img/map.png" alt="Change locate">
+                <label class="find-offers-form__label" for="locate"> Where </label>
+                <div class="find-offers-form__item">
+                    <input class="find-offers-form__input" type="text" name="where" id="locate" placeholder="distination" >
+                    <input class="find-offers-form__input" type="image"  src="img/map.png" alt="Change locate">
+                </div>
             </div>
 
-            <label class="find-offers-form__label" for="date"> When </label>
             <div class="find-offers-form">
-               <input class="find-offers-form__input" type="date" name="when" id="date">
-               <input class="find-offers-form__input" type="image"  src="img/month.png" alt="Change data">
+                <label class="find-offers-form__label" for="date"> When </label>
+                <div class="find-offers-form__item">
+                   <input class="find-offers-form__input" type="date" name="when" id="date">
+                   <input class="find-offers-form__input" type="image"  src="img/month.png" alt="Change data">
+                </div>
             </div>
 
             <button class="find-offers-form__btn"> Search </button>
@@ -162,7 +168,7 @@
 
 		<div class="special-offers">
 			<div class="content-title">
-				<h2 class="content-title_text-style_header">Special offers</h2>
+				<h2 class="content-tttle__text content-title__text_size_big">Special offers</h2>
 				<p>Best 2014 packages where people love to stay?</p>
 			</div>
 
@@ -173,7 +179,7 @@
 					<ul class="offers-item__menu">
 						<li class="offers-item__stroke offers-item__stroke_position_first">
 							<span>  Statue of liberty - USA<br> New Destination! </span>  
-                            <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>	
+                            <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)"></div>	
 						</li>
 						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
 							<li class="offers-item__stroke">
@@ -190,7 +196,7 @@
 							</li>
 							<li class="offers-item__stroke offers-item__stroke_position_last">
 								Expires in : 7 days
-                                <div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div>
+                                <div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)"></div>
 							</li>
 						</div>						
 					</ul>
@@ -202,7 +208,7 @@
 					<ul class="offers-item__menu">
 						<li class="offers-item__stroke offers-item__stroke_position_first">
 							<span> Spectacular Seychelles<br> New Destination! </span>  
-							 <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>					
+							 <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)"></div>					
 						</li>
 						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
 							<li class="offers-item__stroke">
@@ -219,7 +225,7 @@
 							</li>
 							<li class="offers-item__stroke offers-item__stroke_position_last">
 								Expires in : 7 days
-								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div>
+								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)"></div>
 							</li>
 						</div>						
 					</ul>
@@ -231,7 +237,7 @@
 					<ul class="offers-item__menu">
 						<li class="offers-item__stroke offers-item__stroke_position_first">
 							<span> Hong Kong & Macau<br> Bonus Extras! </span>  
-							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>					
+							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)"></div>					
 						</li>
 						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
 							<li class="offers-item__stroke">
@@ -248,7 +254,7 @@
 							</li>
 							<li class="offers-item__stroke offers-item__stroke_position_last">
 								Expires in : 7 days
-								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div> 
+								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)"></div> 
 							</li>
 						</div>						
 					</ul>
@@ -260,7 +266,7 @@
 					<ul class="offers-item__menu">
 						<li class="offers-item__stroke offers-item__stroke_position_first">
 							<span> Vietnam Highlights<br> New Destination! </span>  
-							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>					
+							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)"></div>					
 						</li>
 						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
 							<li class="offers-item__stroke">
@@ -277,7 +283,7 @@
 							</li>
 							<li class="offers-item__stroke offers-item__stroke_position_last">
 								Expires in : 7 days
-								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div>
+								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)"></div>
 							</li>
 						</div>						
 					</ul>
@@ -289,7 +295,7 @@
 					<ul class="offers-item__menu">
 						<li class="offers-item__stroke offers-item__stroke_position_first">
 							<span> Spectacular Seychelles<br> New Destination! </span>  
-							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>					
+							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)"></div>					
 						</li>
 						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
 							<li class="offers-item__stroke">
@@ -306,7 +312,7 @@
 							</li>
 							<li class="offers-item__stroke offers-item__stroke_position_last">
 								Expires in : 7 days
-								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div> 
+								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)"></div> 
 							</li>				
 						</div>		
 					</ul>
@@ -318,7 +324,7 @@
 					<ul class="offers-item__menu">
 						<li class="offers-item__stroke offers-item__stroke_position_first">
 							<span> Dubai<br> New Destination!  </span>  
-							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>					
+							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)"></div>					
 						</li>
 						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
 							<li class="offers-item__stroke">
@@ -335,7 +341,7 @@
 							</li>
 							<li class="offers-item__stroke offers-item__stroke_position_last">
 								Expires in : 7 days
-								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div>
+								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)"></div>
 							</li>				
 						</div>		
 					</ul>
@@ -345,7 +351,7 @@
 
 		<div class="holidays-type">
 			<div class="content-title">
-				<h2 class="content-title_text-style_header content-title_text-style_holiday-head">Holidays type</h2>
+				<h2 class="content-title__text content-title__text_size_big content-title__text_color_white">Holidays type</h2>
 				<p>Get explore your dream to travel this world!</p>
 			</div>
 
@@ -384,40 +390,40 @@
 
 		<div class="reviews"> <!-- блок отзывы-->
 			<div class="content-title">
-				<h2 class="content-title_text-style_header">Happy clients</h2>
+				<h2 class="content-title__text content-title__text_size_big">Happy clients</h2>
 				<p>what customer say about us and why love our services!</p>
 			</div>		
 			<div class="reviews-block">
 				<div class="reviews-block__item"> 
 					<p class="reviews-block__item-text">
-            Lorem Ipsum is simply dummy text of the 
+                        Lorem Ipsum is simply dummy text of the 
 						printing and typeset industry. Lorem Ipsum 
 						has been the industry's standard dummy text
 						 ever hen an with new version look.
 					<br>
-					<span class="l_text-color_lazur">Client Name</span>
+					<span class="l-text_color_lazur">Client Name</span>
 					<br>United States</p>
 				</div>
 
 				<div class="reviews-block__item"> 
 					<p class="reviews-block__item-text">
-            Lorem Ipsum is simply dummy text of the 
+                        Lorem Ipsum is simply dummy text of the 
 						printing and typeset industry. Lorem Ipsum 
 						has been the industry's standard dummy text 
 						ever hen an with new version look.
 					<br>
-					<span class="l_text-color_lazur">Client Name</span>
+					<span class="l-text_color_lazur">Client Name</span>
 					<br>United States</p>
 				</div>
 
 				<div class="reviews-block__item"> 
 					<p class="reviews-block__item-text">
-            Lorem Ipsum is simply dummy text of the 
+                        Lorem Ipsum is simply dummy text of the 
 						printing and typeset industry. Lorem Ipsum 
 						has been the industry's standard dummy text 
 						ever hen an with new version look.
 					<br>
-					<span class="l_text-color_lazur">Client Name</span>
+					<span class="l-text_color_lazur">Client Name</span>
 					<br>United States</p>
 				</div>
 			</div>
@@ -429,10 +435,10 @@
 			<div class="footer-nav__column">
 				<h3 class="footer-nav__title">Newsletter</h3>
 				<p class="footer-nav__text">
-          Duis autem vel eum iriure dolor in
-          <br>hendrerit in vulputate velit esse
-          <br>molestie consequat, vel illum dolore.
-        </p>
+                  Duis autem vel eum iriure dolor in
+                  <br>hendrerit in vulputate velit esse
+                  <br>molestie consequat, vel illum dolore.
+                </p>
 				
 				<form class="footer__subscribe ">		
 					<input class="footer__subscribe-mail" type="text" name="Email" placeholder="Subscribes..">
@@ -447,31 +453,31 @@
 					<img class="footer-nav__post-icon" src="img/1board.png"> 
 					<p class="footer-nav__text"> Postformat Gallery: Multiple <br>
 					images<br>
-					<span class="l_text-color_lazur">October 21, 2013 - 3:31 pm </span></p>
+					<span class="l-text_color_lazur">October 21, 2013 - 3:31 pm </span></p>
 					<!-- Mountch Day, Year - Time pm/am -->
 				</div>	
 
 				<div class="footer-nav__post"> 
 					<img class="footer-nav__post-icon" src="img/2board.png"> 
 					<p class="footer-nav__text"> Snowboarding is fun!<br>
-					<span class="l_text-color_lazur">December 12, 2012 - 9:11 pm </span></p>	
+					<span class="l-text_color_lazur">December 12, 2012 - 9:11 pm </span></p>	
 					<!-- Mountch Day, Year - Time pm/am -->
 				</div>
 			</div>
 
 			<div class="footer-nav__column">
 				<h3 class="footer-nav__title">Tags</h3>
-				<p class="footer-nav__text footer-nav__text_type_tags">
-					<span class="footer-nav__text_type_tag"><a href="#">Agent Login </a></span> 
-					<span class="footer-nav__text_type_tag">Customer Login </span><br> 
-					<span class="footer-nav__text_type_tag">Not a Member? </span> 
-					<span class="footer-nav__text_type_tag">Contact </span><br> 
-					<span class="footer-nav__text_type_tag">New Horizons </span> 
-					<span class="footer-nav__text_type_tag">Lanscape </span>
-					<span class="footer-nav__text_type_tag">Tags </span><br> 
-					<span class="footer-nav__text_type_tag">Nice </span> 
-					<span class="footer-nav__text_type_tag">Some </span> 
-					<span class="footer-nav__text_type_tag">Portrait </span> 
+				<p class="footer-nav__text footer-tags ">
+					<span class="footer-tags__link"><a href="#">Agent Login </a></span> 
+					<span class="footer-tags__link">Customer Login </span><br> 
+					<span class="footer-tags__link">Not a Member? </span> 
+					<span class="footer-tags__link">Contact </span><br> 
+					<span class="footer-tags__link">New Horizons </span> 
+					<span class="footer-tags__link">Lanscape </span>
+					<span class="footer-tags__link">Tags </span><br> 
+					<span class="footer-tags__link">Nice </span> 
+					<span class="footer-tags__link">Some </span> 
+					<span class="footer-tags__link">Portrait </span> 
 				</p>
 			</div>
 
@@ -480,11 +486,11 @@
 				<p class="footer-nav__text">	
 					DieSachbearbeiter Schönhauser Allee 
 					<br> 167c,10435 Berlin Germany
-					<br><span class="l_text-color_lazur">E-mail:</span> 
+					<br><span class="l-text_color_lazur">E-mail:</span> 
 					moin@blindtextgenerator.de
 				</p>
 				
-				 <ul class="footer__social-icons social-icons">
+				 <ul class="social-icons social-icons_position_footer ">
                     <li class="social-icons__link">
                         <a href="#">
                         <img src="img/fb.png"  alt="Fb">
@@ -516,14 +522,14 @@
 			</div>
 		</div>
 
-      <ul class="footer__links">
-				<li><a class="footer__link" href="index.html">Home</a>:</li>
-				<li><a class="footer__link" href="voyage_dest.html">Destinations</a>::</li>
-				<li><a class="footer__link" href="#">Criuses</a>::</li>
-				<li><a class="footer__link" href="#">Specils</a>::</li>
-				<li><a class="footer__link" href="#">Holidays</a>::</li>
-				<li><a class="footer__link" href="blog.html">Blog</a>::</li>
-				<li><a class="footer__link" href="#">Contact Us</a></li>
+      <ul class="footer__links-menu footer-menu">
+				<li><a class="footer-menu__link" href="index.html">Home</a>::</li>
+				<li><a class="footer-menu__link" href="voyage_dest.html">Destinations</a>::</li>
+				<li><a class="footer-menu__link" href="#">Criuses</a>::</li>
+				<li><a class="footer-menu__link" href="#">Specils</a>::</li>
+				<li><a class="footer-menu__link" href="#">Holidays</a>::</li>
+				<li><a class="footer-menu__link" href="blog.html">Blog</a>::</li>
+				<li><a class="footer-menu__link" href="#">Contact Us</a></li>
       </ul>
 
 			<div class="footer__copyright">

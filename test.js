@@ -43,20 +43,20 @@ var j         = 0;
 nav_left.addEventListener('click', function() {
     console.log(i);
     if (i == 0) {
-        wallpaper.classList.remove('promo_back-bridge');
-        wallpaper.classList.add('promo_back-lake');
+        wallpaper.classList.remove('promo_cover_back-bridge');
+        wallpaper.classList.add('promo_cover_back-lake');
             i = 1;
          console.log(i);
 
     } else if (i == 1) {
-        wallpaper.classList.remove('promo_back-lake');
-        wallpaper.classList.add('promo_back-night');
+        wallpaper.classList.remove('promo_cover_back-lake');
+        wallpaper.classList.add('promo_cover_back-night');
             i = 2;
          console.log(i);
 
     } else if (i == 2) {
-        wallpaper.classList.remove('promo_back-night');
-        wallpaper.classList.add('promo_back-bridge');
+        wallpaper.classList.remove('promo_cover_back-night');
+        wallpaper.classList.add('promo_cover_back-bridge');
             i = 0;
          console.log(i);
     }
@@ -64,27 +64,27 @@ nav_left.addEventListener('click', function() {
 
 nav_right.addEventListener('click', function() {
     if (i == 0) {
-        wallpaper.classList.remove('promo_back-bridge');
-        wallpaper.classList.add('promo_back-night');
+        wallpaper.classList.remove('promo_cover_back-bridge');
+        wallpaper.classList.add('promo_cover_back-night');
             i = 1;
          console.log(i);
 
     } else if (i == 1) {
-        wallpaper.classList.remove('promo_back-night');
-        wallpaper.classList.add('promo_back-lake');
+        wallpaper.classList.remove('promo_cover_back-night');
+        wallpaper.classList.add('promo_cover_back-lake');
             i = 2;
          console.log(i);
 
     } else if (i == 2) {
-        wallpaper.classList.remove('promo_back-lake');
-        wallpaper.classList.add('promo_back-bridge');
+        wallpaper.classList.remove('promo_cover_back-lake');
+        wallpaper.classList.add('promo_cover_back-bridge');
             i = 0;
          console.log(i);
     }
 });
 
    /** Sub-menu IN Special offers **/
-function addmenu(elem) {
+function showMenu(elem) {
 var stroke    = elem.parentNode;
 var list      = stroke.parentNode;
 var menu      = list.querySelector('.j-off-item-menu');
@@ -94,7 +94,7 @@ var top_nav   = list.querySelector('.offers-item__nav-img_type_top');
     top_nav.classList.add('l-hidden');
 };
 
-function dellmenu(elem) {
+function hideMenu(elem) {
 var stroke    = elem.parentNode;
 var list      = stroke.parentNode;
 var full_list = list.parentNode;    
