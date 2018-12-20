@@ -442,6 +442,7 @@ ul {
     cursor: pointer;
 }
 
+
 @media all and (max-width: 609px) {
     .find-offers {
         display: flex;
@@ -487,6 +488,7 @@ ul {
          margin: 15px 0;
     }
 }
+
 /*----Content - Upload ----*/
 .l-upload {
     position: absolute;
@@ -646,6 +648,7 @@ ul {
         max-height: 1200px;
     }
 }
+
 /* -- Holidays Type --*/
 .holidays-type {
     background-color: #2c3e50;
@@ -779,6 +782,7 @@ ul {
         width: 150px;
     }
 }
+
 /* ---- Reviews ---*/
 .reviews {
     display: flex;
@@ -832,6 +836,7 @@ ul {
 .reviews-block__item-text:hover {
     color: #626262;
 }
+
 
 @media all and (max-width: 750px) {
     .reviews-block {
@@ -1004,6 +1009,7 @@ footer {
         width: 250px;
     }
 }
+
 /* Хелперы */
 .l-hidden {
     display: none;

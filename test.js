@@ -99,6 +99,7 @@ var stroke    = elem.parentNode;
 var list      = stroke.parentNode;
 var full_list = list.parentNode;    
 var top_nav   = full_list.querySelector('.offers-item__nav-img_type_top');
+
     list.classList.add('l-hidden');
     top_nav.classList.remove('l-hidden');
 };
