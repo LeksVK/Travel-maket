@@ -2,13 +2,13 @@
 var logForm   = document.querySelector('.j-log-form');
 var cover     = document.querySelector('.log-form__back');
 
-function login() {
+function loginShow() {
     logForm.style.display='flex';
     cover.style.display='flex';
     regForm.style.display='none';
 };
 
-function logout() {
+function loginHide() {
     logForm.style.display='none';
     cover.style.display='none';
 };
@@ -22,13 +22,13 @@ cover.addEventListener('click', function() {
             /** Registar Form**/
 var regForm   = document.querySelector('.j-reg-form');
 
-function regin() {
+function regShow() {
     regForm.style.display='flex';
     cover.style.display='flex';
     logForm.style.display='none';
 };
 
-function regout() {
+function regHide() {
     regForm.style.display='none';
     cover.style.display='none';
 };
@@ -99,7 +99,7 @@ var stroke    = elem.parentNode;
 var list      = stroke.parentNode;
 var full_list = list.parentNode;    
 var top_nav   = full_list.querySelector('.offers-item__nav-img_type_top');
-console.log(list);
+
     list.classList.add('l-hidden');
     top_nav.classList.remove('l-hidden');
 };

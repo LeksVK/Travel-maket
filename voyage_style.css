@@ -87,6 +87,16 @@ ul {
     height: 28px;
 }
 
+.nav-menu__hamburger {
+    background-image: url("img/nav-menu__hamb.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
+    width: 60px;
+    height: 40px;
+    display: none;
+}
+
 .nav-menu-links {
     display: flex;
     align-items: center;
@@ -116,7 +126,10 @@ ul {
 }
 
 .nav-menu-links__item_type_search {
-    background-image: url("img/search.png");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-image: url("img/nav-menu__search.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50% 50%;
@@ -124,27 +137,60 @@ ul {
     height: 30px;
     margin-left: 10px;
     border: 2px solid #2c3e50;
-    border-radius: 50%;
-    
+    border-radius: 50%;    
+}
+
+.nav-menu-links__item_type_search:hover {
+    border: 2px solid #2c3e50;
+    border-radius: 50%;    
 }
 
 @media all and (max-width: 399px) {
     .nav-menu {
-        flex-direction: column;
         height: auto;
+        display: flex;
+        justify-content: space-between;
     }
     .header-logo {
-        margin: 10px;
+        margin: 0px;
     }
     .nav-menu-links {
-        flex-direction: column;
-        margin: auto;
-         display: none;
+        display: none;
     }
-    .nav-menu-links__item {
+    .nav-menu__hamburger {
+        display: flex;
         padding: 0;
-        align-content: center;
+        margin: 0;
     }
+}
+
+@media all and (min-width: 400px) and (max-width: 750px) {
+    .user-menu {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .social-icons_position_top {
+        padding:0;
+        margin: 0;
+    }
+    .us-menu-nav {
+        display: none;
+    }
+    .nav-menu {
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-menu-links {
+        display: none;
+    }
+    .nav-menu__hamburger {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }    
 }
 
 /*---LogIn/Registrar Form---*/
@@ -242,22 +288,16 @@ ul {
     color: #fff;
 }
 
-@media all and (max-width: 399px) {
-    .promo {
-        display: none;
-    }
-}
-
 .promo_cover_back-bridge {
-    background-image: url("img/backhead2.png");
+    background-image: url("img/promo__cover_city.png");
 }
 
 .promo_cover_back-lake {
-    background-image: url("img/Explore-the-worlds.jpg");
+    background-image: url("img/promo__cover_lake.jpg");
 }
 
 .promo_cover_back-night {
-    background-image: url("img/night.png");
+    background-image: url("img/promo__cover_night.png");
 }
 
 .promo-tagline {
@@ -321,6 +361,38 @@ ul {
     border: 1px solid #1dd2af;
 }
 
+@media all and (max-width: 399px) {
+    .promo {
+        display: none;
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 750px) {
+    .promo {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: 325px;
+    }
+    .promo-tagline {
+        padding: 0;
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    .promo-tagline__text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .promo__scroll {
+        width: 2.5rem;
+        height: 2rem;
+    }
+}
+
 /*---Find Your Holidays---*/
 .find-offers {
     display: flex;
@@ -370,25 +442,53 @@ ul {
     cursor: pointer;
 }
 
-@media all and (max-width: 399px) {
+
+@media all and (max-width: 609px) {
     .find-offers {
+        display: flex;
         flex-wrap: wrap;
+        align-items: center;
     }
     .find-offers__text {
         width: 300px;
         text-align: center;
     }
+    .find-offers-form {
+        display: flex;
+        margin-bottom: 15px;
+        margin-right: 25px;
+        width: 100%;
+        justify-content: center;
+    }
     .find-offers-form__label {
         margin: 0px 10px 5px;
     }
-    .find-offers-form {
-        margin-bottom: 15px;
-        margin-right: 25px;
-    }
     .find-offers-form__btn {
+        margin: 0;
         margin-bottom: 15px;
     }
 }
+
+@media all and (min-width: 610px) and (max-width: 840px) {
+    .find-offers {
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    .find-offers__text {
+        width: 100%;
+        text-align: center;
+    }
+    .find-offers-form {
+        display: flex;
+        justify-content: center;
+        width: 45%;
+    }
+     .find-offers-form__btn {
+         padding: 0;
+         margin: 15px 0;
+    }
+}
+
 /*----Content - Upload ----*/
 .l-upload {
     position: absolute;
@@ -531,15 +631,15 @@ ul {
 }
 
 .offers-item__nav-img_type_top {
-    background-image: url("img/str_nav.png");
+    background-image: url("img/offers__str_nav.png");
 }
 
 .special-offers-block__item:hover .offers-item__nav-img_type_top {
-    background-image: url("img/str_active.png");
+    background-image: url("img/offers__str_active.png");
 }
 
 .offers-item__nav-img_type_bottom {
-    background-image: url("img/str.png");
+    background-image: url("img/offers__str_hide.png");
 }
 
 
@@ -548,10 +648,11 @@ ul {
         max-height: 1200px;
     }
 }
+
 /* -- Holidays Type --*/
 .holidays-type {
     background-color: #2c3e50;
-    background-image: url('img/Layer12.png');
+    background-image: url('img/holidays__background.png');
     min-height: 415px;
     color: #9dafc0;
 }
@@ -610,60 +711,60 @@ ul {
 }
 
 .holidays-item__cover_icon_cruise {
-    background-image: url('img/cruise.png');
+    background-image: url('img/holiday-type__cruise.png');
     background-size: 50% 55%;	
 }
 
 .holidays-type-block__item:hover .holidays-item__cover_icon_cruise {
-    background-image: url('img/cruise2.png');
+    background-image: url('img/holiday-type__cruise_active.png');
 }
 
 .holidays-item__cover_icon_city {
-    background-image: url('img/city.png');
+    background-image: url('img/holiday-type__city.png');
     background-size: 50% 60%;	
 }
 
 .holidays-type-block__item:hover .holidays-item__cover_icon_city {
-    background-image: url('img/city2.png');	
+    background-image: url('img/holiday-type__city_active.png');	
 }
 
 .holidays-item__cover_icon_honey {
-    background-image: url('img/honeyw.png');
+    background-image: url('img/holiday-type__honey.png');
     background-size: 70% 50%;	
 }
 
 .holidays-type-block__item:hover .holidays-item__cover_icon_honey {
-    background-image: url('img/honey.png');
+    background-image: url('img/holiday-type__honey_active.png');
 }
 
 .holidays-item__cover_icon_advent {
-    background-image: url('img/compas.png');
+    background-image: url('img/holiday-type__compas.png');
     background-size: 70% 70%;	
 }
 
 .holidays-type-block__item:hover .holidays-item__cover_icon_advent {
-    background-image: url('img/compas2.png');	
+    background-image: url('img/holiday-type__compas_active.png');	
 }
 
 .holidays-item__cover_icon_safari {
-    background-image: url('img/safari.png');
+    background-image: url('img/holiday-type__safari.png');
     background-size: 60% 60%;
 }
 
 .holidays-type-block__item:hover .holidays-item__cover_icon_safari {
-    background-image: url('img/safari2.png');
+    background-image: url('img/holiday-type__safari_active.png');
 }
 
 .holidays-item__cover_icon_beach {
-    background-image: url('img/beach.png');
+    background-image: url('img/holiday-type__beach.png');
     background-size: 80% 30%;
 }
 
 .holidays-type-block__item:hover .holidays-item__cover_icon_beach {
-    background-image: url('img/beach2.png');	
+    background-image: url('img/holiday-type__beach_active.png');	
 }
 
-@media all and (max-width: 399px) {
+@media all and (max-width: 750px) {
     .holidays-type-block {
         flex-wrap: wrap;
         max-height: auto;
@@ -681,6 +782,7 @@ ul {
         width: 150px;
     }
 }
+
 /* ---- Reviews ---*/
 .reviews {
     display: flex;
@@ -735,7 +837,8 @@ ul {
     color: #626262;
 }
 
-@media all and (max-width: 399px) {
+
+@media all and (max-width: 750px) {
     .reviews-block {
         padding: 0;
         margin: 0;
@@ -745,6 +848,7 @@ ul {
         width: 250px;
     }
 }
+
 /* ---- Footer --- */
 
 footer {
@@ -894,7 +998,7 @@ footer {
     transition: all 6s ease;
 }
 
-@media all and (max-width: 399px) {
+@media all and (max-width: 750px) {
     .footer__links-menu {
         flex-wrap: wrap;
         justify-content: center;
@@ -905,6 +1009,7 @@ footer {
         width: 250px;
     }
 }
+
 /* Хелперы */
 .l-hidden {
     display: none;
