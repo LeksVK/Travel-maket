@@ -1,242 +1,348 @@
 <!DOCTYPE html>
-<html  land="ru">
-<head>
-	<meta charset="utf-8">
-	<title>Maket Voyage - Blog</title>
-	<link rel="stylesheet" href="voyage_style.css">
-    <link rel="stylesheet" href="blog.css">
-</head>
-<body>
-    <header class="header">
-        <div class="user-menu" id="home">
-            <ul class="us-menu-nav social-icons">
-                <li class="us-menu-nav__link">
-                    <a href="#" onclick = "login()">
-                    <img class="us-menu-nav__link-icon"src="img/a_log.png" alt="icon">
-                    Agent Login
-                    </a>
-                </li>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Maket Voyage</title>
+        <link rel="stylesheet" media="all" href="voyage_style.css">
+        <link rel="stylesheet" media="all" href="blog.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="header">
+            <div class="user-menu">
+                <ul class="us-menu-nav">
+                    <li class="us-menu-nav__link">
+                        <a href="#" onclick = "loginShow()">
+                            <img class="us-menu-nav__link-icon" src="img/us-menu__agent.png" alt="icon">
+                            Agent Login
+                        </a>
+                    </li>
 
-                <li class="us-menu-nav__link">
-                    <a href="#">
-                    <img class="us-menu-nav__link-icon" src="img/custom.png" alt="icon">
-                    Customer Login
-                    </a>
-                </li>
+                    <li class="us-menu-nav__link">
+                        <a href="#">
+                            <img class="us-menu-nav__link-icon" src="img/us-menu__cust.png" alt="icon">
+                            Customer Login
+                        </a>
+                    </li>
 
-                <li class="us-menu-nav__link">
-                    <a href="#">
-                    <img class="us-menu-nav__link-icon" src="img/notm.png" alt="icon">
-                        Not a Member? <a href="#" onclick = "regin()"><span class="l_text-color_lazur"> Register </span></a>
-                    </a>
-                </li>
+                    <li class="us-menu-nav__link">
+                        <a href="#">
+                            <img class="us-menu-nav__link-icon" src="img/us-menu__file.png" alt="icon">
+                            Not a Member? 
+                            <a href="#" onclick = "regShow()">
+                                <span class="l-text_color_lazur"> 
+                                    Register 
+                                </span>
+                            </a>
+                        </a>
+                    </li>
 
-                <li class="us-menu-nav__link">
-                    <a href="tel:8151234567">
-                    Call Us Now 815-123-4567
-                    </a>
-                </li>
-            </ul>
+                    <li class="us-menu-nav__link">
+                        <a href="tel:8151234567">
+                        Call Us Now 815-123-4567
+                        </a>
+                    </li>
+                </ul>
 
-            <ul class="us-menu-icons">
-                <li class="us-menu-icons__link">
-                    <a href="#">
-                    <img src="img/fb.png"  alt="Fb">
-                    </a>
-                    <!-- Fb -->
-                </li>
+                <ul class="social-icons social-icons_position_top">
+                    <li class="social-icons__link">
+                        <a href="https://www.facebook.com/iknow.travel">
+                            <img src="img/social-icon__fb.png"  alt="Fb">
+                        </a>
+                    </li>
 
-                <li class="us-menu-icons__link">
-                    <a href="#">
-                    <img src="img/tw.png"  alt="Tw">
-                    </a>
-                    <!-- Tw -->
-                </li>
+                    <li class="social-icons__link">
+                        <a href="https://twitter.com/hashtag/travel">
+                            <img src="img/social-icon__tw.png"  alt="Tw">
+                        </a>
+                    </li>
 
-                <li class="us-menu-icons__link">
-                    <a href="#">
-                    <img src="img/tumb.png"  alt="Tumb">
-                    </a>
-                    <!-- Tumb-->
-                </li>
+                    <li class="social-icons__link">
+                        <a href="https://www.tumblr.com/tagged/travel">
+                            <img src="img/social-icon__tumb.png"  alt="Tumb">
+                        </a>
+                    </li>
 
-                <li class="us-menu-icons__link">
-                    <a href="#">
-                    <img src="img/pin.png"  alt="Pint">
-                    </a>
-                    <!-- Pint-->
-                </li>
-            </ul>
-        </div>
+                    <li class="social-icons__link">
+                        <a href="https://www.pinterest.ru/search/pins/?q=travel&rs=typed">
+                            <img src="img/social-icon__pint.png"  alt="Pint">
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="nav-menu">
+            <div class="nav-menu">
 
-            <img class="header-logo" src="img/Voyage_logo.png" width="152" height="30" alt="VOYAGE">
+                <div class="nav-menu__hamburger"></div>
+                
+                <a href="index.html">
+                    <img class="header-logo" id="home" src="img/Voyage_logo.png" width="152" height="30" alt="VOYAGE">
+                </a>
 
-            <ul class="nav-menu-links">
-                <li>
-                    <a class="nav-menu-links__item" href="index.html">Home</a>
-                </li>
+                <ul class="nav-menu-links">
+                    <li>
+                        <a class="nav-menu-links__item" href="index.html">Home</a>
+                    </li>
 
-                <li>
-                    <a class="nav-menu-links__item" href="voyage_dest.html">Destinations</a>
-                </li>
+                    <li>
+                        <a class="nav-menu-links__item" href="voyage_dest.html">Destinations</a>
+                    </li>
 
-                <li>
-                    <a class="nav-menu-links__item" href="#">Criuses</a>
-                </li>
+                    <li>
+                        <a class="nav-menu-links__item" href="#">Criuses</a>
+                    </li>
 
-                <li>
-                    <a class="nav-menu-links__item" href="#">Specials</a>
-                </li>
+                    <li>
+                        <a class="nav-menu-links__item" href="#">Specials</a>
+                    </li>
 
-                <li>
-                    <a class="nav-menu-links__item" href="#">Holidays</a>
-                </li>
+                    <li>
+                        <a class="nav-menu-links__item" href="#">Holidays</a>
+                    </li>
 
-                <li>
-                    <a class="nav-menu-links__item" href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a class="nav-menu-links__item_type_search" href="#">
-                    <img src="img/search.png" alt="Search">
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a class="nav-menu-links__item" href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-menu-links__item nav-menu-links__item_type_search">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="find-offers">
+                <p class="find-offers__text"> 
+                    Find your 
+                    <br>
+                    <span class="l-text_color_lazur">
+                        holidays
+                    </span>
+                </p>
+
+                <div class="find-offers-form">
+                    <label class="find-offers-form__label" for="locate"> 
+                        Where 
+                    </label>
+                    <div class="find-offers-form__item">
+                        <input class="find-offers-form__input" type="text" name="where" id="locate" placeholder="distination" >
+                        <input class="find-offers-form__input" type="image"  src="img/find-offers__world.png" alt="Change locate">
+                    </div>
+                </div>
+
+                <div class="find-offers-form">
+                    <label class="find-offers-form__label" for="date"> 
+                        When 
+                    </label>
+                    <div class="find-offers-form__item">
+                        <input class="find-offers-form__input" type="date" name="when" id="date">
+                        <input class="find-offers-form__input" type="image"  src="img/find-offers__calendar.png" alt="Change data">
+                    </div>
+                </div>
+
+                <button class="find-offers-form__btn">
+                    Search 
+                </button>
+            </div>
+        </header>
+
+        <div class="content-posts">
+            <div class="content-posts__stroke">
+                <div class="content-posts__item item-post">
+                    <img src="img/blog__post_chaina.jpg" class="item-post__cover" alt="chaina">
+
+                    <p class="item-post__info item-post__info_type_meta-data">
+                        admin 4-03-2014 blog news
+                    </p>
+                    <p class="item-post__info"> 
+                        <span class="item-post__info item-post__info_type_text-head">
+                            Lorem Ipsum is typesetting industry
+                        </span>
+                        <br>
+                        Lorem Ipsum is simply dummy text of the 
+                        printing and typeset industry. Lorem Ipsum 
+                        has been the industry's standard dummy text 
+                        ever hen an with new version look.
+                    </p>
+                    <button class="content-posts__button">
+                        Details
+                    </button>
+                    <img src="img/blog__avatar_girl.jpeg" class="item-post__author" alt="avatar">
+                </div>
+
+                <div class="content-posts__item item-post">
+                    <img src="img/blog__post_alpy.jpg" class="item-post__cover" alt="alpy">
+
+                    <p class="item-post__info item-post__info_type_meta-data">
+                        admin 4-03-2014 blog news
+                    </p>
+                    <p class="item-post__info">
+                        <span class="item-post__info item-post__info_type_text-head">
+                            Lorem Ipsum is typesetting industry.
+                        </span>
+                        <br>
+                        Lorem Ipsum is simply dummy text of the 
+                        printing and typeset industry. Lorem Ipsum 
+                        has been the industry's standard dummy text 
+                        ever hen an with new version look.
+                    </p>
+                    <button class="content-posts__button">
+                        Details
+                    </button>
+                    <img src="img/blog__avatar_man.png" class="item-post__author" alt="icon">
+                </div>
+            </div>
             
+            <div class="content-posts__stroke">
+                <div class="content-posts__item item-post">
+                    <img src="img/blog__post_praha.jpg" class="item-post__cover" alt="praha">
+
+                    <p class="item-post__info item-post__info_type_meta-data">
+                        admin 4-03-2014 blog news
+                    </p>
+                    <p class="item-post__info">
+                        <span class="item-post__info item-post__info_type_text-head">
+                            Lorem Ipsum is typesetting industry
+                        </span>
+                        <br>
+                        Lorem Ipsum is simply dummy text of the 
+                        printing and typeset industry. Lorem Ipsum 
+                        has been the industry's standard dummy text 
+                        ever hen an with new version look.
+                    </p>
+                    <button class="content-posts__button">
+                        Details
+                    </button>
+                    <img src="img/blog__avatar_plane.png" class="item-post__author" alt="ico">
+                </div>
+
+                <div class="content-posts__item item-post">
+                    <img src="img/blog__post_road.jpg" class="item-post__cover" alt="road">
+
+                    <p class="item-post__info item-post__info_type_meta-data">
+                        admin 4-03-2014 blog news
+                    </p>
+                    <p class="item-post__info">
+                        <span class="item-post__info item-post__info_type_text-head">
+                            Lorem Ipsum is typesetting industry
+                        </span>
+                        <br>
+                        Lorem Ipsum is simply dummy text of the 
+                        printing and typeset industry. Lorem Ipsum 
+                        has been the industry's standard dummy text 
+                        ever hen an with new version look.
+                    </p>
+                    <button class="content-posts__button">
+                        Details
+                    </button>
+                    <img src="img/blog__avatar_pass.jpeg"  class="item-post__author" alt="icon">
+                </div>
+            </div>
+
+            <button class="content-posts__button content-posts__button_type_more">
+                Loading more
+            </button>
         </div>
-
-        <div class="find-offers">
-            <p> Find your <br><span class="l_text-color_lazur">holidays</span></p>
-
-            <label class="find-offers-form__label" for="locate"> Where </label>
-            <div class="find-offers-form">
-                <input class="find-offers-form__input" type="text" name="where" id="locate" placeholder="distination" >
-                <input class="find-offers-form__input" type="image"  src="img/map.png" alt="Change locate">
-            </div>
-
-            <label class="find-offers-form__label" for="date"> When </label>
-            <div class="find-offers-form">
-               <input class="find-offers-form__input" type="date" name="when" id="date">
-               <input class="find-offers-form__input" type="image"  src="img/month.png" alt="Change data">
-            </div>
-
-            <button class="find-offers-form__btn"> Search </button>
-        </div>
-    </header>
-
-	<div class="content">
-        <div class="recent-posts">
-            <div class="recent-posts_stroke">
-                <div class="recent-posts_item">
-                    <img src="img/blog_post1.jpg" class="post_cover"/>
-
-                    <p class="post_info">admin 4-03-2014 blog news</p>
-                    <p> <span>Lorem Ipsum is typesetting industry.</span><br>
-                        Lorem Ipsum is simply dummy text of the 
-                        printing and typeset industry. Lorem Ipsum 
-                        has been the industry's standard dummy text 
-                        ever hen an with new version look.
-                    </p>
-                    <button>Details</button>
-                    <img src="img/post_avatar1.jpeg" class="post_author"/>
-                </div>
-
-                <div class="recent-posts_item">
-                    <img src="img/blog_post2.jpg" class="post_cover"/>
-
-                    <p class="post_info">admin 4-03-2014 blog news</p>
-                    <p> <span>Lorem Ipsum is typesetting industry.</span><br>
-                        Lorem Ipsum is simply dummy text of the 
-                        printing and typeset industry. Lorem Ipsum 
-                        has been the industry's standard dummy text 
-                        ever hen an with new version look.
-                    </p>
-                    <button>Details</button>
-                    <img src="img/post_avatar2.png" class="post_author"/>
-                </div>
-            </div>
-            
-            <div class="recent-posts_stroke">
-                <div class="recent-posts_item">
-                    <img src="img/blog_post3.jpg" class="post_cover"/>
-
-                    <p class="post_info">admin 4-03-2014 blog news</p>
-                    <p> <span>Lorem Ipsum is typesetting industry.</span><br>
-                        Lorem Ipsum is simply dummy text of the 
-                        printing and typeset industry. Lorem Ipsum 
-                        has been the industry's standard dummy text 
-                        ever hen an with new version look.
-                    </p>
-                    <button>Details</button>
-                    <img src="img/post_avatar3.png" class="post_author"/>
-                </div>
-
-                <div class="recent-posts_item">
-                    <img src="img/blog_post4.jpg" class="post_cover"/>
-
-                    <p class="post_info">admin 4-03-2014 blog news</p>
-                    <p> <span>Lorem Ipsum is typesetting industry.</span><br>
-                        Lorem Ipsum is simply dummy text of the 
-                        printing and typeset industry. Lorem Ipsum 
-                        has been the industry's standard dummy text 
-                        ever hen an with new version look.
-                    </p>
-                    <button>Details</button>
-                    <img src="img/post_avatar4.jpeg"  class="post_author"/>
-                </div>
-            </div>
-
-            <button class="recent-posts_button">Loading more</button>
-            
-        </div>
-    </div>
 	
-  <footer class="footer">
-      <ul class="footer__links">
-				<li><a class="footer__link" href="index.html">Home</a>:</li>
-				<li><a class="footer__link" href="voyage_dest.html">Destinations</a>::</li>
-				<li><a class="footer__link" href="#">Criuses</a>::</li>
-				<li><a class="footer__link" href="#">Specils</a>::</li>
-				<li><a class="footer__link" href="#">Holidays</a>::</li>
-				<li><a class="footer__link" href="blog.html">Blog</a>::</li>
-				<li><a class="footer__link" href="#">Contact Us</a></li>
-      </ul>
+        <footer class="footer">
 
-			<div class="footer__copyright">
-				<p>Copyright @voyage. All Right Reserved.</p>
-			</div>
+            <ul class="footer__links-menu footer-menu">
+                <li>
+                    <a class="footer-menu__link" href="index.html">
+                        Home
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="voyage_dest.html">
+                        Destinations
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="#holidays">
+                        Criuses
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="#special">
+                        Specils
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="#holidays">
+                        Holidays
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="blog.html">
+                        Blog
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="#">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
 
-			<a href="#home">
-				<!-- <img src="#"> -->	
-				<div class="footer__btn-up"></div>
-			</a>
-	</footer>	
+            <div class="footer__copyright">
+                <p>
+                    Copyright @voyage. All Right Reserved.
+                </p>
+            </div>
 
-      <div class="log-form j-log-form">
+            <a href="#home">
+                <!-- <img src="#"> -->	
+                <div class="footer__btn-up"></div>
+            </a>
+        </footer>	
+
+        <div class="log-form j-log-form">
 
             <input class="log-form__input" type="text" name="username" placeholder="Username">
 
             <input class="log-form__input" type="text" name="password" placeholder="Password">
 
-            <button class="log-form__btn j-log-form__btn" onclick="logout()">SIGN IN</button>
+            <button class="log-form__btn j-log-form__btn" onclick="loginHide()">
+                SIGN IN
+            </button>
 
-            <p class="log-form__text">Don't have an account? <a class="log-form__text_state_bold" href="#" onclick = "regin()">Sign up</a></p>
-    </div>
-    <div class="reg-form j-reg-form">
+            <p class="log-form__text">
+                Don't have an account? 
+                <a class="log-form__text_state_bold" href="#" onclick = "regShow()">
+                    Sign up
+                </a>
+            </p>
+        </div>
+        
+        <div class="reg-form j-reg-form">
 
             <input class="reg-form__input" type="text" name="username" placeholder="Username">
-        
+
             <input class="reg-form__input" type="text" name="email" placeholder="Email">
 
             <input class="reg-form__input" type="text" name="password" placeholder="Password">
 
-            <button class="reg-form__btn" onclick="regout()">Register</button>
+            <button class="reg-form__btn" onclick="regHide()">
+                Register
+            </button>
 
-            <p class="reg-form__text">Do you have an account? <a class="reg-form__text_state_bold" href="#" onclick = "login()">Sign In</a></p>
-    </div>
-    <div class="log-form__back j-log-form__back_off"></div>
-    
-    <script type="text/javascript" src="test.js"></script>
-</body>
+            <p class="reg-form__text">
+                Do you have an account? 
+                <a class="reg-form__text_state_bold" href="#" onclick = "logShow()">
+                    Sign In
+                </a>
+            </p>
+        </div>
+        
+        <div class="log-form__back j-log-form__back_off">
+        </div>
+
+        <script type="text/javascript" src="test.js"></script>
+    </body>
 </html>

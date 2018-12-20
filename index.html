@@ -1,567 +1,749 @@
 <!DOCTYPE html>
-<html  lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Maket Voyage</title>
-    <link rel="stylesheet" madia="all" href="voyage_style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-</head>
-<body>
-    <header class="header">
-        <div class="user-menu" id="home">
-            <ul class="us-menu-nav social-icons">
-                <li class="us-menu-nav__link">
-                    <a href="#" onclick = "login()">
-                    <img class="us-menu-nav__link-icon"src="img/a_log.png" alt="icon">
-                    Agent Login
-                    </a>
-                </li>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Maket Voyage</title>
+        <link rel="stylesheet" media="all" href="voyage_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="header">
+            <div class="user-menu">
+                <ul class="us-menu-nav">
+                    <li class="us-menu-nav__link">
+                        <a href="#" onclick = "loginShow()">
+                            <img class="us-menu-nav__link-icon" src="img/us-menu__agent.png" alt="icon">
+                            Agent Login
+                        </a>
+                    </li>
 
-                <li class="us-menu-nav__link">
-                    <a href="#">
-                    <img class="us-menu-nav__link-icon" src="img/custom.png" alt="icon">
-                    Customer Login
-                    </a>
-                </li>
+                    <li class="us-menu-nav__link">
+                        <a href="#">
+                            <img class="us-menu-nav__link-icon" src="img/us-menu__cust.png" alt="icon">
+                            Customer Login
+                        </a>
+                    </li>
 
-                <li class="us-menu-nav__link">
-                    <a href="#">
-                    <img class="us-menu-nav__link-icon" src="img/notm.png" alt="icon">
-                        Not a Member? <a href="#" onclick = "regin()"><span class="l_text-color_lazur"> Register </span></a>
-                    </a>
-                </li>
+                    <li class="us-menu-nav__link">
+                        <a href="#">
+                            <img class="us-menu-nav__link-icon" src="img/us-menu__file.png" alt="icon">
+                            Not a Member? 
+                            <a href="#" onclick = "regShow()">
+                                <span class="l-text_color_lazur"> 
+                                    Register 
+                                </span>
+                            </a>
+                        </a>
+                    </li>
 
-                <li class="us-menu-nav__link">
-                    <a href="tel:8151234567">
-                    Call Us Now 815-123-4567
-                    </a>
-                </li>
-            </ul>
+                    <li class="us-menu-nav__link">
+                        <a href="tel:8151234567">
+                        Call Us Now 815-123-4567
+                        </a>
+                    </li>
+                </ul>
 
-            <ul class="us-menu-icons">
-                <li class="us-menu-icons__link">
-                    <a href="#">
-                    <img src="img/fb.png"  alt="Fb">
-                    </a>
-                    <!-- Fb -->
-                </li>
+                <ul class="social-icons social-icons_position_top">
+                    <li class="social-icons__link">
+                        <a href="https://www.facebook.com/iknow.travel">
+                            <img src="img/social-icon__fb.png"  alt="Fb">
+                        </a>
+                    </li>
 
-                <li class="us-menu-icons__link">
-                    <a href="#">
-                    <img src="img/tw.png"  alt="Tw">
-                    </a>
-                    <!-- Tw -->
-                </li>
+                    <li class="social-icons__link">
+                        <a href="https://twitter.com/hashtag/travel">
+                            <img src="img/social-icon__tw.png"  alt="Tw">
+                        </a>
+                    </li>
 
-                <li class="us-menu-icons__link">
-                    <a href="#">
-                    <img src="img/tumb.png"  alt="Tumb">
-                    </a>
-                    <!-- Tumb-->
-                </li>
+                    <li class="social-icons__link">
+                        <a href="https://www.tumblr.com/tagged/travel">
+                            <img src="img/social-icon__tumb.png"  alt="Tumb">
+                        </a>
+                    </li>
 
-                <li class="us-menu-icons__link">
-                    <a href="#">
-                    <img src="img/pin.png"  alt="Pint">
-                    </a>
-                    <!-- Pint-->
-                </li>
-            </ul>
-        </div>
+                    <li class="social-icons__link">
+                        <a href="https://www.pinterest.ru/search/pins/?q=travel&rs=typed">
+                            <img src="img/social-icon__pint.png"  alt="Pint">
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="nav-menu">
-            
-            <a href="index.html">
-                <img class="header-logo" src="img/Voyage_logo.png" width="152" height="30" alt="VOYAGE"></a>
+            <div class="nav-menu">
 
-            <ul class="nav-menu-links">
-                <li>
-                    <a class="nav-menu-links__item" href="index.html">Home</a>
-                </li>
+                <div class="nav-menu__hamburger"></div>
+                
+                <a href="index.html">
+                    <img class="header-logo" id="home" src="img/Voyage_logo.png" width="152" height="30" alt="VOYAGE">
+                </a>
 
-                <li>
-                    <a class="nav-menu-links__item" href="voyage_dest.html">Destinations</a>
-                </li>
+                <ul class="nav-menu-links">
+                    <li>
+                        <a class="nav-menu-links__item" href="index.html">Home</a>
+                    </li>
 
-                <li>
-                    <a class="nav-menu-links__item" href="#">Criuses</a>
-                </li>
+                    <li>
+                        <a class="nav-menu-links__item" href="voyage_dest.html">Destinations</a>
+                    </li>
 
-                <li>
-                    <a class="nav-menu-links__item" href="#">Specials</a>
-                </li>
+                    <li>
+                        <a class="nav-menu-links__item" href="#">Criuses</a>
+                    </li>
 
-                <li>
-                    <a class="nav-menu-links__item" href="#">Holidays</a>
-                </li>
+                    <li>
+                        <a class="nav-menu-links__item" href="#">Specials</a>
+                    </li>
 
-                <li>
-                    <a class="nav-menu-links__item" href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="nav-menu-links__item_type_search"></div>
-                    </a>
-                </li>
-            </ul>
-            
-        </div>
+                    <li>
+                        <a class="nav-menu-links__item" href="#">Holidays</a>
+                    </li>
 
-        <div class="promo j-promo promo_back-bridge">
+                    <li>
+                        <a class="nav-menu-links__item" href="blog.html">Blog</a>
+                    </li>
 
-            <button class="promo__scroll promo__scroll_position_left"> &lt; </button>
+                    <li>
+                        <a href="#" class="nav-menu-links__item nav-menu-links__item_type_search">
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-            <div class="promo-tagline">
-                <p><strong class="promo-tagline_title_style">To travel is to live </strong>
-                <br> You Don't Need Magic to disappear.
-                All you need is a destination.</p>
+            <div class="promo promo_cover_back-bridge j-promo">
+                <button class="promo__scroll promo__scroll_position_left"> 
+                    &lt; 
+                </button>
 
-                <div class="promo-buttons">
-                    <a class="promo-buttons__btn" href="#">Snow on the map</a>
-                    <a class="promo-buttons__btn" href="blog.html">More info</a>
+                <div class="promo-tagline">
+                    <p class="promo-tagline__text">
+                        <strong class="promo__text promo__text_style_big">
+                            To travel is to live 
+                        </strong>
+                        <br> 
+                        You Don't Need Magic to disappear. All you need is a destination.
+                    </p>
+
+                    <div class="promo-buttons">
+                        <a class="promo-buttons__btn" href="#">
+                            Snow on the map
+                        </a>
+                        <a class="promo-buttons__btn" href="blog.html">
+                            More info
+                        </a>
+                    </div>
+                </div>
+
+                <button class="promo__scroll promo__scroll_position_right"> 
+                    &gt; 
+                </button>
+            </div>
+
+            <div class="find-offers">
+                <p class="find-offers__text"> 
+                    Find your 
+                    <br>
+                    <span class="l-text_color_lazur">
+                        holidays
+                    </span>
+                </p>
+
+                <div class="find-offers-form">
+                    <label class="find-offers-form__label" for="locate"> 
+                        Where 
+                    </label>
+                    <div class="find-offers-form__item">
+                        <input class="find-offers-form__input" type="text" name="where" id="locate" placeholder="distination" >
+                        <input class="find-offers-form__input" type="image"  src="img/find-offers__world.png" alt="Change locate">
+                    </div>
+                </div>
+
+                <div class="find-offers-form">
+                    <label class="find-offers-form__label" for="date"> 
+                        When 
+                    </label>
+                    <div class="find-offers-form__item">
+                        <input class="find-offers-form__input" type="date" name="when" id="date">
+                        <input class="find-offers-form__input" type="image"  src="img/find-offers__calendar.png" alt="Change data">
+                    </div>
+                </div>
+
+                <button class="find-offers-form__btn">
+                    Search 
+                </button>
+            </div>
+        </header>
+
+        <div class="content">
+
+            <div class="l-upload"> <!-- блок иконок для предварительно подгрузки -->
+                <img src="img/holiday-type__cruise.png">
+                <img src="img/holiday-type__cruise_active.png">
+                <img src="img/holiday-type__city.png">
+                <img src="img/holiday-type__city_active.png">
+                <img src="img/holiday-type__honey.png">
+                <img src="img/holiday-type__honey_active.png">
+                <img src="img/holiday-type__compas.png">
+                <img src="img/holiday-type__compas_active.png">
+                <img src="img/holiday-type__safari.png">
+                <img src="img/holiday-type__safari_active.png">
+                <img src="img/holiday-type__beach.png">
+                <img src="img/holiday-type__beach_active.png">
+            </div>
+
+            <div class="special-offers" id="special">
+                <div class="content-title">
+                    <h2 class="content-tttle__text content-title__text_size_big">
+                        Special offers
+                    </h2>
+                    <p>Best 2014 packages where people love to stay?</p>
+                </div>
+
+                <div class="special-offers-block">
+                    <div class="special-offers-block__item offers-item">
+                        <img src="img/offers__usa.png" class="offers-item__cover" alt="usa">
+
+                        <ul class="offers-item__menu">
+                            <li class="offers-item__stroke offers-item__stroke_position_first">
+                                Statue of liberty - USA
+                                <br> New Destination! 
+                                <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)">
+                                </div>	
+                            </li>
+                            <div class="offers-item__menu-hidden l-hidden j-off-item-menu">
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__rain.png" class="offers-item__img" alt="rain"> 
+                                    10&#176;C Rainy
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__ticket.png" class="offers-item__img" alt="ticket"> 
+                                    $7965*
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__warning.png" class="offers-item__img" alt="period"> 
+                                    8days/7nights
+                                </li>
+                                <li class="offers-item__stroke offers-item__stroke_position_last">
+                                    Expires in : 7 days
+                                    <div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)">
+                                    </div>
+                                </li>
+                            </div>						
+                        </ul>
+                    </div>
+
+                    <div class="special-offers-block__item offers-item">
+                        <img src="img/offers__rome.png" class="offers-item__cover" alt="rome">
+
+                        <ul class="offers-item__menu">
+                            <li class="offers-item__stroke offers-item__stroke_position_first">
+                                Spectacular Seychelles
+                                <br> New Destination!   
+                                <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)">
+                                </div>					
+                            </li>
+                            <div class="offers-item__menu-hidden l-hidden j-off-item-menu">
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__rain.png" class="offers-item__img" alt="rain"> 
+                                    10&#176;C Rainy
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__ticket.png" class="offers-item__img" alt="ticket"> 
+                                    $7965*
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__warning.png" class="offers-item__img" alt="period"> 
+                                    8days/7nights
+                                </li>
+                                <li class="offers-item__stroke offers-item__stroke_position_last">
+                                    Expires in : 7 days
+                                    <div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)">
+                                    </div>
+                                </li>
+                            </div>						
+                        </ul>
+                    </div>
+
+                    <div class="special-offers-block__item offers-item">
+                        <img src="img/offers__italy.png" class="offers-item__cover" alt="italy">
+
+                        <ul class="offers-item__menu">
+                            <li class="offers-item__stroke offers-item__stroke_position_first">
+                                Hong Kong & Macau
+                                <br> Bonus Extras!
+                                <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)">
+                                </div>					
+                            </li>
+                            <div class="offers-item__menu-hidden l-hidden j-off-item-menu">
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__rain.png" class="offers-item__img" alt="rain"> 
+                                    10&#176;C Rainy
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__ticket.png" class="offers-item__img" alt="ticket"> 
+                                    $7965*
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__warning.png" class="offers-item__img" alt="period"> 
+                                    8days/7nights
+                                </li>
+                                <li class="offers-item__stroke offers-item__stroke_position_last">
+                                    Expires in : 7 days
+                                    <div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)">
+                                    </div> 
+                                </li>
+                           </div>						
+                        </ul>
+                    </div>
+
+                    <div class="special-offers-block__item offers-item">
+                        <img src="img/offers__paris.png" class="offers-item__cover" alt="paris">
+
+                        <ul class="offers-item__menu">
+                            <li class="offers-item__stroke offers-item__stroke_position_first">
+                                Vietnam Highlights
+                                <br> New Destination!
+                                <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)">
+                                </div>					
+                            </li>
+                            <div class="offers-item__menu-hidden l-hidden j-off-item-menu">
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__rain.png" class="offers-item__img" alt="rain"> 
+                                    10&#176;C Rainy
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__ticket.png" class="offers-item__img" alt="ticket"> 
+                                    $7965*
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__warning.png" class="offers-item__img" alt="period"> 
+                                    8days/7nights
+                                </li>
+                                <li class="offers-item__stroke offers-item__stroke_position_last">
+                                    Expires in : 7 days
+                                    <div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)">
+                                    </div>
+                                </li>
+                            </div>						
+                        </ul>
+                    </div>
+
+                    <div class="special-offers-block__item offers-item">
+                        <img src="img/offers__arizon.png" class="offers-item__cover" alt="arizon">
+
+                        <ul class="offers-item__menu">
+                            <li class="offers-item__stroke offers-item__stroke_position_first">
+                                Spectacular Seychelles
+                                <br> New Destination!  
+                                <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)">
+                                </div>					
+                            </li>
+                            <div class="offers-item__menu-hidden l-hidden j-off-item-menu">
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__rain.png" class="offers-item__img" alt="rain"> 
+                                    10&#176;C Rainy
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__ticket.png" class="offers-item__img" alt="ticket"> 
+                                    $7965*
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__warning.png" class="offers-item__img" alt="period"> 
+                                    8days/7nights
+                                </li>
+                                <li class="offers-item__stroke offers-item__stroke_position_last">
+                                    Expires in : 7 days
+                                    <div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)">
+                                    </div> 
+                                </li>				
+                            </div>		
+                        </ul>
+                    </div>
+
+                    <div class="special-offers-block__item offers-item">
+                        <img src="img/offers__dubai.png" class="offers-item__cover" alt="dubai">
+
+                        <ul class="offers-item__menu">
+                            <li class="offers-item__stroke offers-item__stroke_position_first">
+                                Dubai
+                                <br> New Destination!  
+                                <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="showMenu(this)">
+                                </div>					
+                            </li>
+                            <div class="offers-item__menu-hidden l-hidden j-off-item-menu">
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__rain.png" class="offers-item__img" alt="rain"> 
+                                    10&#176;C Rainy
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__ticket.png" class="offers-item__img" alt="ticket"> 
+                                    $7965*
+                                </li>
+                                <li class="offers-item__stroke">
+                                    <img src="img/item-icon__warning.png" class="offers-item__img" alt="period"> 
+                                    8days/7nights
+                                </li>
+                                <li class="offers-item__stroke offers-item__stroke_position_last">
+                                    Expires in : 7 days
+                                    <div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="hideMenu(this)">
+                                    </div>
+                                </li>				
+                            </div>		
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <button class="promo__scroll promo__scroll_position_right"> &gt; </button>
-        </div>
+            <div class="holidays-type" id="holidays">
+                <div class="content-title">
+                    <h2 class="content-title__text content-title__text_size_big content-title__text_color_white">
+                        Holidays type
+                    </h2>
+                    <p>Get explore your dream to travel this world!</p>
+                </div>
 
-        <div class="find-offers">
-            <p class="find-offers__text"> Find your <br><span class="l_text-color_lazur">holidays</span></p>
+                <div class="holidays-type-block">
+                    <div class="holidays-type-block__item holidays-item">
+                        <div class="holidays-item__cover holidays-item__cover_icon_cruise">
+                        </div>
+                        <p class="holidays-item__text">
+                            Cruise
+                        </p>
+                    </div>
 
-            <label class="find-offers-form__label" for="locate"> Where </label>
-            <div class="find-offers-form">
-                <input class="find-offers-form__input" type="text" name="where" id="locate" placeholder="distination" >
-                <input class="find-offers-form__input" type="image"  src="img/map.png" alt="Change locate">
+                    <div class="holidays-type-block__item holidays-item">
+                        <div class="holidays-item__cover holidays-item__cover_icon_city">
+                        </div>
+                            <p class="holidays-item__text" >
+                                City Breaks
+                            </p>
+                    </div>
+
+                    <div class="holidays-type-block__item holidays-item">
+                        <div class="holidays-item__cover holidays-item__cover_icon_honey">
+                        </div>
+                        <p class="holidays-item__text">
+                            Honeymoon
+                        </p>
+                    </div>
+
+                    <div class="holidays-type-block__item holidays-item">
+                        <div class="holidays-item__cover holidays-item__cover_icon_advent">
+                        </div>
+                        <p class="holidays-item__text">
+                            Adventure
+                        </p>
+                    </div>
+
+                    <div class="holidays-type-block__item holidays-item">
+                        <div class="holidays-item__cover holidays-item__cover_icon_safari">
+                        </div>
+                        <p class="holidays-item__text">
+                            Safari
+                        </p>
+                    </div>
+
+                    <div class="holidays-type-block__item holidays-item">
+                        <div class="holidays-item__cover holidays-item__cover_icon_beach">
+                        </div>
+                        <p class="holidays-item__text">
+                            Beach
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <label class="find-offers-form__label" for="date"> When </label>
-            <div class="find-offers-form">
-               <input class="find-offers-form__input" type="date" name="when" id="date">
-               <input class="find-offers-form__input" type="image"  src="img/month.png" alt="Change data">
+            <div class="reviews">
+                <div class="content-title">
+                    <h2 class="content-title__text content-title__text_size_big">
+                        Happy clients
+                    </h2>
+                    <p>what customer say about us and why love our services!</p>
+                </div>
+                
+                <div class="reviews-block">
+                    <div class="reviews-block__item"> 
+                        <p class="reviews-block__item-text">
+                            Lorem Ipsum is simply dummy text of the printing and typeset industry. 
+                            Lorem Ipsum has been the industry's standard dummy 
+                            text ever hen an with new version look.
+                            <br>
+                            <span class="l-text_color_lazur">
+                                Client Name
+                            </span>
+                            <br>
+                            United States
+                        </p>
+                    </div>
+
+                    <div class="reviews-block__item"> 
+                        <p class="reviews-block__item-text">
+                            Lorem Ipsum is simply dummy text of the printing and typeset industry. 
+                            Lorem Ipsum has been the industry's standard dummy 
+                            text ever hen an with new version look.
+                            <br>
+                            <span class="l-text_color_lazur">
+                                Client Name
+                            </span>
+                            <br>
+                            United States
+                        </p>
+                    </div>
+
+                    <div class="reviews-block__item"> 
+                        <p class="reviews-block__item-text">
+                            Lorem Ipsum is simply dummy text of the printing and typeset industry. 
+                            Lorem Ipsum has been the industry's standard dummy 
+                            text ever hen an with new version look.
+                            <br>
+                            <span class="l-text_color_lazur">
+                                Client Name
+                            </span>
+                            <br>
+                            United States
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__site-nav footer-nav">
+                <div class="footer-nav__column">
+                    <h3 class="footer-nav__title">
+                        Newsletter
+                    </h3>
+                    <p class="footer-nav__text">
+                        Duis autem vel eum iriure dolor in
+                        <br>
+                        hendrerit in vulputate velit esse
+                        <br>
+                        molestie consequat, vel illum dolore.
+                    </p>
+
+                    <form class="footer__subscribe ">		
+                        <input class="footer__subscribe-mail" type="text" name="Email" placeholder="Subscribes..">
+                        <button class="footer__subscribe-btn">
+                            GO
+                        </button>				
+                    </form>
+                </div>
+
+                <div class="footer-nav__column">
+                    <h3 class="footer-nav__title">
+                        Latest News
+                    </h3>
+
+                    <div class="footer-nav__post">
+                        <img class="footer-nav__post-icon" src="img/footer-icon__board.png" alt="post-icon"> 
+                        <p class="footer-nav__text">
+                            Postformat Gallery: Multiple 
+                            <br>
+                            images
+                            <br>
+                            <span class="l-text_color_lazur">
+                                October 21, 2013 - 3:31 pm 
+                            </span>
+                        </p>
+                        <!-- Mountch Day, Year - Time pm/am -->
+                    </div>	
+
+                    <div class="footer-nav__post"> 
+                        <img class="footer-nav__post-icon" src="img/footer-icon__horse.png" alt="post-icon"> 
+                        <p class="footer-nav__text">
+                            Snowboarding is fun!
+                            <br>
+                            <span class="l-text_color_lazur">
+                                December 12, 2012 - 9:11 pm 
+                            </span>
+                        </p>	
+                        <!-- Mountch Day, Year - Time pm/am -->
+                    </div>
+                </div>
+
+                <div class="footer-nav__column">
+                    <h3 class="footer-nav__title">
+                        Tags
+                    </h3>
+                    <p class="footer-nav__text footer-tags ">
+                        <span class="footer-tags__link">
+                            <a href="#">
+                                Agent Login 
+                            </a>
+                        </span> 
+                        <span class="footer-tags__link">
+                            Customer Login 
+                        </span>
+                        <br> 
+                        <span class="footer-tags__link">
+                            Not a Member? 
+                        </span> 
+                        <span class="footer-tags__link">
+                            Contact 
+                        </span>
+                        <br> 
+                        <span class="footer-tags__link">
+                            New Horizons 
+                        </span> 
+                        <span class="footer-tags__link">
+                            Lanscape 
+                        </span>
+                        <span class="footer-tags__link">
+                            Tags 
+                        </span>
+                        <br> 
+                        <span class="footer-tags__link">
+                            Nice 
+                        </span> 
+                        <span class="footer-tags__link">
+                            Some 
+                        </span> 
+                        <span class="footer-tags__link">
+                            Portrait 
+                        </span> 
+                    </p>
+                </div>
+
+                <div class="footer-nav__column">
+                    <h3 class="footer-nav__title">
+                        Address
+                    </h3>
+                    <p class="footer-nav__text">	
+                        DieSachbearbeiter Schönhauser Allee 
+                        <br>
+                        167c,10435 Berlin Germany
+                        <br>
+                        <span class="l-text_color_lazur">
+                            <a href="mail:moin@blindtextgenerator.de">
+                                E-mail:
+                            </a>
+                        </span> 
+                        moin@blindtextgenerator.de
+                    </p>
+
+                    <ul class="social-icons social-icons_position_footer ">
+                        <li class="social-icons__link">
+                            <a href="https://www.facebook.com/iknow.travel">
+                                <img src="img/social-icon__fb.png"  alt="Fb">
+                            </a>
+                        </li>
+
+                        <li class="social-icons__link">
+                            <a href="https://twitter.com/hashtag/travel">
+                                <img src="img/social-icon__tw.png"  alt="Tw">
+                            </a>
+                        </li>
+
+                        <li class="social-icons__link">
+                            <a href="https://www.tumblr.com/tagged/travel">
+                                <img src="img/social-icon__tumb.png"  alt="Tumb">
+                            </a>
+                        </li>
+
+                        <li class="social-icons__link">
+                            <a href="https://www.pinterest.ru/search/pins/?q=travel&rs=typed">
+                                <img src="img/social-icon__pint.png"  alt="Pint">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <button class="find-offers-form__btn"> Search </button>
-        </div>
-    </header>
+            <ul class="footer__links-menu footer-menu">
+                <li>
+                    <a class="footer-menu__link" href="index.html">
+                        Home
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="voyage_dest.html">
+                        Destinations
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="#holidays">
+                        Criuses
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="#special">
+                        Specils
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="#holidays">
+                        Holidays
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="blog.html">
+                        Blog
+                    </a>
+                    ::
+                </li>
+                <li>
+                    <a class="footer-menu__link" href="#">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
 
-	<div class="content">
+            <div class="footer__copyright">
+                <p>
+                    Copyright @voyage. All Right Reserved.
+                </p>
+            </div>
 
-		<div class="l-upload"> <!-- блок иконок для предварительно подгрузки -->
-			<img src="img/cruise.png">
-			<img src="img/cruise2.png">
-			<img src="img/city.png">
-			<img src="img/city2.png">
-			<img src="img/honeyw.png">
-			<img src="img/honey.png">
-			<img src="img/compas.png">
-			<img src="img/compas2.png">
-			<img src="img/safari.png">
-			<img src="img/safari2.png">
-			<img src="img/beach.png">
-			<img src="img/beach2.png">
-		</div>
+            <a href="#home">
+                <!-- <img src="#"> -->	
+                <div class="footer__btn-up"></div>
+            </a>
+        </footer>	
 
-		<div class="special-offers">
-			<div class="content-title">
-				<h2 class="content-title_text-style_header">Special offers</h2>
-				<p>Best 2014 packages where people love to stay?</p>
-			</div>
-
-			<div class="special-offers-block">
-                <div class="special-offers-block__item offers-item">
-					<img src="img/usa.png" class="offers-item__cover">
-
-					<ul class="offers-item__menu">
-						<li class="offers-item__stroke offers-item__stroke_position_first">
-							<span>  Statue of liberty - USA<br> New Destination! </span>  
-                            <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>	
-						</li>
-						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
-							<li class="offers-item__stroke">
-								<img src="img/rain.png" class="offers-item__img"> 
-								10C Rainy
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/ticket.png" class="offers-item__img"> 
-								$7965*
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/warning.png" class="offers-item__img"> 
-								8days/7nights
-							</li>
-							<li class="offers-item__stroke offers-item__stroke_position_last">
-								Expires in : 7 days
-                                <div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div>
-							</li>
-						</div>						
-					</ul>
-				</div>
-				
-				<div class="special-offers-block__item offers-item">
-					<img src="img/layers1.png" class="offers-item__cover">
-
-					<ul class="offers-item__menu">
-						<li class="offers-item__stroke offers-item__stroke_position_first">
-							<span> Spectacular Seychelles<br> New Destination! </span>  
-							 <div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>					
-						</li>
-						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
-							<li class="offers-item__stroke">
-								<img src="img/rain.png" class="offers-item__img"> 
-								10C Rainy
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/ticket.png" class="offers-item__img"> 
-								$7965*
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/warning.png" class="offers-item__img"> 
-								8days/7nights
-							</li>
-							<li class="offers-item__stroke offers-item__stroke_position_last">
-								Expires in : 7 days
-								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div>
-							</li>
-						</div>						
-					</ul>
-				</div>
-				
-				<div class="special-offers-block__item offers-item">
-					<img src="img/layers5.png" class="offers-item__cover">
-
-					<ul class="offers-item__menu">
-						<li class="offers-item__stroke offers-item__stroke_position_first">
-							<span> Hong Kong & Macau<br> Bonus Extras! </span>  
-							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>					
-						</li>
-						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
-							<li class="offers-item__stroke">
-								<img src="img/rain.png" class="offers-item__img"> 
-								10C Rainy
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/ticket.png" class="offers-item__img"> 
-								$7965*
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/warning.png" class="offers-item__img"> 
-								8days/7nights
-							</li>
-							<li class="offers-item__stroke offers-item__stroke_position_last">
-								Expires in : 7 days
-								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div> 
-							</li>
-						</div>						
-					</ul>
-				</div>
-				
-				<div class="special-offers-block__item offers-item">
-					<img src="img/layers2.png" class="offers-item__cover">
-
-					<ul class="offers-item__menu">
-						<li class="offers-item__stroke offers-item__stroke_position_first">
-							<span> Vietnam Highlights<br> New Destination! </span>  
-							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>					
-						</li>
-						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
-							<li class="offers-item__stroke">
-								<img src="img/rain.png" class="offers-item__img"> 
-								10C Rainy
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/ticket.png" class="offers-item__img"> 
-								$7965*
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/warning.png" class="offers-item__img"> 
-								8days/7nights
-							</li>
-							<li class="offers-item__stroke offers-item__stroke_position_last">
-								Expires in : 7 days
-								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div>
-							</li>
-						</div>						
-					</ul>
-				</div>
-				
-				<div class="special-offers-block__item offers-item">
-					<img src="img/layers3.png" class="offers-item__cover">
-
-					<ul class="offers-item__menu">
-						<li class="offers-item__stroke offers-item__stroke_position_first">
-							<span> Spectacular Seychelles<br> New Destination! </span>  
-							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>					
-						</li>
-						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
-							<li class="offers-item__stroke">
-								<img src="img/rain.png" class="offers-item__img"> 
-								10C Rainy
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/ticket.png" class="offers-item__img"> 
-								$7965*
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/warning.png" class="offers-item__img"> 
-								8days/7nights
-							</li>
-							<li class="offers-item__stroke offers-item__stroke_position_last">
-								Expires in : 7 days
-								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div> 
-							</li>				
-						</div>		
-					</ul>
-				</div>
-
-				<div class="special-offers-block__item offers-item">
-					<img src="img/layers4.png" class="offers-item__cover">
-
-					<ul class="offers-item__menu">
-						<li class="offers-item__stroke offers-item__stroke_position_first">
-							<span> Dubai<br> New Destination!  </span>  
-							<div class="offers-item__nav-img offers-item__nav-img_type_top" onclick="addmenu(this)"></div>					
-						</li>
-						<div class="offers-item__menu-hidden l-hidden j-off-item-menu">
-							<li class="offers-item__stroke">
-								<img src="img/rain.png" class="offers-item__img"> 
-								10C Rainy
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/ticket.png" class="offers-item__img"> 
-								$7965*
-							</li>
-							<li class="offers-item__stroke">
-								<img src="img/warning.png" class="offers-item__img"> 
-								8days/7nights
-							</li>
-							<li class="offers-item__stroke offers-item__stroke_position_last">
-								Expires in : 7 days
-								<div class="offers-item__nav-img offers-item__nav-img_type_bottom" onclick="dellmenu(this)"></div>
-							</li>				
-						</div>		
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="holidays-type">
-			<div class="content-title">
-				<h2 class="content-title_text-style_header content-title_text-style_holiday-head">Holidays type</h2>
-				<p>Get explore your dream to travel this world!</p>
-			</div>
-
-			<div class="holidays-type-block">
-				<div class="holidays-type-block__item holidays-item">
-					<div class="holidays-item__cover holidays-item__cover_icon_cruise"></div>
-					<p class="holidays-item__text">Cruise</p>
-				</div>
-
-				<div class="holidays-type-block__item holidays-item">
-					<div class="holidays-item__cover holidays-item__cover_icon_city"></div>
-					<p class="holidays-item__text" >City Breaks</p>
-				</div>
-							
-				<div class="holidays-type-block__item holidays-item">
-					<div class="holidays-item__cover holidays-item__cover_icon_honey"></div>
-					<p class="holidays-item__text">Honeymoon</p>
-				</div>
-
-				<div class="holidays-type-block__item holidays-item">
-					<div class="holidays-item__cover holidays-item__cover_icon_advent"></div>
-					<p class="holidays-item__text">Adventure</p>
-				</div>
-
-				<div class="holidays-type-block__item holidays-item">
-					<div class="holidays-item__cover holidays-item__cover_icon_safari"></div>
-					<p class="holidays-item__text">Safari</p>
-				</div>
-
-				<div class="holidays-type-block__item holidays-item">
-					<div class="holidays-item__cover holidays-item__cover_icon_beach"></div>
-					<p class="holidays-item__text">Beach</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="reviews"> <!-- блок отзывы-->
-			<div class="content-title">
-				<h2 class="content-title_text-style_header">Happy clients</h2>
-				<p>what customer say about us and why love our services!</p>
-			</div>		
-			<div class="reviews-block">
-				<div class="reviews-block__item"> 
-					<p class="reviews-block__item-text">
-            Lorem Ipsum is simply dummy text of the 
-						printing and typeset industry. Lorem Ipsum 
-						has been the industry's standard dummy text
-						 ever hen an with new version look.
-					<br>
-					<span class="l_text-color_lazur">Client Name</span>
-					<br>United States</p>
-				</div>
-
-				<div class="reviews-block__item"> 
-					<p class="reviews-block__item-text">
-            Lorem Ipsum is simply dummy text of the 
-						printing and typeset industry. Lorem Ipsum 
-						has been the industry's standard dummy text 
-						ever hen an with new version look.
-					<br>
-					<span class="l_text-color_lazur">Client Name</span>
-					<br>United States</p>
-				</div>
-
-				<div class="reviews-block__item"> 
-					<p class="reviews-block__item-text">
-            Lorem Ipsum is simply dummy text of the 
-						printing and typeset industry. Lorem Ipsum 
-						has been the industry's standard dummy text 
-						ever hen an with new version look.
-					<br>
-					<span class="l_text-color_lazur">Client Name</span>
-					<br>United States</p>
-				</div>
-			</div>
-    </div>
-  </div>
-	
-	<footer class="footer">
-		<div class="footer__site-nav footer-nav">
-			<div class="footer-nav__column">
-				<h3 class="footer-nav__title">Newsletter</h3>
-				<p class="footer-nav__text">
-          Duis autem vel eum iriure dolor in
-          <br>hendrerit in vulputate velit esse
-          <br>molestie consequat, vel illum dolore.
-        </p>
-				
-				<form class="footer__subscribe ">		
-					<input class="footer__subscribe-mail" type="text" name="Email" placeholder="Subscribes..">
-					<button class="footer__subscribe-btn">GO</button>				
-				</form>
-			</div>
-
-			<div class="footer-nav__column">
-				<h3 class="footer-nav__title">Latest News</h3>
-				
-				<div class="footer-nav__post">
-					<img class="footer-nav__post-icon" src="img/1board.png"> 
-					<p class="footer-nav__text"> Postformat Gallery: Multiple <br>
-					images<br>
-					<span class="l_text-color_lazur">October 21, 2013 - 3:31 pm </span></p>
-					<!-- Mountch Day, Year - Time pm/am -->
-				</div>	
-
-				<div class="footer-nav__post"> 
-					<img class="footer-nav__post-icon" src="img/2board.png"> 
-					<p class="footer-nav__text"> Snowboarding is fun!<br>
-					<span class="l_text-color_lazur">December 12, 2012 - 9:11 pm </span></p>	
-					<!-- Mountch Day, Year - Time pm/am -->
-				</div>
-			</div>
-
-			<div class="footer-nav__column">
-				<h3 class="footer-nav__title">Tags</h3>
-				<p class="footer-nav__text footer-nav__text_type_tags">
-					<span class="footer-nav__text_type_tag"><a href="#">Agent Login </a></span> 
-					<span class="footer-nav__text_type_tag">Customer Login </span><br> 
-					<span class="footer-nav__text_type_tag">Not a Member? </span> 
-					<span class="footer-nav__text_type_tag">Contact </span><br> 
-					<span class="footer-nav__text_type_tag">New Horizons </span> 
-					<span class="footer-nav__text_type_tag">Lanscape </span>
-					<span class="footer-nav__text_type_tag">Tags </span><br> 
-					<span class="footer-nav__text_type_tag">Nice </span> 
-					<span class="footer-nav__text_type_tag">Some </span> 
-					<span class="footer-nav__text_type_tag">Portrait </span> 
-				</p>
-			</div>
-
-			<div class="footer-nav__column">
-				<h3 class="footer-nav__title">Address</h3>
-				<p class="footer-nav__text">	
-					DieSachbearbeiter Schönhauser Allee 
-					<br> 167c,10435 Berlin Germany
-					<br><span class="l_text-color_lazur">E-mail:</span> 
-					moin@blindtextgenerator.de
-				</p>
-				
-				 <ul class="footer__social-icons social-icons">
-                    <li class="social-icons__link">
-                        <a href="#">
-                        <img src="img/fb.png"  alt="Fb">
-                        </a>
-                        <!-- Fb -->
-                    </li>
-
-                    <li class="social-icons__link">
-                        <a href="#">
-                        <img src="img/tw.png"  alt="Tw">
-                        </a>
-                        <!-- Tw -->
-                    </li>
-
-                    <li class="social-icons__link">
-                        <a href="#">
-                        <img src="img/tumb.png"  alt="Tumb">
-                        </a>
-                        <!-- Tumb-->
-                    </li>
-
-                    <li class="social-icons__link">
-                        <a href="#">
-                        <img src="img/pin.png"  alt="Pint">
-                        </a>
-                        <!-- Pint-->
-                    </li>
-                </ul>
-			</div>
-		</div>
-
-      <ul class="footer__links">
-				<li><a class="footer__link" href="index.html">Home</a>:</li>
-				<li><a class="footer__link" href="voyage_dest.html">Destinations</a>::</li>
-				<li><a class="footer__link" href="#">Criuses</a>::</li>
-				<li><a class="footer__link" href="#">Specils</a>::</li>
-				<li><a class="footer__link" href="#">Holidays</a>::</li>
-				<li><a class="footer__link" href="blog.html">Blog</a>::</li>
-				<li><a class="footer__link" href="#">Contact Us</a></li>
-      </ul>
-
-			<div class="footer__copyright">
-				<p>Copyright @voyage. All Right Reserved.</p>
-			</div>
-
-			<a href="#home">
-				<!-- <img src="#"> -->	
-				<div class="footer__btn-up"></div>
-			</a>
-	</footer>	
-    
-    <div class="log-form j-log-form">
+        <div class="log-form j-log-form">
 
             <input class="log-form__input" type="text" name="username" placeholder="Username">
 
             <input class="log-form__input" type="text" name="password" placeholder="Password">
 
-            <button class="log-form__btn j-log-form__btn" onclick="logout()">SIGN IN</button>
+            <button class="log-form__btn j-log-form__btn" onclick="loginHide()">
+                SIGN IN
+            </button>
 
-            <p class="log-form__text">Don't have an account? <a class="log-form__text_state_bold" href="#" onclick = "regin()">Sign up</a></p>
-    </div>
-    <div class="reg-form j-reg-form">
+            <p class="log-form__text">
+                Don't have an account? 
+                <a class="log-form__text_state_bold" href="#" onclick = "regShow()">
+                    Sign up
+                </a>
+            </p>
+        </div>
+        <div class="reg-form j-reg-form">
 
             <input class="reg-form__input" type="text" name="username" placeholder="Username">
-        
+
             <input class="reg-form__input" type="text" name="email" placeholder="Email">
 
             <input class="reg-form__input" type="text" name="password" placeholder="Password">
 
-            <button class="reg-form__btn" onclick="regout()">Register</button>
+            <button class="reg-form__btn" onclick="regHide()">
+                Register
+            </button>
 
-            <p class="reg-form__text">Do you have an account? <a class="reg-form__text_state_bold" href="#" onclick = "login()">Sign In</a></p>
-    </div>
-    <div class="log-form__back j-log-form__back_off"></div>
-    
-    <script type="text/javascript" src="test.js"></script>
-</body>
+            <p class="reg-form__text">
+                Do you have an account? 
+                <a class="reg-form__text_state_bold" href="#" onclick = "logShow()">
+                    Sign In
+                </a>
+            </p>
+        </div>
+        <div class="log-form__back j-log-form__back_off">
+        </div>
+
+        <script type="text/javascript" src="test.js"></script>
+    </body>
 </html>
